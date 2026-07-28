@@ -1,0 +1,322 @@
+{
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 49324,
+            "max": [
+                203.2086944580078,
+                62.85281753540039,
+                127.16624450683594
+            ],
+            "min": [
+                -170.48446655273438,
+                -197.34329223632812,
+                0.44968700408935547
+            ],
+            "name": "accessor_buffer_Trex_remade2lower_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 47838,
+            "max": [
+                49322
+            ],
+            "min": [
+                1
+            ],
+            "name": "accessor_buffer_Trex_remade2lower_1",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 227208,
+            "max": [
+                49323
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_Trex_remade2lower_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 49324,
+            "max": [
+                0.9999444484710693,
+                1.0,
+                0.999967634677887
+            ],
+            "min": [
+                -0.9999363422393799,
+                -1.0,
+                -0.9999767541885376
+            ],
+            "name": "accessor_buffer_Trex_remade2lower_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 21018,
+            "max": [
+                49312
+            ],
+            "min": [
+                2
+            ],
+            "name": "accessor_buffer_Trex_remade2lower_2",
+            "type": "SCALAR"
+        }
+    ],
+    "asset": {
+        "copyright": "",
+        "generator": "blendergltf v1.2.0",
+        "version": "2.0"
+    },
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 591888,
+            "byteOffset": 0,
+            "byteStride": 12,
+            "name": "bufferView_buffer_Trex_remade2lower_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 591888,
+            "byteOffset": 591888,
+            "byteStride": 12,
+            "name": "bufferView_buffer_Trex_remade2lower_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 454420,
+            "byteOffset": 1183776,
+            "name": "bufferView_buffer_Trex_remade2lower_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 95680,
+            "byteOffset": 1638196,
+            "name": "bufferView_buffer_Trex_remade2lower_1",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 42040,
+            "byteOffset": 1733876,
+            "name": "bufferView_buffer_Trex_remade2lower_2",
+            "target": 34963
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 1775916,
+            "name": "buffer_20180531_trex_remadelow",
+            "uri": "buffer_20180531_trex_remadelow.bin"
+        }
+    ],
+    "cameras": [
+        {
+            "name": "Camera",
+            "perspective": {
+                "aspectRatio": 1.703595982340029,
+                "yfov": 0.5033799409866333,
+                "zfar": 100.0,
+                "znear": 0.10000000149011612
+            },
+            "type": "perspective"
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "OPAQUE",
+            "doubleSided": false,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "material_0",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.6392160058021545,
+                    0.1254899948835373,
+                    0.10588199645280838,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "alphaMode": "OPAQUE",
+            "doubleSided": false,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "material_1",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.6392160058021545,
+                    0.09411799907684326,
+                    0.1294119954109192,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "alphaMode": "OPAQUE",
+            "doubleSided": false,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "material_2",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.6392160058021545,
+                    0.1529410034418106,
+                    0.11764699965715408,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Trex_remade2lower",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 3,
+                        "POSITION": 0
+                    },
+                    "indices": 2,
+                    "material": 2,
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": 3,
+                        "POSITION": 0
+                    },
+                    "indices": 1,
+                    "material": 1,
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": 3,
+                        "POSITION": 0
+                    },
+                    "indices": 4,
+                    "material": 0,
+                    "mode": 4
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "camera": 0,
+            "name": "Camera",
+            "rotation": [
+                -0.09062843769788742,
+                -0.8937962651252747,
+                -0.2099730223417282,
+                0.38578000664711
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                -7.481131553649902,
+                5.34366512298584,
+                -6.5076398849487305
+            ]
+        },
+        {
+            "name": "Lamp",
+            "rotation": [
+                -0.34203386306762695,
+                -0.5232755541801453,
+                -0.2841663062572479,
+                0.7269423007965088
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                0.9999999403953552
+            ],
+            "translation": [
+                -4.076245307922363,
+                5.903861999511719,
+                1.0054539442062378
+            ]
+        },
+        {
+            "mesh": 0,
+            "name": "Trex_remade2lower",
+            "rotation": [
+                -0.7071068286895752,
+                0.0,
+                0.0,
+                0.7071067094802856
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        }
+    ],
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "active_camera": 0,
+                "background_color": [
+                    0.05087608844041824,
+                    0.05087608844041824,
+                    0.05087608844041824
+                ],
+                "frames_per_second": 24
+            },
+            "name": "Scene",
+            "nodes": [
+                2,
+                1,
+                0
+            ]
+        }
+    ]
+}

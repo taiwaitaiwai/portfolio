@@ -1,0 +1,1052 @@
+/* 1. RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFFBE0;
+  font-family: 'Space Grotesk', sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  padding-bottom: 120px;
+}
+
+/* 2. BACKGROUND LAYERS */
+.pattern-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rotating-bg {
+  height: 150vh;
+  width: auto;
+  opacity: 0.5;
+  animation: slowRotate 150s linear infinite;
+}
+
+@keyframes slowRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.lemon-layer {
+  position: absolute;
+  top: 164px;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+.lemon-layer img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 3. TOPBAR - Portrait Default */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #B8D373;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid #000000;
+  z-index: 2100; /* Increased to stay above scanner */
+  display: flex;
+  justify-content: center;
+}
+
+.topbar-content {
+  width: 100%;
+  max-width: 393px;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 8px;
+}
+
+.logo-portrait { width: 171px; height: 40px; z-index: 2; display: block; }
+.logo-landscape { display: none; }
+
+.deko-left, .deko-right {
+  position: absolute;
+  top: 0;
+  width: 89px;
+  height: 122px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 2101; /* Ensure these are higher than the topbar background */
+}
+.deko-left {
+  left: 0;
+  background-image: url('../img/topbar-left-deko.svg');
+  background-position: left top;
+}
+.deko-right {
+  right: 0;
+  background-image: url('../img/topbar-right-deko.svg');
+  background-position: right top;
+}
+
+/* 4. CONTENT GRID - Portrait (4 Columns) */
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 16px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 393px;
+  padding: 144px 20px 0 20px;
+  position: relative;
+  z-index: 10;
+}
+
+/* 5. HERO SECTION */
+.hero-section {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-title {
+  font-family: 'Bevan', serif;
+  font-style: italic;
+  color: #F6E200;
+  text-align: center;
+  -webkit-text-stroke: 0.5px #000000;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.75);
+  margin-bottom: 28px;
+}
+
+.hero-title .line-1,
+.hero-title .line-1-extra {
+  display: inline;
+  font-size: clamp(18px, 6.5vw, 26px);
+  text-transform: lowercase;
+}
+.hero-title .line-2 {
+  display: block;
+  font-size: clamp(28px, 9vw, 36px);
+  text-transform: uppercase;
+}
+
+.hero-title-landscape { display: none; }
+.hero-title-portrait { display: block; }
+
+.cta-button {
+  width: 168px;
+  height: 50px;
+  border: 1px solid #000000;
+  border-radius: 25px;
+  background: linear-gradient(180deg, #F6E200 0%, #B8D373 100%);
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.cta-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  padding-top: 15px;
+  padding-left: 13px;
+  color: #000000;
+}
+.cta-icon {
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
+  margin-right: 13px;
+  margin-left: auto;
+}
+
+.hero-dose {
+  display: block;
+}
+.hero-dose img {
+  height: 45vh;
+  width: auto;
+  max-width: 188px;
+  max-height: 432px;
+  object-fit: contain;
+  display: block;
+}
+
+/* 6. ZITRA PAGE CONTENT */
+.info-block { grid-column: 1 / -1; width: 100%; margin-bottom: 23px; }
+.center-text { text-align: center; }
+.zitra-hero-title {
+  font-family: 'Bevan', serif;
+  font-style: italic;
+  color: #355A32;
+  -webkit-text-stroke: 0.5px #000000;
+  font-size: clamp(20px, 7vw, 26px);
+  margin-bottom: 12px;
+}
+.reading-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(14px, 4vw, 16px);
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+.sub-heading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: clamp(18px, 5vw, 20px);
+  color: #355A32;
+  margin-bottom: 12px;
+}
+.semibold { font-weight: 600; }
+.full-width-img {
+  grid-column: 1 / -1;
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  margin-bottom: 23px;
+}
+.full-width-img img { width: 100%; height: auto; display: block; }
+.centered-img-block {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  margin: 37px 0 23px 0;
+}
+.oma-img { width: 70vw; max-width: 272px; height: auto; }
+
+.reading-list {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.reading-list li {
+  margin-bottom: 8px;
+}
+
+/* 7. MAIN MENU BAR */
+.main-menu {
+  position: fixed;
+  bottom: 34px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+  max-width: 353px;
+  height: 60px;
+  background-color: #FFFBE0;
+  border: 1px solid #000000;
+  border-radius: 30px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  z-index: 2000;
+  padding: 0 35px;
+}
+
+.menu-item {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.menu-item:first-child { margin-right: auto; }
+.menu-item:last-child { margin-left: auto; }
+
+.item-content {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.menu-item.active .item-content { background-color: #F6E200; }
+
+/* 8. CENTER CIRCLE */
+.center-circle {
+  width: 75px;
+  height: 75px;
+  background-color: #FFFBE0;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 2001;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.center-circle.active { background-color: #F6E200; }
+
+.circle-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-icon-small { width: 28px; height: 28px; margin-bottom: 4px; }
+.menu-icon-large { width: 34px; height: 34px; margin-bottom: 4px; }
+.menu-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1;
+  color: #000000;
+}
+
+/* --- 9. LANDSCAPE MODE --- */
+@media (orientation: landscape) {
+
+  html, body {
+    min-height: 100vh;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto; 
+  }
+
+  .rotating-bg {
+    content: url('../img/start-bg-landscape.png');
+    min-width: 250vw;
+    min-height: 250vh;
+    object-fit: none;
+    flex-shrink: 0;
+  }
+
+  .topbar {
+    width: 100px;
+    height: 100vh;
+    border-bottom: none;
+    border-right: 1px solid #000000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    z-index: 2100;
+  }
+
+  .topbar-content {
+    max-width: none;
+    height: auto;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  .logo-portrait { display: none; }
+  .logo-landscape {
+    display: block;
+    width: 40px;
+    height: auto;
+    flex-shrink: 0;
+    margin-left: 0; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .deko-left {
+    top: 0;
+    left: 0;
+    width: 122px;
+    height: 89px;
+    background-image: url('../img/leftbar-top-deko.svg');
+    background-position: left top;
+    z-index: 2101;
+  }
+  .deko-right {
+    bottom: 0;
+    left: 0;
+    top: auto;
+    right: auto;
+    width: 122px;
+    height: 89px;
+    background-image: url('../img/leftbar-btm-deko.svg');
+    background-position: left bottom;
+    z-index: 2101;
+  }
+
+  .lemon-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  .lemon-layer img {
+    content: url('../img/lemon-bg-landscape.png');
+    width: auto;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+  }
+
+  .content-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 16px;
+    margin-left: 100px;
+    width: calc(100% - 100px);
+    max-width: none;
+    padding: 0 20px;
+    padding-right: 100px; 
+    padding-top: 0;
+  }
+
+  body.zitra-page .content-grid {
+    padding-top: 20px;
+  }
+	
+  body.zitra-page .full-width-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  body.zitra-page .full-width-img img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    display: block;
+  }
+	
+  body.zitra-page .info-block {
+    padding-left: 20px;
+  }
+
+  body.preise-page .content-grid {
+    padding-top: 20px;
+  }
+
+  body.preise-page .full-width-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  body.preise-page .full-width-img img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    display: block;
+  }
+
+  body.preise-page .info-block {
+    padding-left: 20px;
+  }
+
+  .hero-section {
+    display: contents;
+  }
+
+  .hero-title-portrait { display: none; }
+  .hero-title-landscape { display: block; }
+
+  .hero-title-landscape {
+    grid-column: 1 / 4;
+    justify-self: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 34px;
+  }
+
+  .hero-title-landscape .line-1,
+  .hero-title-landscape .line-2 {
+    display: block;
+  }
+
+  .cta-button {
+    grid-column: 1 / 4;
+    justify-self: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .hero-dose {
+    grid-column: 4 / 7;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: calc(100vh - 40px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    transform: translateY(-250px);
+  }
+
+  .hero-dose img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  .main-menu {
+    position: fixed;
+    top: 20px;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: auto;
+    max-width: none;
+    left: auto;
+    transform: none;
+    border-radius: 30px;
+    padding: 35px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2000;
+  }
+
+  .menu-item {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-item:first-child { margin-right: 0; }
+  .menu-item:last-child  { margin-left: 0; }
+
+  .item-content {
+    width: 54px;
+    height: 54px;
+  }
+
+  .center-circle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    width: 75px;
+    height: 75px;
+    z-index: 2001;
+  }
+}
+
+.social-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 16px;
+  padding-bottom: 40px;
+}
+.social-row img { width: 44px; height: 44px; }
+
+/* ===============================
+   Landscape scroll control
+   =============================== */
+@media (orientation: landscape) {
+  html, body {
+    height: auto;
+    overflow-y: auto;
+  }
+
+  body.page-home {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+
+/* ===============================
+   SCAN PAGE ONLY
+   =============================== */
+
+body.scan-page {
+  padding-bottom: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+/* Ensure the topbar and deko are fully visible above camera */
+body.scan-page .topbar {
+  z-index: 2100;
+}
+body.scan-page .deko-left, 
+body.scan-page .deko-right {
+  z-index: 2101;
+}
+
+body.scan-page #qrsection{
+  position: fixed;
+  top: 100px; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  z-index: 1200; /* Stays below Topbar */
+}
+
+body.scan-page #canvas{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+body.scan-page #qrsection::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at center, rgba(0,0,0,0) 0 38%, rgba(0,0,0,.55) 42% 100%);
+}
+
+body.scan-page #qrsection::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  width: min(72vw, 340px);
+  aspect-ratio: 1 / 1;
+  border-radius: 18px;
+  border: 2px solid rgba(255,255,255,.85);
+  box-shadow: 0 0 0 9999px rgba(0,0,0,.18) inset;
+}
+
+body.scan-page .scan-return-circle{
+  width: 80px;
+  height: 80px;
+  background-color: #FFFBE0;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 2200; /* Highest priority */
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.25);
+}
+
+body.scan-page .scan-return-circle .return-icon{
+  width: 35px;
+  height: 35px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+body.scan-page .scan-return-circle .circle-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (orientation: landscape){
+  body.scan-page #qrsection{
+    top: 0;
+    left: 100px; 
+    right: 0;
+    bottom: 0;
+  }
+
+  body.scan-page #qrsection::after{
+    width: min(45vw, 300px);
+  }
+
+  body.scan-page .scan-return-circle{
+    left: auto;
+    transform: none;
+    right: 18px;
+    bottom: 18px;
+  }
+}
+
+a.cta-button {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+}
+
+a.cta-button:visited { color: inherit; }
+
+/* --- LOSE PAGE SPECIFICS --- */
+
+body.lose-page .content-grid {
+  padding-bottom: 40px; /* Since there is no menu bar */
+}
+
+/* Vertical alignment for Portrait */
+.lose-main-content, .lose-actions-content {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===============================
+   WIN PAGE (FULL CSS – FINAL)
+   =============================== */
+
+/* Remove global bottom padding so page ends after button */
+body.win-page{
+  padding-bottom: 0 !important;
+}
+
+/* -------------------------------
+   FORM BASE
+-------------------------------- */
+.win-page .zitra-form{
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 14px !important;
+  width: 100%;
+  max-width: 393px;
+  margin: 0 auto;
+  padding-bottom: 50px !important; /* page ends ~50px after button */
+}
+
+/* Rows */
+.win-page .form-row{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Fields */
+.win-page .field{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.win-page .field-label{
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #000;
+  padding-left: 6px;
+}
+
+/* Inputs */
+.win-page .zitra-form input[type="text"],
+.win-page .zitra-form input[type="email"],
+.win-page .zitra-form input[type="tel"]{
+  width: 100%;
+  height: 58px;
+  padding: 0 18px;
+  border: 1px solid #000;
+  border-radius: 25px;
+  background: #FFFBE0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 15px;
+  outline: none;
+}
+
+.win-page .zitra-form input::placeholder{
+  opacity: 0.8;
+}
+
+/* Checkbox */
+.win-page .checkbox-container{
+  margin-top: 2px;
+  padding: 8px 5px;
+}
+
+/* Hint */
+.win-page .win-hint{
+  min-height: 18px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #b00020;
+  text-align: center;
+}
+
+/* Send button – exact 10px gap */
+.win-page .submit-win{
+  width: 240px;
+  margin-top: 6px;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.win-page .submit-win .cta-text,
+.win-page .submit-win .cta-icon{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Image base */
+.win-page .win-hero-img img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===============================
+   LANDSCAPE MODE
+   =============================== */
+@media (orientation: landscape){
+
+  /* Space from sidebar */
+  .win-page .content-grid{
+    padding-left: 30px !important;
+    padding-right: 100px !important;
+  }
+
+  /* Use full width */
+  .win-page .zitra-form{
+    max-width: 100% !important;
+  }
+
+  /* 🔑 FIX: EVEN COLUMNS */
+  .win-page .form-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* EXACT SAME WIDTH */
+    gap: 14px;
+    width: 100%;
+  }
+
+  /* Full-width fields */
+  .win-page #email,
+  .win-page #phone{
+    grid-column: 1 / -1;
+  }
+
+  .win-page .checkbox-container,
+  .win-page .submit-win,
+  .win-page .win-hint{
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  /* Image size control */
+  .win-page .win-hero-img img{
+    width: auto;
+    max-width: 360px;
+    max-height: 32vh;
+    margin: 0 auto;
+  }
+}
+
+/* ===============================
+   PORTRAIT MODE
+   =============================== */
+@media (orientation: portrait){
+  .win-page .zitra-form{
+    padding-bottom: 50px !important;
+  }
+}
+
+/* ===============================
+   LOSE PAGE (FINAL FIXES)
+   Paste at VERY bottom of style.css
+   =============================== */
+
+/* No scrolling, both orientations */
+html:has(body.lose-page),
+body.lose-page {
+  height: 100dvh;
+  width: 100vw;
+  overflow: hidden !important;
+}
+
+body.lose-page {
+  position: fixed;
+  inset: 0;
+  padding-bottom: 0 !important; /* override global 120px */
+}
+
+/* Ensure content grid fits screen and centers nicely */
+body.lose-page .content-grid {
+  height: calc(100dvh - 100px);        /* subtract topbar height in portrait */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 20px 34px 20px;       /* similar to your lose portrait logic */
+}
+
+/* Center CTA button in portrait (fix: it was appearing left) */
+body.lose-page .lose-cta-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;             /* ✅ centers the button */
+}
+
+/* Keep your fixed image sizing */
+body.lose-page .oma-img-fixed {
+  width: 320px !important;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Reduce bottom padding inside social row so it doesn't cause scroll feeling */
+body.lose-page .social-row {
+  padding-bottom: 0 !important;
+}
+
+/* ===============================
+   LANDSCAPE: 2 columns, no scroll
+   Left: title+text+image
+   Right: title+text+icons+button
+   =============================== */
+@media (orientation: landscape) {
+
+  /* Lose page grid becomes a 2-column frame */
+  body.lose-page .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+
+    /* account for left sidebar (topbar becomes left bar) */
+    margin-left: 100px;
+    width: calc(100% - 100px);
+
+    height: 100dvh;
+    max-width: none;
+
+    padding: 34px 20px 34px 20px;
+    align-items: stretch;
+  }
+
+  /* LEFT COLUMN */
+  body.lose-page .lose-main-content {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  /* push image down in left column */
+  body.lose-page .lose-main-content .centered-img-block {
+    margin: 10px 0 0 0;
+    margin-top: auto;
+  }
+
+  body.lose-page .oma-img-fixed {
+    max-height: 40vh;  /* fits landscape */
+    margin: 0;
+  }
+
+  /* RIGHT COLUMN */
+  body.lose-page .lose-actions-content {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  /* Button belongs to the RIGHT column, centered, bottom aligned */
+  body.lose-page .lose-cta-container {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-self: end;   /* bottom of the column */
+    width: 100%;
+  }
+}
+
+/* Portrait: spacing + button position on lose page */
+@media (orientation: portrait) {
+
+  /* More space above "WIR FEIERN UNSERE GEWINNER!" */
+  body.lose-page .lose-actions-content {
+    margin-top: 32px;   /* adjust if needed */
+  }
+
+  /* Push button slightly down, keep it centered */
+  body.lose-page .lose-cta-container {
+    margin-top: 40px;   /* space from social icons */
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* ===============================
+   FONTS
+   =============================== */
+
+/* Space Grotesk - Regular (400) */
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('../fonts/space-grotesk-v22-latin-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Space Grotesk - SemiBold (600) */
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('../fonts/space-grotesk-v22-latin-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Space Grotesk - Bold (700) */
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('../fonts/space-grotesk-v22-latin-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bevan - Regular (400) */
+@font-face {
+  font-family: 'Bevan';
+  src: url('../fonts/bevan-v26-latin-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bevan - Italic (400) */
+@font-face {
+  font-family: 'Bevan';
+  src: url('../fonts/bevan-v26-latin-italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum | Tai Wai Chan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">Tai Wai Chan</div>
+            <input type="checkbox" id="nav-check">
+            <label for="nav-check" class="menu-toggle"><span></span><span></span><span></span></label>
+            <nav class="nav">
+                <a href="home.html">Work</a>
+                <a href="profile.html">Profile</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="legal-main">
+        <div class="legal-hero">
+            <h1>Impressum</h1>
+            <p>Rechtliche Informationen und Anbieterkennzeichnung gemäß der gesetzlichen Anforderungen für digitale Dienste in Deutschland.</p>
+        </div>
+
+        <div class="legal-card">
+            <h2>Angaben gemäß § 5 TMG</h2>
+            <p>
+                Tai Wai Chan<br>
+                [Your Street Name 123]<br>
+                [10115] Berlin<br>
+                Deutschland
+            </p>
+
+            <h2>Kontakt</h2>
+            <p>
+                Telefon: [Your Phone Number]<br>
+                E-Mail: [Your Email Address]
+            </p>
+
+            <h2>Redaktionell verantwortlich</h2>
+            <p>
+                Tai Wai Chan<br>
+                [Your Street Name 123]<br>
+                [10115] Berlin
+            </p>
+
+            <h2>Haftungsausschluss</h2>
+            <h3>Haftung für Inhalte</h3>
+            <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen.</p>
+
+            <h3>Urheberrecht</h3>
+            <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung bedarf der schriftlichen Zustimmung.</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <nav class="footer-nav">
+                    <a href="impressum.html" class="active">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                </nav>
+            </div>
+            <div class="footer-middle">
+                <p class="copyright">© 2026 Tai Wai Chan · Berlin</p>
+            </div>
+            <div class="footer-right">
+                <button onclick="scrollToTop()" class="btn-top">↑</button>
+            </div>
+        </div>
+    </footer>
+
+    <div class="accessibility-menu">
+        <button class="fab" onclick="toggleAccessMenu()">
+            <img src="img/gear-black.svg" class="icon-gear-black" alt="Settings">
+            <img src="img/gear-white.svg" class="icon-gear-white" alt="Settings">
+        </button>
+        <div class="access-options" id="accessOptions">
+            <button onclick="changeFontSize('increase')">A+</button>
+			<button onclick="changeFontSize('reset')">A</button>
+            <button onclick="changeFontSize('decrease')">A-</button>
+            <button id="contrast-toggle" onclick="toggleContrast()">
+                <img src="img/moon.svg" alt="Dark Mode" class="icon-moon">
+                <img src="img/sun.svg" alt="Light Mode" class="icon-sun">
+            </button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

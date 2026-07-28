@@ -1,0 +1,486 @@
+{
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5123,
+            "count" : 462,
+            "max" : [
+                458
+            ],
+            "min" : [
+                0
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 459,
+            "max" : [
+                0.705510139465332,
+                0.7834165096282959,
+                0.6866881251335144
+            ],
+            "min" : [
+                -0.7922788858413696,
+                -0.9396364688873291,
+                -0.9521628022193909
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 459,
+            "max" : [
+                0.9963139295578003,
+                0.686130940914154,
+                0.9831503629684448
+            ],
+            "min" : [
+                -0.9963136911392212,
+                -0.9158355593681335,
+                -0.4305039346218109
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 462,
+            "max" : [
+                458
+            ],
+            "min" : [
+                0
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 459,
+            "max" : [
+                0.705510139465332,
+                0.7834165096282959,
+                0.6866881251335144
+            ],
+            "min" : [
+                -0.7922788858413696,
+                -0.9396364688873291,
+                -0.9521628022193909
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 459,
+            "max" : [
+                0.9963139295578003,
+                0.686130940914154,
+                0.9831503629684448
+            ],
+            "min" : [
+                -0.9963136911392212,
+                -0.9158355593681335,
+                -0.4305039346218109
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5123,
+            "count" : 462,
+            "max" : [
+                458
+            ],
+            "min" : [
+                0
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5126,
+            "count" : 459,
+            "max" : [
+                0.705510139465332,
+                0.7834165096282959,
+                0.6866881251335144
+            ],
+            "min" : [
+                -0.7922788858413696,
+                -0.9396364688873291,
+                -0.9521628022193909
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 459,
+            "max" : [
+                0.9963139295578003,
+                0.686130940914154,
+                0.9831503629684448
+            ],
+            "min" : [
+                -0.9963136911392212,
+                -0.9158355593681335,
+                -0.4305039346218109
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 9,
+            "componentType" : 5123,
+            "count" : 462,
+            "max" : [
+                458
+            ],
+            "min" : [
+                0
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 10,
+            "componentType" : 5126,
+            "count" : 459,
+            "max" : [
+                0.705510139465332,
+                0.7834165096282959,
+                0.6866881251335144
+            ],
+            "min" : [
+                -0.7922788858413696,
+                -0.9396364688873291,
+                -0.9521628022193909
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 11,
+            "componentType" : 5126,
+            "count" : 459,
+            "max" : [
+                0.9963139295578003,
+                0.686130940914154,
+                0.9831503629684448
+            ],
+            "min" : [
+                -0.9963136911392212,
+                -0.9158355593681335,
+                -0.4305039346218109
+            ],
+            "type" : "VEC3"
+        }
+    ],
+    "asset" : {
+        "generator" : "Khronos Blender glTF 2.0 exporter",
+        "version" : "2.0"
+    },
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 924,
+            "byteOffset" : 0,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5508,
+            "byteOffset" : 924,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5508,
+            "byteOffset" : 6432,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 924,
+            "byteOffset" : 11940,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5508,
+            "byteOffset" : 12864,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5508,
+            "byteOffset" : 18372,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 924,
+            "byteOffset" : 23880,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5508,
+            "byteOffset" : 24804,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5508,
+            "byteOffset" : 30312,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 924,
+            "byteOffset" : 35820,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5508,
+            "byteOffset" : 36744,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5508,
+            "byteOffset" : 42252,
+            "target" : 34962
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 47760,
+            "uri" : "2Mask_vers4.bin"
+        }
+    ],
+    "materials" : [
+        {
+            "name" : "Material.001",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    1.0
+                ],
+                "metallicFactor" : 0.0
+            }
+        },
+        {
+            "name" : "Material.002",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.05781747784938629,
+                    0.05781747784938629,
+                    0.05781747784938629,
+                    1.0
+                ],
+                "metallicFactor" : 0.0
+            }
+        },
+        {
+            "name" : "Material.003",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.05781747784938629,
+                    0.05781747784938629,
+                    0.05781747784938629,
+                    1.0
+                ],
+                "metallicFactor" : 0.0
+            }
+        },
+        {
+            "name" : "Material.004",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.05858875004334374,
+                    0.05858875004334374,
+                    0.05858875004334374,
+                    1.0
+                ],
+                "metallicFactor" : 0.0
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Solidwork lowpolymask  by kongorilla.003",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "NORMAL" : 2,
+                        "POSITION" : 1
+                    },
+                    "indices" : 0,
+                    "material" : 3
+                }
+            ]
+        },
+        {
+            "name" : "Solidwork lowpolymask  by kongorilla.002",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "NORMAL" : 5,
+                        "POSITION" : 4
+                    },
+                    "indices" : 3,
+                    "material" : 2
+                }
+            ]
+        },
+        {
+            "name" : "Solidwork lowpolymask  by kongorilla.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "NORMAL" : 8,
+                        "POSITION" : 7
+                    },
+                    "indices" : 6,
+                    "material" : 1
+                }
+            ]
+        },
+        {
+            "name" : "Solidwork lowpolymask  by kongorilla",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "NORMAL" : 11,
+                        "POSITION" : 10
+                    },
+                    "indices" : 9,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Camera",
+            "rotation" : [
+                0.483536034822464,
+                0.33687159419059753,
+                -0.20870360732078552,
+                0.7804827094078064
+            ],
+            "translation" : [
+                7.481131553649902,
+                5.34366512298584,
+                6.5076398849487305
+            ]
+        },
+        {
+            "name" : "Lamp",
+            "rotation" : [
+                0.16907575726509094,
+                0.7558802962303162,
+                -0.27217137813568115,
+                0.570947527885437
+            ],
+            "scale" : [
+                1.0,
+                1.0,
+                0.9999999403953552
+            ],
+            "translation" : [
+                4.076245307922363,
+                5.903861999511719,
+                -1.0054539442062378
+            ]
+        },
+        {
+            "mesh" : 3,
+            "name" : "Solidwork lowpolymask  by kongorilla",
+            "translation" : [
+                0.0827772468328476,
+                0.9396364688873291,
+                -0.6866881251335144
+            ]
+        },
+        {
+            "mesh" : 2,
+            "name" : "Solidwork lowpolymask  by kongorilla.001",
+            "rotation" : [
+                0.14550703763961792,
+                0.012719027698040009,
+                0.8458876013755798,
+                0.5129718780517578
+            ],
+            "scale" : [
+                0.3797551691532135,
+                0.3797552287578583,
+                0.37975528836250305
+            ],
+            "translation" : [
+                -0.35527777671813965,
+                0.6179911494255066,
+                0.05030149966478348
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "Solidwork lowpolymask  by kongorilla.002",
+            "rotation" : [
+                0.18756115436553955,
+                0.04516855999827385,
+                -0.8158602118492126,
+                0.5451171398162842
+            ],
+            "scale" : [
+                0.3797551989555359,
+                0.3797552287578583,
+                0.37975528836250305
+            ],
+            "translation" : [
+                0.43613171577453613,
+                0.6297810673713684,
+                0.029005471616983414
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Solidwork lowpolymask  by kongorilla.003",
+            "rotation" : [
+                -1.601681027391111e-14,
+                1.3435884227419592e-07,
+                -1.0,
+                1.8759570593829267e-05
+            ],
+            "scale" : [
+                0.5161380171775818,
+                0.5161380171775818,
+                0.5161380171775818
+            ],
+            "translation" : [
+                0.02032724767923355,
+                0.3920513093471527,
+                -0.1354319006204605
+            ]
+        }
+    ],
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                2,
+                1,
+                0,
+                3,
+                4,
+                5
+            ]
+        }
+    ]
+}

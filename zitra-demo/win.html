@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZITRA - WOW! GEWONNEN</title>
+	
+  <link rel="icon" href="img/favicon-32.png" sizes="32x32">
+  <link rel="icon" href="img/favicon-16.png" sizes="16x16">
+  <link rel="apple-touch-icon" href="img/icon-192.png">
+	
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="win-page">
+
+  <div class="pattern-overlay">
+    <img src="img/start-bg.png" alt="" class="rotating-bg">
+  </div>
+
+  <header class="topbar">
+    <div class="deko-left"></div>
+    <div class="deko-right"></div>
+    <div class="topbar-content">
+      <img src="img/zitra-logo.svg" alt="ZITRA Logo" class="logo logo-portrait">
+      <img src="img/zitra-logo-vertical.svg" alt="ZITRA Vertical" class="logo logo-landscape">
+    </div>
+  </header>
+
+  <main class="content-grid">
+
+    <section class="info-block center-text">
+      <h1 class="zitra-hero-title">· WOW! GEWONNEN ·</h1>
+      <p class="reading-text">
+        Hammer! Das <span class="semibold">iPhone 17 Pro Max</span> gehört fast dir. Zeit zum Ausrasten!
+      </p>
+    </section>
+
+    <div class="full-width-img win-hero-img">
+      <img src="img/happy-winning-oma.png" alt="Happy Winning Oma">
+    </div>
+
+    <section class="info-block center-text">
+      <h2 class="sub-heading">DEIN UPGRADE WARTET</h2>
+      <p class="reading-text">
+        Sag uns, wo die Post abgehen soll! Trag deine Daten ein und wir schicken dein iPhone auf die Reise.
+      </p>
+    </section>
+
+    <!-- was <section> before; changed to <div> to avoid "section lacks heading" warning -->
+    <div class="info-block">
+      <form id="win-form" class="zitra-form" novalidate>
+
+        <!-- Vorname / Nachname -->
+        <div class="form-row">
+          <div class="field">
+            <label class="field-label" for="vorname">Vorname:</label>
+            <input
+              type="text"
+              id="vorname"
+              name="vorname"
+              placeholder="Dein Vorname"
+              autocomplete="given-name"
+              required
+            >
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="nachname">Nachname:</label>
+            <input
+              type="text"
+              id="nachname"
+              name="nachname"
+              placeholder="Dein Nachname"
+              autocomplete="family-name"
+              required
+            >
+          </div>
+        </div>
+
+        <!-- Straße / Hausnummer -->
+        <div class="form-row">
+          <div class="field">
+            <label class="field-label" for="street">Straße:</label>
+            <input
+              type="text"
+              id="street"
+              name="street"
+              placeholder="Straßenname"
+              autocomplete="address-line1"
+              required
+            >
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="housenr">Hausnummer:</label>
+            <input
+              type="text"
+              id="housenr"
+              name="housenr"
+              placeholder="z.B. 12a"
+              autocomplete="address-line2"
+              required
+            >
+          </div>
+        </div>
+
+        <!-- PLZ / Ort -->
+        <div class="form-row">
+          <div class="field">
+            <label class="field-label" for="plz">PLZ:</label>
+            <input
+              type="text"
+              id="plz"
+              name="plz"
+              placeholder="z.B. 30159"
+              inputmode="numeric"
+              autocomplete="postal-code"
+              required
+              maxlength="5"
+            >
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="city">Ort:</label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              placeholder="Dein Ort"
+              autocomplete="address-level2"
+              required
+            >
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="field">
+          <label class="field-label" for="email">E-Mail:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="name@mail.de"
+            inputmode="email"
+            autocomplete="email"
+            required
+          >
+        </div>
+
+        <!-- Phone -->
+        <div class="field">
+          <label class="field-label" for="phone">Handynummer:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="z.B. 0176 12345678 oder +49 176 12345678"
+            inputmode="tel"
+            autocomplete="tel"
+            required
+          >
+        </div>
+
+        <!-- Checkbox -->
+        <div class="checkbox-container">
+          <input type="checkbox" id="age-check" required>
+          <label for="age-check">Ich bin 18+ &amp; einverstanden.</label>
+        </div>
+
+        <p class="win-hint" id="winHint" aria-live="polite"></p>
+
+        <button type="submit" class="cta-button submit-win">
+          <span class="cta-text">JETZT ABSCHICKEN</span>
+          <img src="img/icon-send.svg" alt="Send Icon" class="cta-icon">
+        </button>
+
+      </form>
+    </div>
+
+  </main>
+
+  <script>
+    (function () {
+      const form = document.getElementById("win-form");
+      const hint = document.getElementById("winHint");
+
+      const el = {
+        vorname: document.getElementById("vorname"),
+        nachname: document.getElementById("nachname"),
+        street: document.getElementById("street"),
+        housenr: document.getElementById("housenr"),
+        plz: document.getElementById("plz"),
+        city: document.getElementById("city"),
+        email: document.getElementById("email"),
+        phone: document.getElementById("phone"),
+        age: document.getElementById("age-check"),
+      };
+
+      const ONLY_TEXT_RE = /[^a-zA-ZäöüÄÖÜß\s-]/g;
+      const ONLY_DIGITS_RE = /[^\d]/g;
+      const HOUSE_RE = /[^0-9a-zA-Z]/g;
+
+      function setHint(msg) {
+        hint.textContent = msg || "";
+      }
+
+      ["vorname", "nachname", "street", "city"].forEach((key) => {
+        el[key].addEventListener("input", () => {
+          el[key].value = el[key].value.replace(ONLY_TEXT_RE, "");
+        });
+      });
+
+      el.housenr.addEventListener("input", () => {
+        el.housenr.value = el.housenr.value.replace(HOUSE_RE, "");
+      });
+
+      el.plz.addEventListener("input", () => {
+        el.plz.value = el.plz.value.replace(ONLY_DIGITS_RE, "").slice(0, 5);
+      });
+
+      el.phone.addEventListener("input", () => {
+        let v = el.phone.value.replace(/\s+/g, "");
+        if (v.startsWith("+")) {
+          v = "+" + v.slice(1).replace(/[^\d]/g, "");
+        } else {
+          v = v.replace(/[^\d]/g, "");
+        }
+        el.phone.value = v;
+      });
+
+      function isValidGermanMobile(value) {
+        const v = (value || "").replace(/\s+/g, "");
+        if (v.startsWith("+49")) {
+          const rest = v.slice(3);
+          return /^\d{9,12}$/.test(rest);
+        }
+        if (v.startsWith("0")) {
+          const rest = v.slice(1);
+          return /^\d{9,12}$/.test(rest);
+        }
+        return false;
+      }
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        setHint("");
+
+        for (const key of ["vorname","nachname","street","housenr","plz","city","email","phone"]) {
+          if (!el[key].value.trim()) {
+            setHint("Bitte fülle alle Felder aus.");
+            el[key].focus();
+            return;
+          }
+        }
+
+        if (el.plz.value.length !== 5) {
+          setHint("Die PLZ muss genau 5 Ziffern lang sein.");
+          el.plz.focus();
+          return;
+        }
+
+        if (!el.email.checkValidity()) {
+          setHint("Bitte gib eine gültige E-Mail-Adresse ein.");
+          el.email.focus();
+          return;
+        }
+
+        if (!isValidGermanMobile(el.phone.value)) {
+          setHint("Bitte gib eine gültige deutsche Handynummer ein (0… oder +49…).");
+          el.phone.focus();
+          return;
+        }
+
+        if (!el.age.checked) {
+          setHint("Bitte bestätige, dass du 18+ bist und einverstanden.");
+          el.age.focus();
+          return;
+        }
+
+        alert("ERFOLG! Dein iPhone wird vorbereitet. Wir leiten dich zurück zum Start.");
+        window.location.href = "index.html";
+      });
+    })();
+  </script>
+
+</body>
+</html>

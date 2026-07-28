@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtFinder — Dynamic Art & Museum Database | Tai Wai Chan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-inner">
+            <a href="home.html" class="logo">Tai Wai Chan</a>
+            <input type="checkbox" id="nav-check">
+            <label for="nav-check" class="menu-toggle" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </label>
+            <nav class="nav">
+                <a href="home.html" class="active">Work</a> 
+                <a href="profile.html">Profile</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-main">
+        
+        <!-- SECTION 1: HEADER & TITLE -->
+        <header class="case-header">
+            <a href="home.html#work" class="back-link">← Back to Work</a>
+            <h1>ArtFinder — Dynamic Art & Museum Database</h1>
+            <p class="lead">Full-Stack Web Design, MySQL Relational Database & PHP CRUD Operations</p>
+        </header>
+
+        <!-- SECTION 2: HERO BANNER IMAGE -->
+        <section class="hero-banner">
+            <div class="media-frame" onclick="openLightbox('img/artfinder-hero.jpg')">
+                <img src="img/artfinder-hero.jpg" alt="ArtFinder Logo and Database Interface">
+            </div>
+            <p class="caption">ArtFinder web platform branding and dynamic art collection interface.</p>
+        </section>
+
+        <!-- SECTION 3: PROJECT OVERVIEW & META INFO -->
+        <section class="case-content">
+            <div class="text-block">
+                <p><strong>ArtFinder</strong> is a full-stack web application designed for exploring iconic artworks, historical master artists, and world-renowned museum collections. Built with a relational MySQL database backend and dynamic PHP integration, the platform features a complete CRUD (Create, Read, Update, Delete) workflow that allows registered members to manage records, insert new museums and artists, and attach artwork metadata.</p>
+                <p>The project emphasizes clean interface layout, clear form architecture, user authentication, and responsive visual presentations for art pieces.</p>
+            </div>
+
+            <div class="meta-grid">
+                <div class="meta-item">
+                    <h3>Project</h3>
+                    <p>ArtFinder Web Database</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Type</h3>
+                    <p>Academic Full-Stack Project</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Role</h3>
+                    <p>UI/UX Designer & Backend Developer</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Backend Tech</h3>
+                    <p>PHP 8, MySQL / MariaDB SQL Database</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Frontend Tools</h3>
+                    <p>HTML5, CSS3, JavaScript, Lightbox2</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Key Features</h3>
+                    <p>User Auth, Relational CRUD, Form Handling</p>
+                </div>
+            </div>
+
+            <!-- SYSTEM ARCHITECTURE & FEATURES -->
+            <div class="text-block" style="margin-top: 3rem;">
+                <h2>Core Architecture & System Features</h2>
+                <ul>
+                    <li><strong>Dynamic Catalog Browsing:</strong> Queries the MySQL database to dynamically list artworks, artists, and associated museum locations.</li>
+                    <li><strong>Member Authentication System:</strong> Secure session handling (<code>login_check.php</code> and <code>member.php</code>) ensuring administrative tools are restricted to authorized users.</li>
+                    <li><strong>Relational Data Insertion:</strong> Dynamic forms (<code>add_artist.php</code>, <code>add_museum.php</code>, <code>insert.php</code>) connected to server-side processors (<code>insert_do.php</code>) to update database records seamlessly.</li>
+                    <li><strong>Modular Front-End UI:</strong> Custom styling and responsive UI layout (<code>style.css</code>) structured for optimal readability across various display sizes.</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr style="opacity: 0.2; margin: 4rem 0;">
+
+        <!-- SECTION 4: DEMO VIDEO -->
+        <section class="case-content">
+            <article class="text-block">
+                <h2>Full-Stack Workflow Demo</h2>
+                <p>Screen recording demonstrating user authentication, browsing the dynamic collection, and performing MySQL database entries live via PHP form submissions.</p>
+
+                <div class="media-frame video-frame" style="margin-top: 1.5rem;">
+                    <video autoplay controls loop muted playsinline preload="metadata" poster="img/logo-artfinder.png" style="width: 100%; border-radius: 12px; display: block;">
+                        <source src="video/artfinder-demo.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+                <p class="caption">▶️ XAMPP Localhost demonstration showing database queries, user login session checks, and dynamic form entries.</p>
+            </article>
+        </section>
+
+        <!-- CASE STUDY FOOTER -->
+        <div class="case-footer">
+            <a href="home.html#work" class="btn">← Back to All Projects</a>
+        </div>
+
+    </main>
+
+    <!-- LIGHTBOX MODAL CONTAINER -->
+    <div id="lightboxModal" class="lightbox-modal" onclick="closeLightbox(event)">
+        <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+        <div class="lightbox-content-wrapper" onclick="event.stopPropagation()">
+            <img id="lightboxTargetImg" class="lightbox-img" src="" alt="Enlarged view">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <nav class="footer-nav">
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                </nav>
+            </div>
+            <div class="footer-middle">
+                <p class="copyright">© 2026 Tai Wai Chan · Berlin</p>
+            </div>
+            <div class="footer-right">
+                <button onclick="scrollToTop()" class="btn-top" aria-label="Scroll to top">↑</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ACCESSIBILITY FAB -->
+    <div class="accessibility-menu">
+        <button class="fab" onclick="toggleAccessMenu()" aria-label="Open accessibility options">
+            <img src="img/gear-black.svg" class="icon-gear-black" alt="Settings">
+            <img src="img/gear-white.svg" class="icon-gear-white" alt="Settings">
+        </button>
+        
+        <div class="access-options" id="accessOptions">
+            <button onclick="changeFontSize('increase')">A+</button>
+            <button onclick="changeFontSize('reset')">A</button>
+            <button onclick="changeFontSize('decrease')">A-</button>
+            <button id="contrast-toggle" onclick="toggleContrast()" aria-label="Toggle dark mode">
+                <img src="img/moon.svg" alt="Dark Mode" class="icon-moon">
+                <img src="img/sun.svg" alt="Light Mode" class="icon-sun">
+            </button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turtle Diving Resort Case Study | Tai Wai Chan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-inner">
+            <a href="home.html" class="logo">Tai Wai Chan</a>
+            <input type="checkbox" id="nav-check">
+            <label for="nav-check" class="menu-toggle" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </label>
+            <nav class="nav">
+                <a href="home.html" class="active">Work</a> 
+                <a href="profile.html">Profile</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-main">
+        
+        <!-- SECTION 1: HEADER & TITLE -->
+        <header class="case-header">
+            <a href="home.html#work" class="back-link">← Back to Work</a>
+            <h1>Turtle Diving Resort</h1>
+            <p class="lead">Responsive One-Pager, Interactive Map & After Effects Video Banner</p>
+        </header>
+
+        <!-- SECTION 2: HERO BANNER IMAGE -->
+        <section class="hero-banner">
+            <div class="media-frame" onclick="openLightbox('img/resort-hero.png')">
+                <img src="img/resort-hero.png" alt="Turtle Diving Resort Interface Overview">
+            </div>
+            <p class="caption">Turtle Diving Resort e-commerce and booking platform interface across desktop, tablet, and mobile breakpoints.</p>
+        </section>
+
+        <!-- SECTION 3: PROJECT OVERVIEW & META INFO -->
+        <section class="case-content">
+            <div class="text-block">
+                <p>Turtle Diving Resort is a responsive B2C one-pager website concept designed for a premier diving resort on Gili Air, Indonesia. The goal of the project was to craft an immersive digital experience that seamlessly blends travel booking, PADI course registrations, marine conservation awareness, and interactive dive spot exploration.</p>
+                <p>I managed the full end-to-end design and technical planning process: creating the information architecture, wireframing in Balsamiq, establishing WCAG 2.1 AA accessible color systems, prototyping full high-fidelity screen designs in Figma, producing custom vector badge icons, and animating a 30-second ambient motion background in After Effects.</p>
+            </div>
+
+            <div class="meta-grid">
+                <div class="meta-item">
+                    <h3>Project</h3>
+                    <p>Turtle Diving Resort</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Year</h3>
+                    <p>2026</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Role</h3>
+                    <p>UX/UI Designer & Motion Creator</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Key Highlights</h3>
+                    <p>Interactive Spot Map, PADI Course Grid, AE Video Loop</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Tools</h3>
+                    <p>Figma, After Effects, Illustrator, Photoshop, HTML5/CSS3, Vanilla JS</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Live Prototype</h3>
+                    <p><a href="turtle-diving-demo/index.html" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">View Live Prototype ↗</a></p>
+                </div>
+            </div>
+
+            <!-- CONTRIBUTIONS & LEARNINGS -->
+            <div class="text-block" style="margin-top: 3rem;">
+                <h2>My Process & Contributions</h2>
+                <ul>
+                    <li><strong>Information Architecture:</strong> Developed a structured sitemap mapping 7 core one-page sections (Hero, Welcome, Dive Spots, Courses, Booking, About, Contact).</li>
+                    <li><strong>UX Wireframing:</strong> Designed low-fidelity wireframes establishing 12-column layout grids, spacing tokens (100px section padding), and interactive modal logic.</li>
+                    <li><strong>High-Fidelity UI Design:</strong> Built full 1440px desktop screen layouts in Figma utilizing custom typography scale (Raleway + Nunito Sans) and marine branding colors (#004282, #276FB7, #EDF2F7).</li>
+                    <li><strong>Custom Vector Assets:</strong> Created 5 collectible-style dive spot badge icons in Illustrator (Coral Fan Garden, Deep Turbo, Manta Point, Shark Point, Turtle Heaven).</li>
+                    <li><strong>Motion Graphics:</strong> Edited and rendered a 30s 1080p seamless ambient video loop in After Effects with parallax depth layers and light ray effects.</li>
+                    <li><strong>Technical Handoff & Validation:</strong> Implemented clean, semantically valid HTML5/CSS3 and client-side Vanilla JavaScript for modal overlays and booking validation.</li>
+                </ul>
+            </div>
+
+            <div class="text-block">
+                <h2>What I Learned</h2>
+                <p>Designing Turtle Diving Resort reinforced the importance of systematic design thinking. By strictly adhering to WCAG 2.1 AA contrast ratios (achieving an 8.87:1 ratio between dark blue and ice blue backgrounds) and defining modular spacing rules early, the conversion from wireframe to interactive Figma mockup felt fluid and precise. It also allowed me to combine UI engineering with motion design to enhance user engagement above the fold.</p>
+            </div>
+        </section>
+
+        <hr style="opacity: 0.2; margin: 4rem 0;">
+
+        <!-- SECTION 4: VISUAL SUBSECTIONS -->
+        <section class="case-content">
+            
+            <!-- SUBSECTION 1: SITEMAP & WIREFRAMING -->
+            <article class="text-block">
+                <h2>1. Information Architecture & Wireframing</h2>
+                <p>Before moving into high-fidelity visuals, I structured the website hierarchy through a complete sitemap and wireframe skeleton to test content flow, modal triggers, and form accessibility across all sections.</p>
+
+                <div class="gallery-grid" style="grid-template-columns: repeat(2, 1fr); margin-top: 2rem;">
+                    <div class="media-frame" onclick="openLightbox('img/sitemap.png')">
+                        <div class="responsive-preview-frame">
+                            <img src="img/sitemap.png" alt="Turtle Diving Resort Sitemap Architecture">
+                        </div>
+                        <div class="frame-tag">01. Sitemap</div>
+                    </div>
+
+                    <div class="media-frame" onclick="openLightbox('img/wireframe.jpg')">
+                        <div class="responsive-preview-frame">
+                            <img src="img/wireframe.jpg" alt="Turtle Diving Resort Low-Fidelity Wireframe">
+                        </div>
+                        <div class="frame-tag">02. Wireframe Skeleton</div>
+                    </div>
+                </div>
+
+                <p class="caption">Sitemap architecture and low-fidelity layout planning for the 1440px viewport. Click any frame to inspect in detail.</p>
+            </article>
+
+            <!-- SUBSECTION 2: FULL SCREEN DESIGN (HIGH-RES & GRID VIEWS) -->
+            <article class="text-block">
+                <h2>2. High-Fidelity Figma Screendesign</h2>
+                <p>The high-fidelity design translates the wireframe into a vibrant, tropical aesthetic. Below, you can inspect both the clean 1440px full-page design and the underlying 12-column grid layout system used to structure components and spacing.</p>
+                
+                <div class="gallery-grid" style="grid-template-columns: repeat(2, 1fr); margin-top: 2rem;">
+                    <!-- CLEAN FULL DESIGN -->
+                    <div class="media-frame" onclick="openLightbox('img/onepager.jpg')">
+                        <div class="long-image-frame">
+                            <img src="img/onepager.jpg" alt="Full One-Pager Figma Screendesign without grid">
+                        </div>
+                        <div class="frame-tag">Full Design (Clean)</div>
+                    </div>
+
+                    <!-- 12-COLUMN GRID DESIGN -->
+                    <div class="media-frame" onclick="openLightbox('img/figma-in-grid.png')">
+                        <div class="long-image-frame">
+                            <img src="img/figma-in-grid.png" alt="Full One-Pager Figma Screendesign showing 12-column layout grid">
+                        </div>
+                        <div class="frame-tag">12-Column Grid View</div>
+                    </div>
+                </div>
+
+                <p class="caption">High-fidelity 1440px Screendesign shown in clean view and 12-column grid alignment. Click either image to inspect full board in high resolution.</p>
+            </article>
+
+            <!-- SUBSECTION 3: DIVE SPOT BADGES & MAP ICONS -->
+            <article class="text-block">
+                <h2>3. Custom Icon & Badge Design</h2>
+                <p>To encourage exploration and give divers a sense of accomplishment, I designed five collectible-style badge icons in Adobe Illustrator. Each vector badge represents a famous dive site around Gili Air and triggers interactive detail popups on the custom map.</p>
+
+                <!-- 5-COLUMN SVG BADGE GRID -->
+                <div class="badge-grid" style="margin-top: 2rem;">
+                    <div class="badge-item" onclick="openLightbox('img/icon-coral-fan-garden.svg')">
+                        <img src="img/icon-coral-fan-garden.svg" alt="Coral Fan Garden Badge">
+                        <span>Coral Fan Garden</span>
+                    </div>
+
+                    <div class="badge-item" onclick="openLightbox('img/icon-deep-turbo.svg')">
+                        <img src="img/icon-deep-turbo.svg" alt="Deep Turbo Badge">
+                        <span>Deep Turbo</span>
+                    </div>
+
+                    <div class="badge-item" onclick="openLightbox('img/icon-manta-point.svg')">
+                        <img src="img/icon-manta-point.svg" alt="Manta Point Badge">
+                        <span>Manta Point</span>
+                    </div>
+
+                    <div class="badge-item" onclick="openLightbox('img/icon-shark-point.svg')">
+                        <img src="img/icon-shark-point.svg" alt="Shark Point Badge">
+                        <span>Shark Point</span>
+                    </div>
+
+                    <div class="badge-item" onclick="openLightbox('img/icon-turtle-heaven.svg')">
+                        <img src="img/icon-turtle-heaven.svg" alt="Turtle Heaven Badge">
+                        <span>Turtle Heaven</span>
+                    </div>
+                </div>
+
+                <p class="caption">Collectible vector badge icons designed in Adobe Illustrator for interactive map overlays. Click any badge to inspect SVG vector details.</p>
+            </article>
+
+            <!-- SUBSECTION 4: MOTION BACKGROUND PRODUCTION -->
+            <article class="text-block">
+                <h2>4. Motion Banner Production (After Effects)</h2>
+                <p>To create an atmospheric, underwater entry point above the fold, I built a 30-second Full HD (1080p) looping video background in Adobe After Effects. The animation separates underwater photography into parallax depth layers, applying wave warp displacements, animated light rays, and a seamless 1-second opacity crossfade.</p>
+
+                <div class="media-frame">
+                    <video controls loop muted playsinline style="width: 100%; border-radius: 12px; display: block;">
+                        <source src="video/background_loop.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+                <p class="caption">30-second ambient video loop produced in Adobe After Effects for the website hero header.</p>
+            </article>
+
+        </section>
+
+        <!-- CASE STUDY FOOTER -->
+        <div class="case-footer">
+            <a href="home.html#work" class="btn">← Back to All Projects</a>
+        </div>
+
+    </main>
+
+    <!-- LIGHTBOX MODAL CONTAINER -->
+    <div id="lightboxModal" class="lightbox-modal" onclick="closeLightbox(event)">
+        <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+        <div class="lightbox-content-wrapper" onclick="event.stopPropagation()">
+            <img id="lightboxTargetImg" class="lightbox-img" src="" alt="Enlarged view">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <nav class="footer-nav">
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                </nav>
+            </div>
+            <div class="footer-middle">
+                <p class="copyright">© 2026 Tai Wai Chan · Berlin</p>
+            </div>
+            <div class="footer-right">
+                <button onclick="scrollToTop()" class="btn-top" aria-label="Scroll to top">↑</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ACCESSIBILITY FAB -->
+    <div class="accessibility-menu">
+        <button class="fab" onclick="toggleAccessMenu()" aria-label="Open accessibility options">
+            <img src="img/gear-black.svg" class="icon-gear-black" alt="Settings">
+            <img src="img/gear-white.svg" class="icon-gear-white" alt="Settings">
+        </button>
+        
+        <div class="access-options" id="accessOptions">
+            <button onclick="changeFontSize('increase')">A+</button>
+            <button onclick="changeFontSize('reset')">A</button>
+            <button onclick="changeFontSize('decrease')">A-</button>
+            <button id="contrast-toggle" onclick="toggleContrast()" aria-label="Toggle dark mode">
+                <img src="img/moon.svg" alt="Dark Mode" class="icon-moon">
+                <img src="img/sun.svg" alt="Light Mode" class="icon-sun">
+            </button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

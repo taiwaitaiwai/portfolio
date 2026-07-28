@@ -1,0 +1,1430 @@
+{
+    "accessors": [
+        {
+            "bufferView": 11,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 9654,
+            "max": [
+                9645
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.004_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 23,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 9654,
+            "max": [
+                9645
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.008_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 5,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 9654,
+            "max": [
+                9645
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.002_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 31,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9646,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -0.9997875094413757,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.011_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 9,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9646,
+            "max": [
+                57.436309814453125,
+                18.784456253051758,
+                21.245220184326172
+            ],
+            "min": [
+                -32.549102783203125,
+                -12.972163200378418,
+                -21.220308303833008
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.004_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 20,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 9654,
+            "max": [
+                9645
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.007_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 25,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9646,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -0.9997875094413757,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.009_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 10,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9646,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -0.9997875094413757,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.004_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 15,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9646,
+            "max": [
+                57.436309814453125,
+                18.784456253051758,
+                21.245220184326172
+            ],
+            "min": [
+                -32.549102783203125,
+                -12.972163200378418,
+                -21.220308303833008
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.006_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 29,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 9654,
+            "max": [
+                9645
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.010_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 17,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 9654,
+            "max": [
+                9645
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.006_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 12,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9646,
+            "max": [
+                57.436309814453125,
+                18.784456253051758,
+                21.245220184326172
+            ],
+            "min": [
+                -32.549102783203125,
+                -12.972163200378418,
+                -21.220308303833008
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.005_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 21,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9646,
+            "max": [
+                57.436309814453125,
+                18.784456253051758,
+                21.245220184326172
+            ],
+            "min": [
+                -32.549102783203125,
+                -12.972163200378418,
+                -21.220308303833008
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.008_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 9654,
+            "max": [
+                9645
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_LFS Elephant low2_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 6,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9646,
+            "max": [
+                57.436309814453125,
+                18.784456253051758,
+                21.245220184326172
+            ],
+            "min": [
+                -32.549102783203125,
+                -12.972163200378418,
+                -21.220308303833008
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.003_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 19,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9646,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -0.9997875094413757,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.007_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 34,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9646,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -0.9997875094413757,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.012_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9646,
+            "max": [
+                57.436309814453125,
+                18.784456253051758,
+                21.245220184326172
+            ],
+            "min": [
+                -32.549102783203125,
+                -12.972163200378418,
+                -21.220308303833008
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.002_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 14,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 9654,
+            "max": [
+                9645
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.005_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 8,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 9654,
+            "max": [
+                9645
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.003_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 13,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9646,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -0.9997875094413757,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.005_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 22,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9646,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -0.9997875094413757,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.008_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9646,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -0.9997875094413757,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_LFS Elephant low2_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 7,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9646,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -0.9997875094413757,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.003_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 27,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9646,
+            "max": [
+                57.436309814453125,
+                18.784456253051758,
+                21.245220184326172
+            ],
+            "min": [
+                -32.549102783203125,
+                -12.972163200378418,
+                -21.220308303833008
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.010_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 26,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 9654,
+            "max": [
+                9645
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.009_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 16,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9646,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -0.9997875094413757,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.006_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 18,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9646,
+            "max": [
+                57.436309814453125,
+                18.784456253051758,
+                21.245220184326172
+            ],
+            "min": [
+                -32.549102783203125,
+                -12.972163200378418,
+                -21.220308303833008
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.007_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 35,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 9654,
+            "max": [
+                9645
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.012_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9646,
+            "max": [
+                57.436309814453125,
+                18.784456253051758,
+                21.245220184326172
+            ],
+            "min": [
+                -32.549102783203125,
+                -12.972163200378418,
+                -21.220308303833008
+            ],
+            "name": "accessor_buffer_LFS Elephant low2_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9646,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -0.9997875094413757,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.002_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 32,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 9654,
+            "max": [
+                9645
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.011_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 24,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9646,
+            "max": [
+                57.436309814453125,
+                18.784456253051758,
+                21.245220184326172
+            ],
+            "min": [
+                -32.549102783203125,
+                -12.972163200378418,
+                -21.220308303833008
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.009_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 30,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9646,
+            "max": [
+                57.436309814453125,
+                18.784456253051758,
+                21.245220184326172
+            ],
+            "min": [
+                -32.549102783203125,
+                -12.972163200378418,
+                -21.220308303833008
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.011_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 28,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9646,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -0.9997875094413757,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.010_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 33,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9646,
+            "max": [
+                57.436309814453125,
+                18.784456253051758,
+                21.245220184326172
+            ],
+            "min": [
+                -32.549102783203125,
+                -12.972163200378418,
+                -21.220308303833008
+            ],
+            "name": "accessor_buffer_LFS Elephant low2.012_POSITION_0",
+            "type": "VEC3"
+        }
+    ],
+    "asset": {
+        "copyright": "",
+        "generator": "blendergltf v1.2.0",
+        "version": "2.0"
+    },
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 115752,
+            "byteOffset": 0,
+            "byteStride": 12,
+            "name": "bufferView_buffer_LFS Elephant low2_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 115752,
+            "byteOffset": 115752,
+            "byteStride": 12,
+            "name": "bufferView_buffer_LFS Elephant low2_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 19312,
+            "byteOffset": 231504,
+            "name": "bufferView_buffer_LFS Elephant low2_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 115752,
+            "byteOffset": 250816,
+            "byteStride": 12,
+            "name": "bufferView_buffer_LFS Elephant low2.002_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 115752,
+            "byteOffset": 366568,
+            "byteStride": 12,
+            "name": "bufferView_buffer_LFS Elephant low2.002_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 19312,
+            "byteOffset": 482320,
+            "name": "bufferView_buffer_LFS Elephant low2.002_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 115752,
+            "byteOffset": 501632,
+            "byteStride": 12,
+            "name": "bufferView_buffer_LFS Elephant low2.003_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 115752,
+            "byteOffset": 617384,
+            "byteStride": 12,
+            "name": "bufferView_buffer_LFS Elephant low2.003_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 19312,
+            "byteOffset": 733136,
+            "name": "bufferView_buffer_LFS Elephant low2.003_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 115752,
+            "byteOffset": 752448,
+            "byteStride": 12,
+            "name": "bufferView_buffer_LFS Elephant low2.004_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 115752,
+            "byteOffset": 868200,
+            "byteStride": 12,
+            "name": "bufferView_buffer_LFS Elephant low2.004_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 19312,
+            "byteOffset": 983952,
+            "name": "bufferView_buffer_LFS Elephant low2.004_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 115752,
+            "byteOffset": 1003264,
+            "byteStride": 12,
+            "name": "bufferView_buffer_LFS Elephant low2.005_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 115752,
+            "byteOffset": 1119016,
+            "byteStride": 12,
+            "name": "bufferView_buffer_LFS Elephant low2.005_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 19312,
+            "byteOffset": 1234768,
+            "name": "bufferView_buffer_LFS Elephant low2.005_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 115752,
+            "byteOffset": 1254080,
+            "byteStride": 12,
+            "name": "bufferView_buffer_LFS Elephant low2.006_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 115752,
+            "byteOffset": 1369832,
+            "byteStride": 12,
+            "name": "bufferView_buffer_LFS Elephant low2.006_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 19312,
+            "byteOffset": 1485584,
+            "name": "bufferView_buffer_LFS Elephant low2.006_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 115752,
+            "byteOffset": 1504896,
+            "byteStride": 12,
+            "name": "bufferView_buffer_LFS Elephant low2.007_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 115752,
+            "byteOffset": 1620648,
+            "byteStride": 12,
+            "name": "bufferView_buffer_LFS Elephant low2.007_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 19312,
+            "byteOffset": 1736400,
+            "name": "bufferView_buffer_LFS Elephant low2.007_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 115752,
+            "byteOffset": 1755712,
+            "byteStride": 12,
+            "name": "bufferView_buffer_LFS Elephant low2.008_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 115752,
+            "byteOffset": 1871464,
+            "byteStride": 12,
+            "name": "bufferView_buffer_LFS Elephant low2.008_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 19312,
+            "byteOffset": 1987216,
+            "name": "bufferView_buffer_LFS Elephant low2.008_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 115752,
+            "byteOffset": 2006528,
+            "byteStride": 12,
+            "name": "bufferView_buffer_LFS Elephant low2.009_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 115752,
+            "byteOffset": 2122280,
+            "byteStride": 12,
+            "name": "bufferView_buffer_LFS Elephant low2.009_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 19312,
+            "byteOffset": 2238032,
+            "name": "bufferView_buffer_LFS Elephant low2.009_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 115752,
+            "byteOffset": 2257344,
+            "byteStride": 12,
+            "name": "bufferView_buffer_LFS Elephant low2.010_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 115752,
+            "byteOffset": 2373096,
+            "byteStride": 12,
+            "name": "bufferView_buffer_LFS Elephant low2.010_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 19312,
+            "byteOffset": 2488848,
+            "name": "bufferView_buffer_LFS Elephant low2.010_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 115752,
+            "byteOffset": 2508160,
+            "byteStride": 12,
+            "name": "bufferView_buffer_LFS Elephant low2.011_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 115752,
+            "byteOffset": 2623912,
+            "byteStride": 12,
+            "name": "bufferView_buffer_LFS Elephant low2.011_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 19312,
+            "byteOffset": 2739664,
+            "name": "bufferView_buffer_LFS Elephant low2.011_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 115752,
+            "byteOffset": 2758976,
+            "byteStride": 12,
+            "name": "bufferView_buffer_LFS Elephant low2.012_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 115752,
+            "byteOffset": 2874728,
+            "byteStride": 12,
+            "name": "bufferView_buffer_LFS Elephant low2.012_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 19312,
+            "byteOffset": 2990480,
+            "name": "bufferView_buffer_LFS Elephant low2.012_0",
+            "target": 34963
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 3009792,
+            "name": "buffer_8elephant_remade_low2",
+            "uri": "buffer_8elephant_remade_low2.bin"
+        }
+    ],
+    "cameras": [
+        {
+            "name": "Camera",
+            "perspective": {
+                "aspectRatio": 1.703595982340029,
+                "yfov": 0.5033799409866333,
+                "zfar": 100.0,
+                "znear": 0.10000000149011612
+            },
+            "type": "perspective"
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "OPAQUE",
+            "doubleSided": false,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "Material.008",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.09511684626340866,
+                    0.6644200682640076,
+                    0.6839941740036011,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "alphaMode": "OPAQUE",
+            "doubleSided": false,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "Material.014",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.023282881826162338,
+                    0.5948564410209656,
+                    0.64000004529953,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "LFS Elephant low2",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 22,
+                        "POSITION": 29
+                    },
+                    "indices": 13,
+                    "material": 0,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "LFS Elephant low2.002",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 30,
+                        "POSITION": 17
+                    },
+                    "indices": 2,
+                    "material": 0,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "LFS Elephant low2.003",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 23,
+                        "POSITION": 14
+                    },
+                    "indices": 19,
+                    "material": 0,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "LFS Elephant low2.004",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 7,
+                        "POSITION": 4
+                    },
+                    "indices": 0,
+                    "material": 0,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "LFS Elephant low2.005",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 20,
+                        "POSITION": 11
+                    },
+                    "indices": 18,
+                    "material": 0,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "LFS Elephant low2.006",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 26,
+                        "POSITION": 8
+                    },
+                    "indices": 10,
+                    "material": 0,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "LFS Elephant low2.007",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 15,
+                        "POSITION": 27
+                    },
+                    "indices": 5,
+                    "material": 0,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "LFS Elephant low2.008",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 21,
+                        "POSITION": 12
+                    },
+                    "indices": 1,
+                    "material": 0,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "LFS Elephant low2.009",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 6,
+                        "POSITION": 32
+                    },
+                    "indices": 25,
+                    "material": 0,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "LFS Elephant low2.010",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 34,
+                        "POSITION": 24
+                    },
+                    "indices": 9,
+                    "material": 0,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "LFS Elephant low2.011",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 3,
+                        "POSITION": 33
+                    },
+                    "indices": 31,
+                    "material": 0,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "LFS Elephant low2.012",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 16,
+                        "POSITION": 35
+                    },
+                    "indices": 28,
+                    "material": 0,
+                    "mode": 4
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "camera": 0,
+            "name": "Camera",
+            "rotation": [
+                -0.09062843769788742,
+                -0.8937962651252747,
+                -0.2099730223417282,
+                0.38578000664711
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                -7.481131553649902,
+                5.34366512298584,
+                -6.5076398849487305
+            ]
+        },
+        {
+            "name": "Lamp",
+            "rotation": [
+                -0.34203386306762695,
+                -0.5232755541801453,
+                -0.2841663062572479,
+                0.7269423007965088
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                0.9999999403953552
+            ],
+            "translation": [
+                -4.076245307922363,
+                5.903861999511719,
+                1.0054539442062378
+            ]
+        },
+        {
+            "mesh": 0,
+            "name": "LFS Elephant low2",
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                -12.435636520385742,
+                12.967105865478516,
+                0.0005748363328166306
+            ]
+        },
+        {
+            "mesh": 1,
+            "name": "LFS Elephant low2.001",
+            "rotation": [
+                0.0,
+                -1.0,
+                0.0,
+                4.048744813189842e-05
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                101.94925689697266,
+                12.967105865478516,
+                -0.0015818106476217508
+            ]
+        },
+        {
+            "mesh": 2,
+            "name": "LFS Elephant low2.002",
+            "rotation": [
+                0.0,
+                -1.0,
+                0.0,
+                4.048744813189842e-05
+            ],
+            "scale": [
+                0.9308554530143738,
+                0.9308554530143738,
+                0.9308554530143738
+            ],
+            "translation": [
+                97.99471282958984,
+                12.070501327514648,
+                -31.884262084960938
+            ]
+        },
+        {
+            "mesh": 3,
+            "name": "LFS Elephant low2.003",
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.9308554530143738,
+                0.9308554530143738,
+                0.9308554530143738
+            ],
+            "translation": [
+                -8.48109245300293,
+                12.070501327514648,
+                -31.882253646850586
+            ]
+        },
+        {
+            "mesh": 4,
+            "name": "LFS Elephant low2.004",
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.9308554530143738,
+                0.9308554530143738,
+                0.9308554530143738
+            ],
+            "translation": [
+                -8.48109245300293,
+                12.070501327514648,
+                31.77494239807129
+            ]
+        },
+        {
+            "mesh": 5,
+            "name": "LFS Elephant low2.005",
+            "rotation": [
+                0.0,
+                -1.0,
+                0.0,
+                4.048744813189842e-05
+            ],
+            "scale": [
+                0.9308554530143738,
+                0.9308554530143738,
+                0.9308554530143738
+            ],
+            "translation": [
+                97.99471282958984,
+                12.070501327514648,
+                31.772933959960938
+            ]
+        },
+        {
+            "mesh": 6,
+            "name": "LFS Elephant low2.006",
+            "rotation": [
+                1.0,
+                -4.2275591113138944e-05,
+                4.0574865124654025e-05,
+                1.9642251913865039e-07
+            ],
+            "scale": [
+                0.9308554530143738,
+                0.9308554530143738,
+                0.9308554530143738
+            ],
+            "translation": [
+                -8.482097625732422,
+                -12.034247398376465,
+                31.77293586730957
+            ]
+        },
+        {
+            "mesh": 7,
+            "name": "LFS Elephant low2.007",
+            "rotation": [
+                1.1360196637555386e-11,
+                1.343588280633412e-07,
+                1.0,
+                4.227558747516014e-05
+            ],
+            "scale": [
+                0.9308554530143738,
+                0.9308554530143738,
+                0.9308554530143738
+            ],
+            "translation": [
+                97.99370574951172,
+                -12.04325008392334,
+                31.774944305419922
+            ]
+        },
+        {
+            "mesh": 8,
+            "name": "LFS Elephant low2.008",
+            "rotation": [
+                1.1360196637555386e-11,
+                1.343588280633412e-07,
+                1.0,
+                4.227558747516014e-05
+            ],
+            "scale": [
+                0.9308554530143738,
+                0.9308554530143738,
+                0.9308554530143738
+            ],
+            "translation": [
+                97.99370574951172,
+                -12.043269157409668,
+                -31.882251739501953
+            ]
+        },
+        {
+            "mesh": 9,
+            "name": "LFS Elephant low2.009",
+            "rotation": [
+                1.0,
+                -4.2275591113138944e-05,
+                4.0574865124654025e-05,
+                1.9642251913865039e-07
+            ],
+            "scale": [
+                0.9308554530143738,
+                0.9308554530143738,
+                0.9308554530143738
+            ],
+            "translation": [
+                -8.482097625732422,
+                -12.034266471862793,
+                -31.884260177612305
+            ]
+        },
+        {
+            "mesh": 10,
+            "name": "LFS Elephant low2.010",
+            "rotation": [
+                1.0,
+                -4.2275591113138944e-05,
+                4.0574865124654025e-05,
+                1.9642251913865039e-07
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                -12.436717987060547,
+                -12.930526733398438,
+                -0.0015805005095899105
+            ]
+        },
+        {
+            "mesh": 11,
+            "name": "LFS Elephant low2.011",
+            "rotation": [
+                1.1360196637555386e-11,
+                1.343588280633412e-07,
+                1.0,
+                4.227558747516014e-05
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                101.94817352294922,
+                -12.94019889831543,
+                0.000578520295675844
+            ]
+        }
+    ],
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "active_camera": 0,
+                "background_color": [
+                    0.05087608844041824,
+                    0.05087608844041824,
+                    0.05087608844041824
+                ],
+                "frames_per_second": 24
+            },
+            "name": "Scene",
+            "nodes": [
+                2,
+                1,
+                0,
+                3,
+                5,
+                4,
+                7,
+                6,
+                13,
+                12,
+                11,
+                10,
+                9,
+                8
+            ]
+        }
+    ]
+}

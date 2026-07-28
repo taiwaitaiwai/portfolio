@@ -1,0 +1,1927 @@
+/* ==========================================================================
+   1. DESIGN TOKENS, CUSTOM PROPERTIES & LOCAL FONTS
+   ========================================================================== */
+
+/* Define Local Fonts pointing to your exact .woff2 files */
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../assets/fonts/NunitoSans-Variable.woff2') format('woff2');
+    font-weight: 400 700; /* Variable font range */
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Base Design Variable Setup using your exact Hex codes */
+:root {
+    --primary-color: #004282;      /* Main Color & Headlines */
+    --hover-color: #276FB7;        /* Hover and active links */
+    --bg-light: #EDF2F7;           /* Main background light tint */
+    --text-dark: #151D31;          /* Reading text */
+    --card-bg: #D0E7EA;            /* Cards & Highlight box background */
+    --white: #FFFFFF;
+    
+    /* Layout Constraints from your 1440px desktop grid draft */
+    --max-width: 1440px;
+    --grid-margin: 80px;
+    --grid-gutter: 24px;
+    --transition: all 0.25s ease-in-out;
+}
+
+/* ==========================================================================
+   2. GLOBAL RESET & BASE RULES
+   ========================================================================== */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    height: 100%;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.125rem; /* 18px matching your exact specification */
+    line-height: 1.4;    /* 140% line height */
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    overflow-x: hidden;
+}
+
+/* Typographical hierarchy according to your style guide */
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 2.25rem; /* 36px */
+    line-height: 1.2;
+    color: var(--white);
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 1.75rem; /* 28px */
+    line-height: 1.25;
+    color: var(--primary-color);
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.3;
+    color: var(--primary-color);
+}
+
+/* General Layout Elements */
+.grid-container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding-left: var(--grid-margin);
+    padding-right: var(--grid-margin);
+}
+
+.grid-2col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+/* 12-Column Grid system helper matching Figma guidelines */
+.grid-12col {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+    width: 100%;
+}
+
+.section-padding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* Standard Button */
+.btn {
+    display: inline-block;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700; /* Bold font for button actions */
+    font-size: 1rem;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: var(--transition);
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: var(--hover-color);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.btn-secondary:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* ==========================================================================
+   3. HEADER & STICKY FIGMA NAVIGATION (1440px Viewport)
+   ========================================================================== */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; /* Exact height from Figma */
+    background-color: rgba(0, 66, 130, 0.90); /* Exactly 90% opacity */
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15); /* Drop shadow: x0, y4, blur 4, black 15% */
+    z-index: 1000;
+}
+
+.header-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* Precise 12-column system */
+    column-gap: 24px; /* Gutters from your draft */
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    height: 100%; /* Fill the 80px height of main-header */
+    margin: 0 auto;
+    padding-left: 80px; /* Margins from your draft */
+    padding-right: 80px;
+}
+
+/* Brand Identity: Spans exactly 3 Columns as in Figma to fit Schriftzug perfectly */
+.brand-identity {
+    grid-column: 1 / span 3; /* Columns 1, 2, 3 */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+.brand-schriftzug {
+    width: 100%;
+    max-width: 302px; /* Figma dimensions */
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* Navigation: Spans remaining columns 6 to 12, leaving columns 4 & 5 completely empty */
+.main-nav {
+    grid-column: 6 / span 7; /* Starts at Column 6, spans across columns 6 to 12 */
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between; /* Spreads navigation points beautifully across the columns like in Figma */
+    width: 100%; /* Essential to stretch across columns 6 to 12 */
+    align-items: center;
+    white-space: nowrap; /* Strictly guarantees no wrapping on desktop viewports */
+}
+
+.nav-link {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700; /* Bold as specified */
+    font-size: 18px; /* 18px */
+    color: #ffffff; /* ffffff */
+    text-decoration: none;
+    position: relative;
+    padding: 10px 0;
+    display: inline-block;
+    transition: color 0.2s ease-in-out;
+    z-index: 1; /* Establishes a local stacking context so z-index works correctly */
+}
+
+/* The hover.svg diver backdrop integration (111px x 55px) */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    top: 50%; /* Center vertically behind text */
+    left: 50%; /* Center horizontally behind text */
+    transform: translate(-50%, -50%) scale(0.6); /* Perfectly centered scale-down starting point */
+    width: 111px; /* Exact width from your Figma specification */
+    height: 55px; /* Exact height from your Figma specification */
+    background: url('../assets/img/hover.svg') no-repeat center;
+    background-size: contain;
+    opacity: 0;
+    z-index: -1; /* Places the diver vector outline behind the text */
+    transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s ease;
+    pointer-events: none;
+}
+
+/* Make hover.svg backdrop fade and scale up to 100% on hover or active section state */
+.nav-link:hover::after,
+.nav-link.active::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+/* Adjust header spacing for Hero background video so it aligns beneath it */
+.hero-section {
+    padding-top: 0; /* Ensures full-bleed visual layout */
+}
+
+/* Mobile Nav Toggle Button placement */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.hamburger, .hamburger::before, .hamburger::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--white);
+    position: absolute;
+    transition: var(--transition);
+}
+
+.hamburger { top: 13px; }
+.hamburger::before { top: -8px; }
+.hamburger::after { top: 8px; }
+
+/* ==========================================================================
+   4. HERO SECTION (16:9 RATIO WITH EMBLEM, WAVE MASK & BOBBING ARROW)
+   ========================================================================== */
+.hero-section {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Strict original 16:9 aspect ratio */
+    min-height: auto;
+    height: auto;
+    overflow: hidden;
+    background-color: var(--primary-color);
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Central Emblem Logo placement (259px x 150px) - now fully responsive using fluid clamp units */
+.hero-logo {
+    position: absolute;
+    top: clamp(85px, 8vw, 115px); /* Responsive top offset relative to header height */
+    left: 50%;
+    transform: translateX(-50%) translateY(0);
+    width: clamp(160px, 18vw, 259px); /* Fluid width scaling gracefully down from 259px */
+    height: clamp(93px, 10.4vw, 150px); /* Proportional height scaling matching 259:150 aspect ratio */
+    z-index: 3;
+    pointer-events: none; /* Allows click scroll to work behind emblem */
+    object-fit: contain;
+    display: block;
+    /* Combine entrance fade-in with the continuous, organic breathing animation */
+    animation: emblemEntrance 1s cubic-bezier(0.16, 1, 0.3, 1) forwards,
+               emblemFloat 8s ease-in-out infinite 1s; /* Slow, peaceful 8-second breathing loop with a natural pause */
+    opacity: 0;
+}
+
+/* Bottom Wave Mask overlaying the video */
+.hero-mask {
+    position: absolute;
+    bottom: -1px; /* Avoids thin render line gaps */
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 4;
+    pointer-events: none;
+    display: block;
+}
+
+/* Bouncing scroll down indicator (30px x 42px) - now fully responsive using fluid clamp units */
+.scroll-down-btn {
+    position: absolute;
+    bottom: clamp(30px, 4.5vw, 55px); /* Position dynamically above wave curve proportional to viewport */
+    left: 50%;
+    transform: translateX(-50%);
+    width: clamp(22px, 2.1vw, 30px); /* Scales cleanly relative to viewport width */
+    height: clamp(31px, 2.9vw, 42px); /* Scales proportionally preserving 30:42 aspect ratio */
+    z-index: 5;
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3)); /* Soft drop shadow */
+    animation: bobbingArrow 2s infinite ease-in-out;
+    transition: opacity var(--transition);
+}
+
+.scroll-down-btn:hover {
+    opacity: 0.8;
+}
+
+.scroll-down-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* Custom Emblem Animations */
+@keyframes emblemEntrance {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-20px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0) scale(1);
+    }
+}
+
+/* Peaceful, biological breathing pattern (opacity scales between 100% and 75% with a rhythmic holding pause) */
+@keyframes emblemFloat {
+    0% {
+        transform: translateX(-50%) translateY(0) scale(1);
+        opacity: 1;
+    }
+    35% {
+        transform: translateX(-50%) translateY(6px) scale(0.97);
+        opacity: 0.75; /* Smooth breathing fade, never completely invisible */
+    }
+    70% {
+        transform: translateX(-50%) translateY(0) scale(1);
+        opacity: 1; /* Retracts back to full prominence */
+    }
+    100% {
+        transform: translateX(-50%) translateY(0) scale(1);
+        opacity: 1; /* Creates a natural, lifelike breathing pause before repeating */
+    }
+}
+
+@keyframes bobbingArrow {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(8px); /* Smooth movement pattern */
+    }
+}
+
+/* ==========================================================================
+   5. WELCOME & EDITORIAL COPY SECTION (Figma 1440px Compliant)
+   ========================================================================== */
+.welcome-section {
+    background-color: var(--bg-light); /* Background color exactly EDF2F7 */
+    padding-top: 50px; /* FIXED: Reduced by 50% from 100px */
+    padding-bottom: 50px; /* FIXED: Reduced by 50% from 100px */
+}
+
+.welcome-intro-header {
+    width: 100%;
+    max-width: 100%; /* Uses all 12 columns of the grid container width */
+    margin: 0 auto 40px auto; /* Exactly 40px gap from intro text to the highlight cards */
+    text-align: left; /* Clean left alignment inside Figma columns */
+}
+
+.welcome-intro-header h2 {
+    font-size: 2.25rem; /* 36px Raleway ExtraBold */
+    margin-bottom: 25px;
+    color: var(--primary-color);
+}
+
+.welcome-intro-header p {
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+/* Highlight boxes wrapper matching 12-column guidelines */
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Spans 6 columns width each (half of 12 columns) */
+    gap: 24px; /* Gutter width matching Figma specifications */
+    align-items: stretch; /* Guarantees both highlight boxes always share identical height */
+    margin-top: 40px;
+}
+
+.highlight-card {
+    background-color: var(--card-bg); /* Highlight box background: D0E7EA */
+    border-radius: 8px 8px 25px 25px; /* Top two corners 8px, bottom two corners 25px radius */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0; /* Cleared base padding so button sits completely flush with edges */
+    overflow: hidden; /* Clips the flush button corners precisely within the bottom rounded corners */
+    transition: box-shadow var(--transition); /* No bigger/transform hover effects */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Explicitly added beautiful drop shadow to card itself */
+}
+
+/* Keeps premium shadows on hover, but NO scale growth */
+.highlight-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 66, 130, 0.20); /* Drop shadow slightly stronger on hover */
+}
+
+/* Inner content wrapping container to hold comfortable structural padding */
+.highlight-card .card-content {
+    padding: 40px 40px 0 40px; /* Retains clear margin space only around texts */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.highlight-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.25rem; /* 20px Raleway Bold */
+    color: var(--primary-color);
+}
+
+.highlight-card p {
+    margin-bottom: 30px;
+    flex-grow: 1; /* Automatically pushes CTA button to align with bottom edge */
+    color: var(--text-dark);
+}
+
+/* Highlight card CTA Button matching color tokens - Flush Bottom, Full-Width */
+.highlight-card .btn {
+    width: 100%; /* Takes 100% full width of highlight box */
+    text-align: center;
+    background-color: #276FB7; /* Default button color 276FB7 */
+    color: var(--white);
+    padding: 16px 24px; /* Generous height for seamless touch targets */
+    border-radius: 4px 4px 25px 25px; /* Radius: top-left/right: 4px, bottom-left/right: 25px */
+    border: none;
+    display: block;
+    margin-top: auto; /* Locked to absolute bottom boundary */
+    transition: var(--transition); /* Smooth, beautiful global CSS transitions */
+}
+
+.highlight-card:hover .btn,
+.highlight-card .btn:hover {
+    background-color: #004282; /* Button hover state changes smoothly to exactly 004282 */
+}
+
+/* ==========================================================================
+   6. INTERACTIVE MAP SECTION (TAUCHSPOTS) (Figma 1440px Compliant)
+   ========================================================================== */
+.spots-section {
+    position: relative;
+    width: 100%;
+    background-color: var(--bg-light); /* Background color exactly EDF2F7 */
+    overflow: visible; /* Allows the nested map card and background waves to lay out correctly */
+    padding-top: 100px; /* Strict 100px gap */
+    padding-bottom: 100px; /* Symmetric padding at the bottom */
+}
+
+/* Full-width parallax backdrop containing insel.jpg - positioned beautifully behind the lower part */
+.spots-parallax-bg {
+    position: absolute;
+    bottom: 0; /* Aligned to the very bottom boundary of the Tauchspots section */
+    left: 0;
+    width: 100%;
+    height: 380px; /* Exact height around 380px */
+    background-image: url('../assets/img/insel.jpg');
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+/* Wave mask placed precisely over bottom of parallax background banner */
+.spots-parallax-bg .spots-mask {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Centered container card mapping to exactly 10 columns (grid-column: 2 / span 10) */
+.spots-card-container {
+    grid-column: 2 / span 10; /* Precise 10-column alignment in 12-column grid container */
+    background-color: var(--white);
+    border-radius: 8px 8px 25px 25px; /* Radius: top 8px, bottom 25px */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Strong premium drop shadow */
+    padding: 40px 30px 30px 30px; /* Content padding: bottom, left, right are 30px */
+    position: relative;
+    z-index: 5; /* Floors above parallax background banner */
+}
+
+.spots-container-header {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.spots-container-header h2 {
+    font-size: 2.25rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.spots-intro {
+    font-size: 1.125rem;
+    line-height: 1.4;
+    color: var(--text-dark);
+}
+
+/* Map Wrapper with stroke outline and rounded corners */
+.map-wrapper {
+    position: relative;
+    border-radius: 4px 4px 20px 20px; /* Radius: top 4px, bottom 20px */
+    border: 4px solid rgba(39, 111, 183, 0.50); /* Stroke outline 4px 276FB7 50% */
+    overflow: visible; /* FIXED: changed from hidden to visible so pins and labels do not get cropped */
+    background-color: #9cd1f0; /* Fallback sandy ocean sky blue color */
+}
+
+/* Relative container holding the SVG and pins only, keeping calculations isolated */
+.map-relative-container {
+    position: relative;
+    width: 100%;
+    overflow: visible; /* Keeps pins and pulsing rings visible */
+}
+
+.map-base-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 16px 16px; /* Sits perfectly within the border boundaries */
+}
+
+/* Interactive Map pins styling and alignment - Responsive with clamp */
+.map-interactive-pin {
+    position: absolute;
+    width: clamp(44px, 5.2vw, 75px); /* FIXED: responsive size, down to min 44px */
+    height: clamp(44px, 5.2vw, 75px); /* FIXED: proportional height scaling */
+    cursor: pointer;
+    transform: translate(-50%, -50%) scale(1);
+    transform-origin: center;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.25s ease;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.25)); /* Icon drop shadow */
+}
+
+/* Interactive custom icon size matching circular frame */
+.pin-custom-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+    z-index: 2;
+}
+
+/* Pulse ring animating ONLY on hover or when card is active */
+.pulse-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Matches responsive parent clamped width */
+    height: 100%; /* Matches responsive parent clamped height */
+    border-radius: 50%;
+    border: 2.5px solid var(--hover-color);
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Only trigger refined pulsing loop on active states or hover */
+.map-interactive-pin:hover .pulse-ring,
+.map-interactive-pin.active .pulse-ring {
+    animation: pin-pulse-hover 1.8s infinite ease-out;
+}
+
+/* Scale icon bigger and project a stronger drop shadow on hover */
+.map-interactive-pin:hover,
+.map-interactive-pin.active {
+    transform: translate(-50%, -50%) scale(1.08); /* slight grow */
+    filter: drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.45)); /* stronger dropshadow */
+    z-index: 50; /* FIXED: hovered/active pin always stacked above other pins */
+}
+
+/* Refined label placed exactly 7px above the icon and layered on top of all circles */
+.pin-label {
+    position: absolute;
+    bottom: calc(100% + 7px); /* FIXED: sits exactly 7px above the icon circle, regardless of scaled size */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity var(--transition);
+    pointer-events: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 20; /* Placed over pulsing animations and custom icons on Z-axis */
+}
+
+.map-interactive-pin:hover .pin-label,
+.map-interactive-pin.active .pin-label {
+    opacity: 1;
+}
+
+@keyframes pin-pulse-hover {
+    0% { transform: translate(-50%, -50%) scale(1.0); opacity: 0.85; }
+    100% { transform: translate(-50%, -50%) scale(1.30); opacity: 0; } /* circle less big */
+}
+
+/* Absolute details popup box inside map - Spans exactly 5 columns width (approx 46% of map container) */
+.spot-popup-card {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: calc(50% - 30px); /* Spans exactly 5 columns (half of the centered 10-column container) */
+    background-color: rgba(208, 231, 234, 0.85); /* D0E7EA 85% opacity */
+    backdrop-filter: blur(8px);
+    border-radius: 4px 4px 20px 20px; /* Radius: top 4px, bottom 20px */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.20); /* drop shadow */
+    padding: 38px 24px 30px 24px; /* Paddings exactly as specified */
+    z-index: 100;
+    display: none; /* Controlled dynamically in JS */
+    animation: slideUpPopup 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.spot-popup-card.active {
+    display: block;
+}
+
+/* Double column content layout - Left 2 Columns for Icon, Right 3 Columns for text description */
+.spot-popup-content {
+    display: grid;
+    grid-template-columns: 110px 1fr; /* Exact column division for premium scaling */
+    gap: 24px;
+    align-items: center; /* Vertically centered as in your figma overlay screenshot */
+}
+
+.spot-popup-icon-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.popup-custom-icon-img {
+    width: 110px; /* Prominent, beautiful icon sizing matching figma proportion */
+    height: 110px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+    display: block;
+}
+
+.spot-popup-text-col h3 {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.spot-popup-text-col p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: var(--text-dark);
+    margin-bottom: 0;
+}
+
+/* Close button - direct placement on top right ignoring parent padding (44px x 44px) */
+.spot-popup-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 44px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 105;
+}
+
+.spot-popup-close img {
+    width: 44px; /* Fully utilizes the transparent frame size */
+    height: 44px;
+    display: block;
+}
+
+@keyframes slideUpPopup {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==========================================================================
+   7. COURSES SECTION (Kurse)
+   ========================================================================== */
+.courses-section {
+    background-color: var(--bg-light); /* Background exactly EDF2F7 */
+    position: relative;
+    z-index: 5;
+    padding-top: 100px; /* Exact 100px Gap */
+}
+
+.courses-intro-wrapper {
+    grid-column: 2 / span 10; /* Locked to exactly 10 columns width centered */
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center; /* FIXED: Centered text above the cards */
+}
+
+/* 8-Column Language Flags Container (centered) */
+.languages-container {
+    grid-column: 3 / span 8; /* Spans exactly 8 columns centered */
+    display: flex;
+    justify-content: center; /* FIXED: Center alignment of language icons in row */
+    gap: 40px; /* Adjusted gap so flags align with grid design */
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.lang-icon-wrapper {
+    width: 85px; /* Locked to 85px x 85px in 1440 baseline */
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform var(--transition);
+}
+
+.lang-icon-wrapper:hover {
+    transform: scale(1.1); /* Interactive expand pop on hover */
+}
+
+.lang-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Spacing under languages is exactly 50px */
+.padi-intro-wrapper {
+    grid-column: 2 / span 10; /* Centered 10 columns */
+    width: 100%;
+    margin-top: 50px; 
+    text-align: center; /* FIXED: Centered heading, badge & paragraph copy */
+}
+
+.padi-badge {
+    margin-top: 20px;
+    font-size: 1rem;
+    background: var(--white);
+    padding: 8px 18px;
+    border-radius: 30px;
+    display: inline-block;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* Gap under badge before subheadline is exactly 50px */
+.courses-subheading {
+    margin-top: 50px;
+    font-size: 1.5rem; /* 24px */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+/* Flex Grid displaying 3 columns in first row, 2 centered in second row */
+.courses-flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px; /* Gutter matches Figma specs */
+    margin-top: 25px; /* Spacing below subheadline: 25px */
+    margin-bottom: 80px;
+    width: 100%;
+}
+
+.course-item {
+    background-color: #CEE4E7; /* Default background CEE4E7 */
+    flex: 0 1 calc(33.333% - 16px); /* Spans exactly 4 columns wide on desktop */
+    min-width: 320px;
+    max-width: 400px;
+    border-radius: 8px 8px 25px 25px; /* top 8px, bottom 25px */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* dropshadow */
+    transition: transform var(--transition), box-shadow var(--transition), background-color var(--transition);
+    cursor: pointer;
+}
+
+/* Active and Hover card statuses */
+.course-item:hover,
+.course-item.active {
+    background-color: var(--bg-light); /* turns to EDF2F7 */
+    transform: scale(1.02); /* slight scale grow */
+    box-shadow: 0 10px 25px rgba(0, 66, 130, 0.15); /* deeper premium drop shadow */
+}
+
+.course-visual {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* strict 16:9 aspect ratio image */
+    position: relative;
+    overflow: hidden;
+}
+
+.course-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Custom CEE4E7 50% mask overlaying course visual on hover/active states */
+.course-visual::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(206, 228, 231, 0.50); /* CEE4E7 50% mask */
+    opacity: 0;
+    z-index: 2;
+    transition: opacity var(--transition);
+    pointer-events: none;
+}
+
+.course-item:hover .course-visual::after,
+.course-item.active .course-visual::after {
+    opacity: 1; /* Mask becomes visible */
+}
+
+.course-content-wrapper {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* FIXED: forces "mehr" link to bottom and title to top */
+    flex-grow: 1;
+}
+
+.course-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+/* FIXED: Course Card Title typography matches style sheets with strict flex margins */
+.course-content-wrapper h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.3;
+    color: var(--primary-color);
+    margin-bottom: auto; /* Pushes content down elegantly */
+}
+
+/* interactive link with arrow */
+.course-more-link {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #276FB7; /* normal status in 276FB7 */
+    text-decoration: underline;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 25px; /* Comfortable gap below titles */
+    align-self: flex-end; /* FIXED: aligns beautifully to bottom-right of card */
+    transition: color var(--transition);
+}
+
+.course-item:hover .course-more-link,
+.course-more-link:hover {
+    color: #004282; /* hover state in 004282 */
+}
+
+/* ==========================================================================
+   7b. COURSE DETAILS MODAL OVERLAY (Viewport level, 5-Column equivalent width)
+   ========================================================================== */
+.course-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 66, 130, 0.50); /* Soft transparent backdrop overlay */
+    backdrop-filter: blur(5px);
+    z-index: 2000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-modal-overlay.active {
+    display: flex; /* controlled via main.js */
+}
+
+.course-modal-card {
+    position: relative;
+    width: 90%;
+    max-width: 580px; /* Map container 5-column width equivalent */
+    background-color: rgba(208, 231, 234, 0.85); /* D0E7EA 85% opacity */
+    backdrop-filter: blur(8px);
+    border-radius: 8px 8px 25px 25px; /* top 8px, bottom 25px to match cards perfectly */
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25); /* drop shadow */
+    padding: 38px 24px 0 24px; /* bottom padding 0 so button sits completely flush */
+    overflow: hidden; /* Clips the flush button's bottom rounded corners */
+    display: flex;
+    flex-direction: column;
+    animation: slideUpPopup 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.course-modal-content {
+    display: grid;
+    grid-template-columns: 140px 1fr; /* left column for image, right column for course info */
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.course-modal-icon-col {
+    width: 100%;
+}
+
+.course-modal-icon-col img {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* strict 16:9 ratio visual */
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.course-modal-text-col h3 {
+    font-size: 1.35rem;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.course-modal-text-col p {
+    font-size: 1.125rem; /* FIXED: standard body text size matches screenshot description */
+    line-height: 1.4;
+    color: var(--text-dark);
+}
+
+.course-popup-metadata {
+    margin-top: 1.625rem; /* FIXED: Simulate exactly one empty line/row gap */
+    font-size: 1.125rem; /* FIXED: Enforce identical size to the description copy */
+    color: var(--text-dark);
+    line-height: 1.4;
+}
+
+.course-popup-metadata div {
+    font-size: 1.125rem; /* FIXED: Enforce identical size */
+    margin-bottom: 4px; /* Slight gap between rows */
+}
+
+/* Close button - direct placement on top right ignoring parent padding (44px x 44px) */
+.course-modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 44px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 105;
+}
+
+.course-modal-close img {
+    width: 44px; /* Fully utilizes the transparent frame size */
+    height: 44px;
+    display: block;
+}
+
+/* FIXED: CTA Button sits flush at the bottom edge, resembling the CTA button from home section */
+#course-cta-book-btn {
+    width: calc(100% + 48px); /* expands past padding to card edges */
+    margin-left: -24px; /* pulls to left edge */
+    margin-right: -24px; /* pulls to right edge */
+    margin-top: 30px; /* gap between content and button */
+    background-color: #276FB7; /* Home CTA base color */
+    color: var(--white);
+    padding: 16px 24px;
+    border: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    cursor: pointer;
+    border-radius: 4px 4px 25px 25px; /* matching highlight-card button top 4px, bottom 25px */
+    transition: background-color var(--transition);
+}
+
+#course-cta-book-btn:hover {
+    background-color: #004282; /* hover color */
+}
+
+/* ==========================================================================
+   8. RESPONSIVE BOOKING & CONTACT FORM SYSTEM
+   ========================================================================== */
+.booking-outer-wrapper {
+    position: relative; /* Context for absolutely positioned fish & starfish */
+    width: 100%; /* FIXED: Takes up full viewport screen layout naturally */
+    background-image: url('../assets/img/whirlpool.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0; /* STRICT FIX: Strict 60px gap at top and bottom from background image edges to form card */
+    margin-top: 20px; /* Precise 100px gap from the courses cards grid */
+    overflow: visible; /* Allows pseudo-elements to float elegantly outside wrapper margins */
+}
+
+/* Pseudo-elements for responsive, floating fish & starfish */
+.booking-outer-wrapper::before {
+    content: "";
+    position: absolute;
+    left: 2%;
+    top: 20%;
+    width: clamp(120px, 15.35vw, 221px); /* Responsive width: 221px at 1440px baseline */
+    height: clamp(73px, 9.3vw, 134px); /* Keeps 221:134 aspect ratio */
+    background: url('../assets/img/fisch.png') no-repeat center;
+    background-size: contain;
+    z-index: 2;
+    animation: floatFish 6s ease-in-out infinite;
+}
+
+.booking-outer-wrapper::after {
+    content: "";
+    position: absolute;
+    right: 2%;
+    bottom: 20%;
+    width: clamp(120px, 15.35vw, 221px); /* Responsive width: 221px at 1440px baseline */
+    height: clamp(73px, 9.3vw, 134px); /* Keeps 221:134 aspect ratio */
+    background: url('../assets/img/seestern.png') no-repeat center;
+    background-size: contain;
+    z-index: 2;
+    animation: floatSeastar 8s ease-in-out infinite;
+}
+
+@keyframes floatFish {
+    0%, 100% {
+        transform: translateY(0) rotate(-3deg);
+    }
+    50% {
+        transform: translateY(-12px) rotate(3deg);
+    }
+}
+
+@keyframes floatSeastar {
+    0%, 100% {
+        transform: translateY(0) rotate(4deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(-4deg);
+    }
+}
+
+/* Centered Form card - Spans exactly 8 columns (66.666667% width) centered inside full 100% viewport wrapper row */
+.booking-container {
+    grid-column: 3 / span 8; /* Desktop: exact 8-column width centered in the 12-column grid */
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    background-color: rgba(226, 232, 240, 0.95); /* Bluish light tint matches Screenshot */
+    border-radius: 8px 8px 25px 25px; /* FIXED: top corners 8px, both bottom corners 25px radius card box */
+    box-shadow: 0 10px 30px rgba(0, 66, 130, 0.15);
+    padding: 0; /* Clear container padding so button is completely flush */
+    overflow: hidden; /* Clips the bottom flush button's rounded corners */
+    position: relative;
+    z-index: 3; /* Keeps the form above decorative layers */
+    border: 1px solid rgba(0, 66, 130, 0.05);
+}
+
+.booking-form-wrapper {
+    padding: 40px 30px 0 30px; /* FIXED: Exact 30px left/right padding on the form box contents */
+}
+
+.booking-form-wrapper h3 {
+    font-size: 1.5rem; /* 24px */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    grid-column: span 2;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+/* Custom select drop down wrappers */
+.select-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+/* Arrow indicator icon inside selection dropdowns */
+.select-wrapper::after {
+    content: '▼';
+    font-size: 0.75rem;
+    color: var(--primary-color);
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 66, 130, 0.15);
+    background-color: var(--white);
+    color: var(--text-dark);
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    appearance: none; /* Strips system default selects for figma matching */
+    transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: var(--hover-color);
+    box-shadow: 0 0 0 3px rgba(39, 111, 183, 0.15);
+    outline: none;
+}
+
+.form-group select:disabled {
+    background-color: rgba(226, 232, 240, 0.5);
+    cursor: not-allowed;
+    border-color: rgba(0, 66, 130, 0.08);
+}
+
+/* Verbatim Pflichtfelder notice group styling */
+.pflichtfelder-notice {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 0.85rem;
+    color: var(--text-dark);
+    margin-top: 10px;
+    margin-bottom: 2px; /* FIXED: Reduced gap slightly */
+    font-weight: 400 !important; /* FIXED: Strict normal text weight, not bold */
+}
+
+.form-group-checkbox {
+    grid-column: span 2;
+    margin-top: 4px; /* FIXED: Reduced gap between checkboxes and pflichtfelder notice by 50% */
+}
+
+/* Specific adjacent selector to make spacing between the two checkboxes extremely tight */
+.form-group-checkbox + .form-group-checkbox {
+    margin-top: 2px; /* FIXED: Reduced gap between the two checkboxes by 50% */
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    cursor: pointer;
+    font-size: 0.85rem;
+    user-select: none;
+    line-height: 1.4;
+    color: var(--text-dark);
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.custom-checkbox {
+    min-width: 20px;
+    height: 20px;
+    background-color: var(--white);
+    border: 1px solid rgba(0, 66, 130, 0.15);
+    border-radius: 4px;
+    margin-right: 12px;
+    display: inline-block;
+    position: relative;
+    margin-top: 2px;
+}
+
+.checkbox-container input:checked ~ .custom-checkbox {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.custom-checkbox::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--white);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.checkbox-container input:checked ~ .custom-checkbox::after {
+    display: block;
+}
+
+/* Flush bottom button styling to match the Figma mockups */
+.booking-submit-btn {
+    width: 100%;
+    background-color: #276FB7; /* Home CTA base color */
+    color: var(--white);
+    padding: 16px 24px;
+    border: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    cursor: pointer;
+    margin-top: 40px; /* FIXED: Exactly 40px gap in the 1440 viewport */
+    border-radius: 4px 4px 25px 25px; /* FIXED: both bottom corners 25px radius matching card */
+    transition: background-color var(--transition);
+    display: block;
+    text-align: center;
+}
+
+.booking-submit-btn:hover {
+    background-color: #004282; /* hover color */
+}
+
+/* ==========================================================================
+   9. ABOUT SECTION (TEAM PHOTO & VISUALS) (Full 12 columns width row)
+   ========================================================================== */
+.about-section {
+    background-color: var(--bg-light);
+    padding-top: 50px; /* FIXED: Reduced from 100px (50%) to shrink gap below Booking Form */
+    padding-bottom: 120px; /* FIXED: Creates exactly 120px gap at the bottom before contact section */
+}
+
+.about-header {
+    grid-column: 1 / span 12; /* FIXED: Spans full 12 columns of the figma grid */
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-header h2 {
+    font-size: 2.25rem; /* FIXED: Exactly 36px in 1440 baseline viewport (2.25rem * 16px = 36px) */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px; /* FIXED: Exactly 30px gap below the h2 headline */
+}
+
+.about-slogan {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700; /* Bold slogan reference */
+    font-size: 1.125rem; /* Sized exactly as standard reading body text (18px) */
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px; /* FIXED: Exactly 30px gap below slogan to subsequent intro paragraphs */
+}
+
+.about-intro-text {
+    max-width: 100%; /* FIXED: Spans full 12 columns wide */
+    text-align: center; /* FIXED: Centered copy alignment */
+}
+
+.about-intro-text p {
+    margin-bottom: 20px;
+    color: var(--text-dark);
+    line-height: 1.5;
+}
+
+/* 12-Column Row wrappers inside Über uns */
+.about-row {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+    align-items: center;
+}
+
+.about-row .about-col-img {
+    grid-column: span 4; /* Spans exactly 4 columns width */
+}
+
+.about-row-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    display: block;
+    object-fit: cover;
+}
+
+.about-row .about-col-text {
+    grid-column: span 8; /* Spans exactly 8 columns width */
+}
+
+.about-row .about-col-text h3 {
+    font-size: 1.5rem; /* 24px */
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.about-row .about-col-text p {
+    color: var(--text-dark);
+    line-height: 1.5;
+}
+
+/* Link element with underline states inside text block */
+.about-link {
+    color: #276FB7;
+    font-weight: 700;
+    text-decoration: underline;
+    transition: color var(--transition);
+}
+
+.about-link:hover {
+    color: #004282;
+}
+
+/* Row alignment direction switching parameters on Desktop viewports */
+.about-row.reversed .about-col-text {
+    grid-column: 1 / span 8;
+    grid-row: 1;
+}
+
+.about-row.reversed .about-col-img {
+    grid-column: 9 / span 4;
+    grid-row: 1;
+}
+
+/* ============================================================================
+   10. CONTACT SECTION, IMAGE BANNER & FOOTER
+   ========================================================================== */
+.contact-section {
+    position: relative;
+    background-color: var(--bg-light);
+    padding-top: 40px;
+    min-height: 620px;
+    overflow: hidden;
+}
+
+.contact-banner {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 402px;
+    background-image: url('../assets/img/resort.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    z-index: 0;
+}
+
+.contact-wave-mask {
+    position: absolute;
+    left: 0;
+    top: -1px;
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 1;
+}
+
+.contact-grid {
+    position: relative;
+    z-index: 2;
+    align-items: start;
+    padding-top: 0;
+    padding-bottom: 40px;
+}
+
+.contact-form-side,
+.contact-info-side {
+    background-color: #CEE4E7;
+    border-radius: 8px 8px 25px 25px;
+    box-shadow: 0 10px 24px rgba(0, 66, 130, 0.18);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.contact-form-side {
+    grid-column: 2 / span 6;
+    padding-top: 36px;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
+.contact-info-side {
+    grid-column: 8 / span 4;
+    padding-top: 36px;
+    padding-bottom: 30px;
+}
+
+.contact-form-side h2 {
+    margin-bottom: 24px;
+}
+
+.form-intro {
+    margin-bottom: 24px;
+    max-width: 560px;
+}
+
+.contact-form-side .responsive-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-form-side .form-group label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.contact-form-side .form-group input,
+.contact-form-side .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 66, 130, 0.15);
+    background-color: rgba(255, 255, 255, 0.82);
+    color: var(--text-dark);
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.contact-form-side .form-group textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+.contact-form-side .form-group input:focus,
+.contact-form-side .form-group textarea:focus {
+    border-color: var(--hover-color);
+    box-shadow: 0 0 0 3px rgba(39, 111, 183, 0.15);
+    outline: none;
+}
+
+.contact-form-side .pflichtfelder-notice {
+    margin: 2px 0 0 0;
+}
+
+.contact-form-side .form-group-checkbox {
+    grid-column: auto;
+    margin-top: -4px;
+}
+
+.contact-submit {
+    display: block;
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-top: 8px;
+    border-radius: 0 0 25px 25px;
+    padding: 16px 28px;
+    background-color: #276FB7;
+}
+
+.contact-submit:hover {
+    background-color: var(--primary-color);
+    transform: none;
+}
+
+.contact-info-side .address {
+    font-size: 1rem;
+    margin-bottom: 24px;
+}
+
+.contact-details-list {
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.contact-details-list li {
+    margin-bottom: 2px;
+    font-size: 1rem;
+}
+
+.contact-details-list a {
+    color: var(--text-dark);
+    text-decoration: none;
+}
+
+.contact-details-list a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    flex-wrap: wrap;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.main-footer {
+    color: var(--white);
+    padding-top: 0;
+}
+
+.footer-upper {
+    background-color: #276FB7;
+    padding: 42px 0 36px;
+}
+
+.footer-upper-grid {
+    align-items: start;
+}
+
+.footer-logo-col {
+    grid-column: 1 / span 2;
+}
+
+.footer-logo {
+    width: 168px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.footer-text-col {
+    color: var(--white);
+    font-size: 1rem;
+    line-height: 1.35;
+}
+
+.footer-text-col a {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+.footer-owner {
+    grid-column: 3 / span 3;
+}
+
+.footer-address {
+    grid-column: 6 / span 3;
+}
+
+.footer-contact {
+    grid-column: 9 / span 3;
+}
+
+.scroll-top {
+    grid-column: 12 / span 1;
+    justify-self: end;
+    align-self: start;
+    width: 44px;
+    height: 44px;
+    display: block;
+    transition: transform var(--transition); /* FIXED: Hover transition */
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3)); /* FIXED: Drop shadow */
+}
+
+.scroll-top:hover {
+    transform: scale(1.15); /* FIXED: Slight grow bigger on hover */
+}
+
+.scroll-top img {
+    width: 44px;
+    height: 44px;
+    display: block;
+}
+
+.footer-bottom {
+    background-color: #004282;
+    padding: 18px 0;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.footer-bottom-grid {
+    align-items: center;
+}
+
+.footer-menu {
+    grid-column: 1 / span 4;
+    display: flex;
+    gap: 44px;
+}
+
+.footer-menu a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer-menu a:hover {
+    text-decoration: underline;
+}
+
+.footer-exam-note {
+    grid-column: 8 / span 5;
+    justify-self: end;
+    color: var(--white);
+    margin: 0;
+}
+
+/* ==========================================================================
+   13. RESPONSIVE CONSTRAINTS (TABLETS & MOBILE)
+   ========================================================================= */
+@media (max-width: 1200px) {
+    :root {
+        --grid-margin: 40px;
+    }
+    .header-grid {
+        padding-left: 40px;
+        padding-right: 40px;
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+    }
+    .brand-identity {
+        grid-column: auto;
+        width: auto;
+    }
+    .brand-schriftzug {
+        width: 240px; /* Scale logo down gracefully on tablet viewports */
+    }
+    .main-nav {
+        display: none; /* Hide primary inline nav for tablet layout to switch to mobile toggle */
+    }
+    .nav-toggle {
+        display: block;
+        z-index: 1001;
+    }
+    .nav-toggle.active .hamburger {
+        background-color: transparent;
+    }
+    .nav-toggle.active .hamburger::before {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .nav-toggle.active .hamburger::after {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    /* Mobile system drawer navigation layout menu links styles */
+    .main-nav.active {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 80%;
+        max-width: 320px;
+        height: 100vh;
+        background-color: var(--primary-color);
+        padding: 100px 30px;
+        box-shadow: -5px 0 20px rgba(0,0,0,0.15);
+        z-index: 1000;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .main-nav.active ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+        width: 100%;
+    }
+    
+    .nav-link {
+        font-size: 20px;
+        color: var(--white);
+        width: 100%;
+    }
+    
+    .nav-link::after {
+        display: none; /* Hide hover indicator context outline on mobile drawer menu */
+    }
+
+    .grid-2col {
+        grid-template-columns: 1fr;
+    }
+    .interactive-map-container {
+        grid-template-columns: 1fr;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    .form-group.full-width {
+        grid-column: span 1;
+    }
+    .form-group-checkbox, .form-group-button {
+        grid-column: span 1;
+    }
+    .about-visual {
+        order: 2; /* Team photo slides underneath details on mobile viewports */
+    }
+    .hero-logo {
+        width: clamp(120px, 15vw, 180px); /* Proportional scaling on tablet / mobile devices */
+        height: auto;
+        top: clamp(85px, 9vw, 100px); /* Adjusts dynamic top gaps */
+    }
+    .spots-parallax-bg {
+        top: auto; /* Aligned nicely to bottom via absolute coordinates override */
+        bottom: 0;
+        height: 380px;
+    }
+    
+    /* Centered container card spans full 12 columns on mobile/tablet devices viewports layouts */
+    .spots-card-container {
+        grid-column: 1 / span 12;
+        padding: 30px 20px 20px 20px; /* Slimmed margins on mobile devices systems */
+    }
+    
+    /* FIXED: Mobile modal box placement flow static underneath the map wrapper so it never covers it on click items */
+    .spot-popup-card {
+        position: static; /* Standard flow instead of overlapping absolute overlay systems context */
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px; /* Balanced spacing underneath the map wrapper container frame */
+        background-color: var(--card-bg); /* Solid background color for premium mobile legibility context */
+        border-radius: 8px 8px 25px 25px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        padding: 30px 20px;
+        display: none; /* Controlled dynamically in JS interaction elements handlers */
+    }
+    
+    .spot-popup-card.active {
+        display: block; /* Sits naturally under the map on click interactions items systems */
+    }
+    
+    .spot-popup-content {
+        grid-template-columns: 80px 1fr; /* Slimmer icon column width specification for mobile viewports */
+        gap: 16px;
+    }
+    
+    .popup-custom-icon-img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    /* Close button outline triggers placement on static mobile card element frames layout */
+    .spot-popup-close {
+        top: 5px;
+        right: 5px;
+    }
+
+    /* Course Responsive Layout Updates rules dimensions definitions */
+    .courses-intro-wrapper, .languages-container, .padi-intro-wrapper {
+        grid-column: 1 / span 12;
+    }
+    .languages-container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .lang-icon-wrapper {
+        width: 65px;
+        height: 65px;
+    }
+    .course-item {
+        flex: 0 1 100%; /* Spans full row width layout rows on tablet / mobile devices viewports system cards */
+    }
+    .course-modal-card {
+        padding: 30px 20px 0 20px; /* Adjust bottom padding to 0 for flush button overlay layouts definitions */
+    }
+    .course-modal-content {
+        grid-template-columns: 1fr; /* Stack layout vertically on small screen viewport overlay modal system */
+    }
+    #course-cta-book-btn {
+        width: calc(100% + 40px); /* 20px content card padding left / right bounds offsets */
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    
+    /* Booking Form tablet / mobile viewports devices layout responsiveness overrides definitions tags rules */
+    .booking-outer-wrapper {
+        padding: 60px 0; /* Ensures consistent strict 60px top/bottom padding across layouts if tested on tablet */
+        margin-top: 60px; /* Adjust top gap space layout block on mobile devices windows screen sizes */
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .booking-outer-wrapper::before,
+    .booking-outer-wrapper::after {
+        display: none !important; /* FIXED: Pseudo-elements are hidden on smaller responsive viewports where there is no space */
+    }
+    .booking-container {
+        grid-column: 1 / span 12; /* Mobile/tablet: use the full grid width */
+        width: 100%; /* Spans full horizontal scale layout on mobile viewports grid rows wrappers rules */
+        border-radius: 8px 8px 25px 25px; /* Keeps consistent modern rounded card box corners bounds context specification */
+    }
+    .booking-form-wrapper {
+        padding: 30px 20px 0 20px; /* Slimmed horizontal structural layout items elements padding bounds */
+    }
+    .booking-submit-btn {
+        width: 100%; /* Sits flush naturally horizontal boundary because container card block fills viewport row scales */
+    }
+
+    /* Über uns tablet / mobile responsiveness grid columns overrides layout specification definitions */
+    .about-section {
+        padding-bottom: 60px; /* Snugger layout section space baseline mobile padding */
+    }
+    .about-header, .about-row .about-col-img, .about-row .about-col-text,
+    .about-row.reversed .about-col-text, .about-row.reversed .about-col-img {
+        grid-column: 1 / span 12 !important; /* Forces full width text image vertical elements stack layout rules */
+    }
+    .about-row {
+        margin-top: 35px;
+        margin-bottom: 40px;
+        gap: 15px;
+    }
+    .about-col-img {
+        order: 2; /* Sinks image element box beneath standard paragraph content copy layout rows on mobile devices screen frames */
+    }
+    .about-row.reversed .about-col-img {
+        grid-column: 1 / span 12;
+        margin-top: 10px;
+    }
+    .about-row.reversed .about-col-text {
+        grid-column: 1 / span 12;
+    }
+}

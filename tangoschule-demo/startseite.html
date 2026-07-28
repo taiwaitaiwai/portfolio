@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<!-- Grundlegende Meta-Informationen -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Tanguito – Tangoschule Hannover</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="50x50">
+   
+	<!-- Google Fonts Einbindung -->
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;700&family=Oswald:wght@600&display=swap" rel="stylesheet">
+    
+	<!-- Slick Carousel CSS -->
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+	
+	 <!-- Haupt-CSS Datei -->
+    <link rel="stylesheet" href="css/lightmode.css">
+</head>
+<body>
+
+<!-- Header -->	
+<header id="main-header">
+    <div class="top-bar"></div>
+
+    <div class="header-content">
+        <div class="mode-switch">
+            <img src="img/light-to-dark_btn.png" alt="mode toggle" class="mode-icon" id="mode-toggle">
+            <div class="toggle-switch">
+                <div class="circle-large"></div>
+                <div class="circle-small"></div>
+            </div>
+        </div>
+
+        <!-- Logo -->
+        <img src="img/logo.png" alt="Logo" class="logo" id="main-logo">
+
+        <!-- Language Switch -->
+        <div class="language-switch">
+            <a href="index_de.html" class="language-link" id="de-link">de</a> |
+            <a href="index_es.html" class="language-link" id="es-link">es</a>
+        </div>
+    </div>
+    <div class="header-background-box"></div><!-- Hintergrund-Element für Header -->
+</header>
+
+<!-- ========== HAUPTNAVIGATION ========== -->	
+<nav id="main-nav">
+    <ul class="nav-menu">
+        <li class="nav-item"><a href="startseite.html" class="nav-link">Startseite</a></li>
+		<!-- Dropdown-Menü "Tanzen" -->
+        <li class="nav-item dropdown">
+            <a href="tanzen.html" class="nav-link">Tanzen</a>
+            <ul class="submenu">
+                <li class="submenu-item"><a href="tanzen.html#membership" class="submenu-link">Mitgliedschaft</a></li>
+                <li class="submenu-item"><a href="tanzen.html#course" class="submenu-link">Kursangebote</a></li>
+                <li class="submenu-item"><a href="tanzen.html#workshops" class="submenu-link">Workshops</a></li>
+                <li class="submenu-item"><a href="tanzen.html#form" class="submenu-link">Anmeldung</a></li>
+            </ul>
+        </li>
+		
+		<!-- Dropdown-Menü "Tanzschule" -->
+        <li class="nav-item dropdown">
+            <a href="tanzschule.html" class="nav-link">Tanzschule</a>
+            <ul class="submenu">
+                <li class="submenu-item"><a href="tanzschule.html#ueber-uns" class="submenu-link">Über uns</a></li>
+                <li class="submenu-item"><a href="tanzschule.html#team" class="submenu-link">Team</a></li>
+                <li class="submenu-item"><a href="tanzschule.html#philosophie" class="submenu-link">Philosophie</a></li>
+                <li class="submenu-item"><a href="tanzschule.html#raeumlichkeiten" class="submenu-link">Räumlichkeiten</a></li>
+            </ul>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link">Raumieten</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Kontakt</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Aktuelles</a></li>
+    </ul>
+</nav>
+
+	
+<!-- ========== BANNER-CAROUSEL ========== -->	
+<section id="banner-section" class="banner-container">
+    <h2 class="visually-hidden">Tango Tanzbilder</h2>
+    <div class="banner autoplay">
+        <div class="banner-slide"><img src="img/beautiful-passionate-dancers-dancing.png" alt="Banner 1" class="banner-img"></div>
+        <div class="banner-slide"><img src="img/dancecouple-tango.jpg" alt="Banner 2" class="banner-img"></div>
+        <div class="banner-slide"><img src="img/dancecouple-tango-kick.jpg" alt="Banner 3" class="banner-img"></div>
+        <div class="banner-slide"><img src="img/dance-couple.jpg" alt="Banner 4" class="banner-img"></div>
+    </div>
+</section>
+ 
+	
+<!-- ========== NEWS-TICKER ========== -->	
+<section id="news-ticker-section" class="news-ticker">
+    <h2 class="visually-hidden">Aktuelle Nachrichten</h2>
+    <div class="ticker-wrapper">
+        <div class="ticker-content">
+            <span class="ticker-item">🎉 Neue Anfänger-Tanzkurse starten im Juni! Jetzt anmelden! &nbsp;&nbsp;&nbsp;</span>
+            <span class="ticker-item">💃 Milonga Special jeden Freitagabend! &nbsp;&nbsp;&nbsp;</span>
+            <span class="ticker-item">🕺 Workshop zur musikalischen Interpretation am 25. Mai. &nbsp;&nbsp;&nbsp;</span>
+        </div>
+    </div>
+</section>
+ 
+<!-- ========== WILLKOMMENSBEREICH ========== -->	
+<section id="welcome-section" class="welcome-section">
+    <div class="welcome-container">
+        <h1 class="welcome-heading">Willkommen bei El Tanguito – Deiner Tangoschule in Hannover</h1>
+        <p class="welcome-text">
+            <span class="highlight">Erlebe die Leidenschaft und Eleganz des Tangos</span> in einer inspirierenden und modernen Umgebung. 
+            Bei uns geht es nicht nur um Tanz, sondern auch um eine lebendige Community, die regelmäßig Tanzabende, Workshops und das jährliche Tangofestival organisiert.
+        </p>
+        <p class="welcome-text">
+            Tauche ein in die Welt des Tangos und entdecke, was es bedeutet, Teil von El Tanguito zu sein – einer Tanzschule, die Tradition mit Moderne vereint. 
+            <a href="#mitgliedschaft" class="welcome-link">Werde Teil unserer Community</a> und lass dich von der Magie des Tangos verzaubern!
+        </p>
+    </div>
+</section>
+    
+<!-- ========== AKTUELLES/NEWS ========== -->	
+<section id="news-section" class="news-section">
+    <div class="news-box">
+        <h1 class="section-title">Aktuelles:</h1>
+
+        <div class="news-tabs">
+            <div class="news-tab">
+                <img src="img/news-foto1-paar-tanzen.jpg" alt="Event preview" class="news-image">
+                <div class="news-label">Tanzturnier</div>
+                <h2 class="news-title">European Tango Championship 2025</h2>
+                <p class="news-description">Unsere talentierten Tanzschüler Anna Müller und Maximilian Schmidt sind bei der European Tango Championship. Wir sind stolz auf ihre Teilnahme und Unterstützung!</p>
+                <a class="tab-link" href="#">
+                    <img class="img-default" src="img/icon-arrow-schwarz.png" alt="Mehr">
+                    <img class="img-hover" src="img/icon-arrow-hover-rot.png" alt="Mehr">
+                </a>
+            </div>
+            <div class="news-tab">
+                <img src="img/news-foto2-tangofest.jpg" alt="Event preview" class="news-image">
+                <div class="news-label">Event</div>
+                <h2 class="news-title">Internationales Tangofestival</h2>
+                <p class="news-description">Das Entusiastas del Tango-Team ist beim Internationalen Tangofestival in Hannover dabei! Tanzt, lernt und genießt ein spannendes Festivalprogramm voller Tanz und Kultur.</p>
+                <a class="tab-link" href="#">
+                    <img class="img-default" src="img/icon-arrow-schwarz.png" alt="Mehr">
+                    <img class="img-hover" src="img/icon-arrow-hover-rot.png" alt="Mehr">
+                </a>
+            </div>
+            <div class="news-tab">
+                <img src="img/news-foto3-tangoevent.jpg" alt="Event preview" class="news-image">
+                <div class="news-label">Ankündigung</div>
+                <h2 class="news-title">Los Milonguitos aus Buenos Aires</h2>
+                <p class="news-description">Erlebt die außergewöhnlichen Tänzer von Los Milonguitos aus Buenos Aires bei unseren nächsten Workshops – ein Highlight für alle Tango-Liebhaber!</p>
+                <a class="tab-link" href="#">
+                    <img class="img-default" src="img/icon-arrow-schwarz.png" alt="Mehr">
+                    <img class="img-hover" src="img/icon-arrow-hover-rot.png" alt="Mehr">
+                </a>
+            </div>
+        </div>
+        
+        <div class="news-button-wrapper">
+            <a href="#" class="news-more-button">mehr erfahren</a>
+        </div>
+    </div>
+</section>
+
+<!-- ========== WARUM EL TANGUITO ========== -->	
+<section id="warum-section" class="warum-el-tanguito">
+    <div class="warum-container">
+        <h1 class="section-title">Warum El Tanguito</h1>
+        <p class="section-subtitle">Erlebe mehr als nur Tanz – entdecke eine Community, die Tango lebt.</p>
+    </div>
+    
+    <div class="warum-tabs">
+        <div class="warum-tab">
+            <img src="img/icon-gebaude.png" alt="Grund" class="icon-image">
+            <div class="tab-content">
+                <h3 class="tab-title">Einzigartige Atmosphäre</h3>
+                <p class="tab-text">Unsere Räume verbinden zeitlose Eleganz mit modernem, urbanem Flair – der perfekte Ort, um dich inspirieren zu lassen und die Leidenschaft des Tangos zu spüren.</p>  
+            </div>
+        </div>
+
+        <div class="warum-tab">
+            <img src="img/icon-tango.png" alt="Grund" class="icon-image">
+            <div class="tab-content">
+                <h3 class="tab-title">Internationale Lehrkräfte</h3>
+                <p class="tab-text">Unser Team aus erfahrenen Tanzlehrern aus verschiedenen Ländern bringt eine Vielfalt an Techniken und Stilen in den Unterricht, damit du Tango aus vielen Perspektiven erleben kannst.</p>  
+            </div>
+        </div>
+
+        <div class="warum-tab">
+            <img src="img/icon-niveau.png" alt="Grund" class="icon-image">
+            <div class="tab-content">
+                <h3 class="tab-title">Für alle Niveaus</h3>
+                <p class="tab-text">Ob Anfänger oder Profi – bei uns findest du den passenden Kurs. Wir begleiten dich auf deinem Weg vom ersten Schritt bis zur meisterhaften Improvisation.</p>  
+            </div>
+        </div>
+
+        <div class="warum-tab">
+            <img src="img/icon-kalendar.png" alt="Grund" class="icon-image">
+            <div class="tab-content">
+                <h3 class="tab-title">Vielfältige Events</h3>
+                <p class="tab-text">Werde Teil einer offenen, herzlichen Gemeinschaft. Tanze bei unseren regelmäßigen Tanzabenden, Workshops und Festivals und erlebe unvergessliche Tango-Momente.</p>  
+            </div>
+        </div>
+    </div>
+        
+    <div class="warum-button-wrapper">
+        <a href="#" class="warum-more-button">mehr erfahren</a>
+    </div>
+</section>
+    
+<!-- ========== TESTIMONIALS ========== -->	
+<section id="testimonial-section" class="testimonial">
+    <div class="testimonial-container">
+        <h1 class="section-title">Was unsere Tänzer sagen</h1>
+        <p class="section-subtitle">Erfahre, wie unsere Schüler*innen Entusiastas del Tango erleben<br>von der ersten Tanzstunde bis zu unvergesslichen Tango-Momenten.</p>
+    </div>
+    
+    <div class="testimonial-tabs">
+        <div class="testimonial-tab">
+            <div class="testimonial-content">
+                <img src="img/Userpic-max.png" alt="Bild von Max" class="user-image">
+                <p class="testimonial-text">„Ich schätze besonders die Vielfältigkeit der Kurse und die professionelle Betreuung. Entusiastas del Tango ist der perfekte Ort, um seine Tango-Fähigkeiten weiterzuentwickeln."</p>  
+                <h3 class="user-name">Max S.</h3>
+                <h4 class="user-title">Fortgeschrittener Tänzer</h4>
+            </div>
+        </div>
+        
+        <div class="testimonial-tab">
+            <div class="testimonial-content">
+                <img src="img/Userpic-anne.png" alt="Bild von Anna" class="user-image">
+                <p class="testimonial-text">„Entusiastas del Tango hat meine Leidenschaft geweckt. Die Lehrer sind inspirierend, und die Atmosphäre ist einzigartig. Ich habe viel gelernt und freue mich auf den nächsten Kurs!"</p>  
+                <h3 class="user-name">Anna M.</h3>
+                <h4 class="user-title">Anfängerin</h4>
+            </div>
+        </div>
+        
+        <div class="testimonial-tab">
+            <div class="testimonial-content">
+                <img src="img/Userpic-lisa.png" alt="Bild von Lisa" class="user-image">
+                <p class="testimonial-text">„Entusiastas del Tango hat mir nicht nur das Tanzen beigebracht, sondern auch geholfen, meinen Tanzpartner zu finden. Die Gemeinschaft und vielseitigen Events machen jede Stunde zum Highlight!"</p>  
+                <h3 class="user-name">Lisa T.</h3>
+                <h4 class="user-title">Mitglied</h4>
+            </div>
+        </div>
+        
+        <div class="testimonial-tab">
+            <div class="testimonial-content">
+                <img src="img/Userpic-max.png" alt="Bild von Max" class="user-image">
+                <p class="testimonial-text">„Ich schätze besonders die Vielfältigkeit der Kurse und die professionelle Betreuung. Entusiastas del Tango ist der perfekte Ort, um seine Tango-Fähigkeiten weiterzuentwickeln."</p>  
+                <h3 class="user-name">Peter S.</h3>
+                <h4 class="user-title">Fortgeschrittener Tänzer</h4>
+            </div>
+        </div>
+        
+        <div class="testimonial-tab">
+            <div class="testimonial-content">
+                <img src="img/Userpic-anne.png" alt="Bild von Anna" class="user-image">
+                <p class="testimonial-text">„Entusiastas del Tango hat meine Leidenschaft geweckt. Die Lehrer sind inspirierend, und die Atmosphäre ist einzigartig. Ich habe viel gelernt und freue mich auf den nächsten Kurs!"</p>  
+                <h3 class="user-name">Linda M.</h3>
+                <h4 class="user-title">Anfängerin</h4>
+            </div>
+        </div>
+        
+        <div class="testimonial-tab">
+            <div class="testimonial-content">
+                <img src="img/Userpic-lisa.png" alt="Bild von Lisa" class="user-image">
+                <p class="testimonial-text">„Entusiastas del Tango hat mir nicht nur das Tanzen beigebracht, sondern auch geholfen, meinen Tanzpartner zu finden. Die Gemeinschaft und vielseitigen Events machen jede Stunde zum Highlight!"</p>  
+                <h3 class="user-name">Ellen T.</h3>
+                <h4 class="user-title">Mitglied</h4>
+            </div>
+        </div>
+    </div>
+</section>  
+ 
+<!-- ========== CALL-TO-ACTION ========== -->	
+<div class="cta-contour-wrapper">
+    <div class="footer-cta-tabs">
+        <div class="cta-wrapper">
+            <div class="cta-image">
+                <img src="img/tanzen-lernen.png" alt="CTA Bild" class="cta-img">
+            </div>
+            <div class="cta-content">
+                <h2 class="cta-title">Werde Teil unserer Tanzfamilie!</h2>
+                <p class="cta-text">Erlebe die Faszination des Tangos in einer einzigartigen Community. Profitiere von exklusiven Kursen, Workshops und Events – für Anfänger bis Profis.</p>
+                <a href="#mitgliedschaft" class="btn-cta">Jetzt Mitglied werden</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ========== FOOTER ========== -->
+<footer id="main-footer">
+    <div class="main-footer">
+        <div class="footer-container">
+
+            <!-- Column 1: Kontakt -->
+            <div class="footer-column footer-col1">
+                <img src="img/logo-weiss-schwarz-footer.png" alt="El Tanguito Logo" class="footer-logo">
+                <div class="contact-info">
+                    <h3 class="footer-heading">Kontakt:</h3>
+                    <address class="footer-address">
+                        Knochenhauerstr. 3<br>
+                        30159 Hannover<br><br>
+                        Tel: <a href="tel:051120030022" class="footer-link">0511-20030022</a><br>
+                        Fax: 0511-45678023<br>
+                        <a href="mailto:elena.traeger@eltanguito.com" class="footer-link">elena.traeger@eltanguito.com</a><br>
+                        <a href="https://www.eltanguito.com" target="_blank" rel="noopener" class="footer-link">www.eltanguito.com</a>
+                    </address>
+                </div>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook" class="social-icon"><img src="img/FB.png" alt="Facebook"></a>
+                    <a href="#" aria-label="Instagram" class="social-icon"><img src="img/instagram.png" alt="Instagram"></a>
+                    <a href="#" aria-label="YouTube" class="social-icon"><img src="img/Youtube.png" alt="YouTube"></a>
+                    <a href="#" aria-label="Twitter" class="social-icon"><img src="img/twitter.png" alt="Twitter"></a>
+                    <a href="#" aria-label="TikTok" class="social-icon"><img src="img/tiktok.png" alt="TikTok"></a>
+                </div>
+            </div>
+
+            <!-- Column 2: Öffnungszeiten -->
+            <div class="footer-column footer-col2">
+                <h3 class="footer-heading">Öffnungszeiten:</h3>
+                <p class="footer-text">
+                    Montag – Freitag: 10:00 – 21:00 Uhr<br>
+                    Samstag: 10:00 – 22:00 Uhr<br>
+                    Sonntag &amp; Feiertage: 10:00 – 20:00 Uhr
+                </p>
+            </div>
+
+            <!-- Column 3: Google Map -->
+            <div class="footer-column footer-col3">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.808984134597!2d9.73292531580737!3d52.36848697978446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b074d6f5b0eb39%3A0x422e63ddba91a22a!2sKnochenhauerstra%C3%9Fe%203%2C%2030159%20Hannover%2C%20Germany!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" 
+                    width="265" 
+                    height="224" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="footer-map">
+                </iframe>
+            </div>
+
+            <!-- Column 4: Newsletter Signup -->
+            <div class="footer-column footer-col4">
+                <h3 class="footer-heading">Bleib auf dem Laufenden</h3>
+                <p class="footer-text">Tanze im Rhythmus der neuesten Updates – lass dir nichts entgehen!</p>
+                <form action="/newsletter-signup" method="POST" class="newsletter-form">
+                    <div class="newsletter-input-wrapper">
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Email-Adresse eingeben"
+                            required
+                            class="newsletter-input"
+                        >
+                        <button type="submit" aria-label="Newsletter senden" class="newsletter-button">
+                            <img src="img/Icon-newsletter.png" alt="Senden Icon" class="newsletter-icon">
+                        </button>
+                    </div>
+                </form>
+				<!-- Zurück nach oben Button -->
+                <div class="back-to-top-wrapper">
+                    <button class="back-to-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                        <img src="img/icon-rot-arrow.png" alt="Nach oben Icon" class="back-to-top-icon">
+                        <span class="back-to-top-text">nach oben</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+	<!-- Footer untere Leiste mit Links und Copyright -->
+    <div class="bottom-bar">
+        <div class="bottom-bar-content">
+            <ul class="footer-menu">
+                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Startseite</a></li>
+                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Impressum</a></li>
+                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Datenschutz</a></li>
+                <li class="footer-menu-item"><a href="#" class="footer-menu-link">FAQ</a></li>
+                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Kontakt</a></li>
+            </ul>
+            <div class="copyright">
+                2025 © copyright by El Tanguito GmbH, designed by Tai Wai Chan
+            </div>
+        </div>
+    </div>
+</footer>
+    
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="js/slick.min.js"></script>
+
+<!-- Init Slick -->
+<script>
+    $(document).ready(function(){
+        $('.autoplay').slick({
+            slidesToShow: 1,  
+            slidesToScroll: 1,
+            autoplay: true,  
+            autoplaySpeed: 3000,  
+            dots: true,  
+            arrows: false,  
+        });
+        
+        $('.testimonial-tabs').slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplay: false,
+            dots: true,
+            arrows: false,
+            infinite: false,
+            centerMode: false,         
+            variableWidth: false,
+        });
+    });
+</script>
+    
+</body>
+</html>

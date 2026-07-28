@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reichstag Ragnarok Case Study | Tai Wai Chan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-inner">
+            <a href="home.html" class="logo">Tai Wai Chan</a>
+            <input type="checkbox" id="nav-check">
+            <label for="nav-check" class="menu-toggle" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </label>
+            <nav class="nav">
+                <a href="home.html" class="active">Work</a> 
+                <a href="profile.html">Profile</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-main">
+        
+        <!-- SECTION 1: HEADER & TITLE -->
+        <header class="case-header">
+            <a href="home.html#work" class="back-link">← Back to Work</a>
+            <h1>Reichstag Ragnarok</h1>
+            <p class="lead">2D Political Parody Fighting Game, Character Systems & AI Production Pipeline</p>
+        </header>
+
+        <!-- SECTION 2: HERO BANNER IMAGE (.jpg) -->
+        <section class="hero-banner">
+            <div class="media-frame" onclick="openLightbox('img/reichstag-hero.jpg')">
+                <img src="img/reichstag-hero.jpg" alt="Reichstag Ragnarok Fire Matchup Banner">
+            </div>
+            <p class="caption">Reichstag Ragnarok key visual featuring Fritz and Der Millionär in front of the blazing battle stage.</p>
+        </section>
+
+        <!-- SECTION 3: PROJECT OVERVIEW & META INFO -->
+        <section class="case-content">
+            <div class="text-block">
+                <p><strong>Reichstag Ragnarok: Pension Destruction</strong> is an experimental 2D parody fighting game currently in active development as a personal hobby project.</p>
+                <p>The project serves as a creative playground to explore game system design, character concepting, sprite animation pipelines, and generative AI workflows. Each character is being handcrafted with 300 to 400 individual sprite drawing frames to ensure fluid arcade animation in open-source fighting game engines like IKEMEN GO and Phase 5.</p>
+            </div>
+
+            <div class="meta-grid">
+                <div class="meta-item">
+                    <h3>Project</h3>
+                    <p>Reichstag Ragnarok (Hobby Project)</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Status</h3>
+                    <p>In Active Development</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Playable Demo</h3>
+                    <p>Expected Early 2027</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Role</h3>
+                    <p>Game System Designer, Art Director & AI Pipeline Creator</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Animation Scope</h3>
+                    <p>300–400 Sprite Frames per Character</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Theme Music</h3>
+                    <p><a href="https://makebestmusic.com/s/OZAAhF96?pid=invite&source=makebestmusic" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Listen to Theme Song ↗</a></p>
+                </div>
+            </div>
+
+            <!-- DEMO ANNOUNCEMENT BOX -->
+            <div style="background: rgba(255, 235, 59, 0.15); border-left: 4px solid var(--accent-yellow, #ffd700); padding: 1.2rem 1.5rem; border-radius: 8px; margin-top: 2rem;">
+                <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
+                    🎮 <strong>Development Update:</strong> The game is actively in pre-production. The <strong>first playable public demo</strong> will be released in <strong>early 2027</strong>!
+                </p>
+            </div>
+        </section>
+
+        <hr style="opacity: 0.2; margin: 4rem 0;">
+
+        <!-- SECTION 4: VISUAL SUBSECTIONS -->
+        <section class="case-content">
+            
+            <!-- SUBSECTION 1: ARENA STAGES SLIDER -->
+            <article class="text-block">
+                <h2>1. Arena Stages & Character Assignments</h2>
+                <p>Each fighter is assigned an iconic stage environment reflecting their political origin and narrative background. Click any slide to expand in the lightbox viewer.</p>
+
+                <div class="slider-wrapper" style="margin-top: 2rem;">
+                    <button class="slider-btn prev" onclick="moveSlider('stageSlider', -1)" aria-label="Previous Slide">‹</button>
+                    <div class="slider-container" id="stageSlider">
+                        <div class="slider-track">
+                            <div class="slide-item">
+                                <div class="media-frame" onclick="openLightbox('img/reichstag-stage-berlin-wall.png')">
+                                    <img src="img/reichstag-stage-berlin-wall.png" alt="Berlin Wall Stage for Der Millionär">
+                                    <div class="frame-tag">Berlin Wall (Stage for Der Millionär)</div>
+                                </div>
+                            </div>
+                            <div class="slide-item">
+                                <div class="media-frame" onclick="openLightbox('img/reichstag-stage-erfurt.png')">
+                                    <img src="img/reichstag-stage-erfurt.png" alt="Erfurt Stage for A.A. Blau">
+                                    <div class="frame-tag">Erfurt (Stage for A.A. Blau)</div>
+                                </div>
+                            </div>
+                            <div class="slide-item">
+                                <div class="media-frame" onclick="openLightbox('img/reichstag-stage-stuttgart.png')">
+                                    <img src="img/reichstag-stage-stuttgart.png" alt="Stuttgart Station Stage for D-Bot">
+                                    <div class="frame-tag">Stuttgart Station (Stage for D-Bot)</div>
+                                </div>
+                            </div>
+                            <div class="slide-item">
+                                <div class="media-frame" onclick="openLightbox('img/reichstag-stage-zdf.png')">
+                                    <img src="img/reichstag-stage-zdf.png" alt="ZDF TV Centre Stage for Dr. Karl">
+                                    <div class="frame-tag">ZDF TV Centre (Stage for Dr. Karl)</div>
+                                </div>
+                            </div>
+                            <div class="slide-item">
+                                <div class="media-frame" onclick="openLightbox('img/reichstag-stage-reichstag.png')">
+                                    <img src="img/reichstag-stage-reichstag.png" alt="Reichstag Stage for Fritz">
+                                    <div class="frame-tag">Reichstag (Stage for Fritz)</div>
+                                </div>
+                            </div>
+                            <div class="slide-item">
+                                <div class="media-frame" onclick="openLightbox('img/reichstag-stage-neuschwanstein.png')">
+                                    <img src="img/reichstag-stage-neuschwanstein.png" alt="Schloss Neuschwanstein Stage for König Markus">
+                                    <div class="frame-tag">Neue Schwanzstein (Stage for König Markus)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-btn next" onclick="moveSlider('stageSlider', 1)" aria-label="Next Slide">›</button>
+                </div>
+
+                <p class="caption">Arena stage environments. Use arrows to browse and click any image to enlarge.</p>
+            </article>
+
+            <!-- SUBSECTION 2: CHARACTER IDLE POSES SLIDER (3/4 FIGHTING VIEW) -->
+            <article class="text-block" style="margin-top: 4rem;">
+                <h2>2. Fighter Roster & Stances (3/4 Fighting View)</h2>
+                <p>Character sprites designed in classic 3/4 fighting game stance, featuring neutral idle poses and signature combat gear. Click to open in lightbox.</p>
+
+                <div class="slider-wrapper" style="margin-top: 2rem;">
+                    <button class="slider-btn prev" onclick="moveSlider('charSlider', -1)" aria-label="Previous Slide">‹</button>
+                    <div class="slider-container" id="charSlider">
+                        <div class="slider-track">
+                            <div class="slide-item">
+                                <div class="media-frame" onclick="openLightbox('img/reichstag-char-drkarl.png')">
+                                    <img src="img/reichstag-char-drkarl.png" alt="Dr. Karl 3/4 Stance">
+                                    <div class="frame-tag">Dr. Karl</div>
+                                </div>
+                            </div>
+                            <div class="slide-item">
+                                <div class="media-frame" onclick="openLightbox('img/reichstag-char-dbot.png')">
+                                    <img src="img/reichstag-char-dbot.png" alt="D-Bot 3/4 Stance">
+                                    <div class="frame-tag">D-Bot</div>
+                                </div>
+                            </div>
+                            <div class="slide-item">
+                                <div class="media-frame" onclick="openLightbox('img/reichstag-char-aablau.png')">
+                                    <img src="img/reichstag-char-aablau.png" alt="A.A. Blau 3/4 Stance">
+                                    <div class="frame-tag">A.A. Blau</div>
+                                </div>
+                            </div>
+                            <div class="slide-item">
+                                <div class="media-frame" onclick="openLightbox('img/reichstag-char-fritz.png')">
+                                    <img src="img/reichstag-char-fritz.png" alt="Fritz 3/4 Stance">
+                                    <div class="frame-tag">Fritz</div>
+                                </div>
+                            </div>
+                            <div class="slide-item">
+                                <div class="media-frame" onclick="openLightbox('img/reichstag-char-markus.png')">
+                                    <img src="img/reichstag-char-markus.png" alt="König Markus 3/4 Stance">
+                                    <div class="frame-tag">König Markus</div>
+                                </div>
+                            </div>
+                            <div class="slide-item">
+                                <div class="media-frame" onclick="openLightbox('img/reichstag-char-millionaer.png')">
+                                    <img src="img/reichstag-char-millionaer.png" alt="Der Millionär 3/4 Stance">
+                                    <div class="frame-tag">Der Millionär</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-btn next" onclick="moveSlider('charSlider', 1)" aria-label="Next Slide">›</button>
+                </div>
+
+                <p class="caption">Character 3/4 fighting stances. Click any fighter to inspect details.</p>
+            </article>
+
+            <!-- SUBSECTION 3: FACIAL EXPRESSION MATRICES SLIDER -->
+            <article class="text-block" style="margin-top: 4rem;">
+                <h2>3. Character Facial Expression Matrices</h2>
+                <p>Facial expression sheets mapping cutscene dialogue, hit reactions, and victory portraits for each character. Click to expand in lightbox.</p>
+
+                <div class="slider-wrapper" style="margin-top: 2rem;">
+                    <button class="slider-btn prev" onclick="moveSlider('exprSlider', -1)" aria-label="Previous Slide">‹</button>
+                    <div class="slider-container" id="exprSlider">
+                        <div class="slider-track">
+                            <div class="slide-item">
+                                <div class="media-frame" onclick="openLightbox('img/reichstag-expr-drkarl.png')">
+                                    <img src="img/reichstag-expr-drkarl.png" alt="Dr. Karl Expression Matrix">
+                                    <div class="frame-tag">Dr. Karl — Expression Matrix</div>
+                                </div>
+                            </div>
+                            <div class="slide-item">
+                                <div class="media-frame" onclick="openLightbox('img/reichstag-expr-dbot.png')">
+                                    <img src="img/reichstag-expr-dbot.png" alt="D-Bot Expression Matrix">
+                                    <div class="frame-tag">D-Bot — Expression Matrix</div>
+                                </div>
+                            </div>
+                            <div class="slide-item">
+                                <div class="media-frame" onclick="openLightbox('img/reichstag-expr-aablau.png')">
+                                    <img src="img/reichstag-expr-aablau.png" alt="A.A. Blau Expression Matrix">
+                                    <div class="frame-tag">A.A. Blau — Expression Matrix</div>
+                                </div>
+                            </div>
+                            <div class="slide-item">
+                                <div class="media-frame" onclick="openLightbox('img/reichstag-expr-fritz.png')">
+                                    <img src="img/reichstag-expr-fritz.png" alt="Fritz Expression Matrix">
+                                    <div class="frame-tag">Fritz — Expression Matrix</div>
+                                </div>
+                            </div>
+                            <div class="slide-item">
+                                <div class="media-frame" onclick="openLightbox('img/reichstag-expr-markus.png')">
+                                    <img src="img/reichstag-expr-markus.png" alt="König Markus Expression Matrix">
+                                    <div class="frame-tag">König Markus — Expression Matrix</div>
+                                </div>
+                            </div>
+                            <div class="slide-item">
+                                <div class="media-frame" onclick="openLightbox('img/reichstag-expr-millionaer.png')">
+                                    <img src="img/reichstag-expr-millionaer.png" alt="Der Millionär Expression Matrix">
+                                    <div class="frame-tag">Der Millionär — Expression Matrix</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-btn next" onclick="moveSlider('exprSlider', 1)" aria-label="Next Slide">›</button>
+                </div>
+
+                <p class="caption">Facial expression matrices for story dialogue and battle UI states. Click to enlarge.</p>
+            </article>
+
+            <!-- SUBSECTION 4: IN-DEVELOPMENT ACTION & GAMEPLAY CONCEPTS -->
+            <article class="text-block" style="margin-top: 4rem;">
+                <h2>4. In-Development Action & Gameplay Concepts</h2>
+                <p>Early action sprite loops and in-game HUD battle concepts showing stage setups and combat interactions currently in pre-production (300–400 frames per completed character).</p>
+
+                <div class="gallery-grid three-col-grid" style="margin-top: 2rem;">
+                    <!-- GIF ACTION SAMPLE -->
+                    <div class="media-frame" onclick="openLightbox('img/reichstag-action-1.gif')">
+                        <img src="img/reichstag-action-1.gif" alt="Megaphone Soundwave Special Attack GIF">
+                        <div class="frame-tag">Action Sample — Megaphone Attack (GIF)</div>
+                    </div>
+
+                    <!-- GAMEPLAY CONCEPT 1 -->
+                    <div class="media-frame" onclick="openLightbox('img/reichstag-gameplay-1.png')">
+                        <img src="img/reichstag-gameplay-1.png" alt="Reichstag Stage Matchup A.A. Blau vs Dr. Karl">
+                        <div class="frame-tag">Reichstag Stage (A.A. Blau vs Dr. Karl)</div>
+                    </div>
+
+                    <!-- GAMEPLAY CONCEPT 2 -->
+                    <div class="media-frame" onclick="openLightbox('img/reichstag-gameplay-2.png')">
+                        <img src="img/reichstag-gameplay-2.png" alt="Erfurt Stage Matchup A.A. Blau vs Der Millionär">
+                        <div class="frame-tag">Erfurt Stage (A.A. Blau vs Der Millionär)</div>
+                    </div>
+                </div>
+
+                <p class="caption">Action GIF and HUD mockup concepts. Click any item to expand in full resolution.</p>
+            </article>
+
+        </section>
+
+        <!-- CASE STUDY FOOTER -->
+        <div class="case-footer">
+            <a href="home.html#work" class="btn">← Back to All Projects</a>
+        </div>
+
+    </main>
+
+    <!-- LIGHTBOX MODAL CONTAINER -->
+    <div id="lightboxModal" class="lightbox-modal" onclick="closeLightbox(event)">
+        <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+        <div class="lightbox-content-wrapper" onclick="event.stopPropagation()">
+            <img id="lightboxTargetImg" class="lightbox-img" src="" alt="Enlarged view">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <nav class="footer-nav">
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                </nav>
+            </div>
+            <div class="footer-middle">
+                <p class="copyright">© 2026 Tai Wai Chan · Berlin</p>
+            </div>
+            <div class="footer-right">
+                <button onclick="scrollToTop()" class="btn-top" aria-label="Scroll to top">↑</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ACCESSIBILITY FAB -->
+    <div class="accessibility-menu">
+        <button class="fab" onclick="toggleAccessMenu()" aria-label="Open accessibility options">
+            <img src="img/gear-black.svg" class="icon-gear-black" alt="Settings">
+            <img src="img/gear-white.svg" class="icon-gear-white" alt="Settings">
+        </button>
+        
+        <div class="access-options" id="accessOptions">
+            <button onclick="changeFontSize('increase')">A+</button>
+            <button onclick="changeFontSize('reset')">A</button>
+            <button onclick="changeFontSize('decrease')">A-</button>
+            <button id="contrast-toggle" onclick="toggleContrast()" aria-label="Toggle dark mode">
+                <img src="img/moon.svg" alt="Dark Mode" class="icon-moon">
+                <img src="img/sun.svg" alt="Light Mode" class="icon-sun">
+            </button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postdigital VR Gallery Case Study | Tai Wai Chan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-inner">
+            <a href="home.html" class="logo">Tai Wai Chan</a>
+            <input type="checkbox" id="nav-check">
+            <label for="nav-check" class="menu-toggle" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </label>
+            <nav class="nav">
+                <a href="home.html" class="active">Work</a> 
+                <a href="profile.html">Profile</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-main">
+        
+        <!-- SECTION 1: HEADER & TITLE -->
+        <header class="case-header">
+            <a href="home.html#work" class="back-link">← Back to Work</a>
+            <h1>Digital Readymade / VR Gallery</h1>
+            <p class="lead">Postdigital 3D Exhibition, Open Web VR Framework & Mobile Cardboard Experience</p>
+        </header>
+
+        <!-- SECTION 2: HERO BANNER IMAGE -->
+        <section class="hero-banner">
+            <div class="media-frame" onclick="openLightbox('img/vr-hero.jpg')">
+                <img src="img/vr-hero.jpg" alt="Everyone's a printer, only I'm a maker - VR Gallery Hero">
+            </div>
+            <p class="caption">Exhibition banner framing the postdigital critique around 3D printing culture ("Everyone's a printer, only I'm a maker").</p>
+        </section>
+
+        <!-- SECTION 3: PROJECT OVERVIEW & META INFO -->
+        <section class="case-content">
+            <div class="text-block">
+                <p>Cheap custom-made prostheses, precious spare parts, local fabrication: 3D printing is a promising technology in many ways. But a look at the top downloaded 3D files on platforms like Thingiverse shows that most people still print gadgetry and novelty items—stuff that could be produced better in traditional mass production or not produced at all. This project points out that flaw by curating a satirical VR museum around the topic.</p>
+                <p>Rooted in the digital version of the traditional art form "readymade", we based our VR museum on found digital assets (3D models). We rearranged and modified them to give them ironic new meanings, such as stacked toy boats becoming a "leg prosthesis", a whistle modified into an "artificial lung", and a reframed T-Rex skull acting as a "one-of-a-kind shoe".</p>
+            </div>
+
+            <div class="meta-grid">
+                <div class="meta-item">
+                    <h3>Project</h3>
+                    <p>Postdigital VR Gallery</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Year</h3>
+                    <p>2026</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Role</h3>
+                    <p>Concept Developer, 3D CAD Modeler & A-Frame Coder</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Key Highlights</h3>
+                    <p>Open Web VR, Blender 3D Modification, Mobile Cardboard Optimization</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Tools</h3>
+                    <p>A-Frame, Three.js, Blender, Thingiverse Assets, HTML5/CSS3</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Live Prototype</h3>
+                    <p><a href="postdigital-vr-demo/index.html" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">View Live VR Experience ↗</a></p>
+                </div>
+            </div>
+
+            <!-- MOBILE VR NOTICE -->
+            <div style="background: rgba(255, 235, 59, 0.15); border-left: 4px solid var(--accent-yellow, #ffd700); padding: 1.2rem 1.5rem; border-radius: 8px; margin-top: 2rem;">
+                <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
+                    🥽 <strong>VR & Mobile Experience Note:</strong> While viewable in any desktop browser, this experience is optimized for mobile phones in <strong>landscape mode</strong> and supports VR viewers like Google Cardboard or Samsung Gear VR (utilizing line-of-sight gaze interaction). Please allow up to 10 seconds for 3D assets to load.
+                </p>
+            </div>
+
+            <!-- TECHNICAL & CONTRIBUTIONS -->
+            <div class="text-block" style="margin-top: 3rem;">
+                <h2>Technology & My Contributions</h2>
+                <p>The entire experience is built with the Open Web VR Framework <strong>A-Frame</strong> (built on top of Three.js). Models were sourced from Thingiverse, modified in Blender, and placed inside a custom multi-story 3D scene representing an active Makerbot 3D printer.</p>
+                <ul>
+                    <li><strong>Concept Development:</strong> Defined the postdigital narrative framework and sarcastic art naming conventions.</li>
+                    <li><strong>3D Modeling & CAD:</strong> Prepared and optimized 3D files in Blender, balancing polycount performance with web fidelity.</li>
+                    <li><strong>A-Frame Engineering:</strong> Coded gaze-based interaction triggers (looking at models rotates or floats them; looking at labels reveals titles).</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr style="opacity: 0.2; margin: 4rem 0;">
+
+        <!-- SECTION 4: VISUAL SUBSECTIONS -->
+        <section class="case-content">
+            
+            <!-- SUBSECTION 1: VIRTUAL GALLERY VIEWS -->
+            <article class="text-block">
+                <h2>1. Virtual Exhibition Environment</h2>
+                <p>Inside the virtual museum space built within the 3D printer environment, users encounter curated readymade objects paired with descriptive data labels.</p>
+
+                <div class="gallery-grid" style="grid-template-columns: repeat(2, 1fr); margin-top: 2rem; gap: 1.5rem;">
+                    <div class="media-frame" onclick="openLightbox('img/vr-gallery-view-1.jpg')">
+                        <img src="img/vr-gallery-view-1.jpg" alt="Virtual exhibition front view with artifact pedestals and data list">
+                        <div class="frame-tag">01. Pedestal Front View</div>
+                    </div>
+
+                    <div class="media-frame" onclick="openLightbox('img/vr-gallery-view-2.jpg')">
+                        <img src="img/vr-gallery-view-2.jpg" alt="Angled view of the circular gallery layout in A-Frame">
+                        <div class="frame-tag">02. Angled Exhibition View</div>
+                    </div>
+                </div>
+
+                <p class="caption">In-browser renders of the A-Frame 3D gallery space. Click any preview to view in full resolution.</p>
+            </article>
+
+            <!-- SUBSECTION 2: MOBILE VR & CARDBOARD MODE -->
+            <article class="text-block" style="margin-top: 4rem;">
+                <h2>2. Mobile Stereo & Headset Experience</h2>
+                <p>By enabling WebVR mode, the view splits into dual-lens stereoscopic projection designed for mobile VR viewers (e.g., Google Cardboard). Interaction relies entirely on head tracking and line-of-sight gaze timers.</p>
+
+                <div class="gallery-grid" style="grid-template-columns: repeat(2, 1fr); margin-top: 2rem; gap: 1.5rem;">
+                    <div class="media-frame" onclick="openLightbox('img/vr-cardboard-view-1.jpg')">
+                        <img src="img/vr-cardboard-view-1.jpg" alt="Dual-lens stereo view looking up into printer structure">
+                        <div class="frame-tag">01. Enclosure Structure View</div>
+                    </div>
+
+                    <div class="media-frame" onclick="openLightbox('img/vr-cardboard-view-2.jpg')">
+                        <img src="img/vr-cardboard-view-2.jpg" alt="Dual-lens view focusing on Anti-Pollution Mask label">
+                        <div class="frame-tag">02. Gaze-Based Interaction</div>
+                    </div>
+                </div>
+
+                <p class="caption">Stereoscopic dual-screen view optimized for mobile VR glasses and line-of-sight gaze interaction.</p>
+            </article>
+
+            <!-- SUBSECTION 3: A-FRAME INSPECTOR & SPATIAL SETUP -->
+            <article class="text-block" style="margin-top: 4rem;">
+                <h2>3. A-Frame Scene Inspector & Spatial Hierarchy</h2>
+                <p>Working within WebGL and A-Frame required setting up precise entity parent-child relationships, position vectors, rotational animations, and lighting nodes.</p>
+
+                <div class="gallery-grid" style="grid-template-columns: repeat(2, 1fr); margin-top: 2rem; gap: 1.5rem;">
+                    <div class="media-frame" onclick="openLightbox('img/vr-inspector-1.jpg')">
+                        <img src="img/vr-inspector-1.jpg" alt="A-Frame visual inspector showing 3D scene entity tree">
+                        <div class="frame-tag">01. Scene Entity Inspector</div>
+                    </div>
+
+                    <div class="media-frame" onclick="openLightbox('img/vr-inspector-2.jpg')">
+                        <img src="img/vr-inspector-2.jpg" alt="Macro scene view showing the Makerbot printer frame">
+                        <div class="frame-tag">02. Makerbot Enclosure Frame</div>
+                    </div>
+                </div>
+
+                <p class="caption">A-Frame Inspector views illustrating camera positioning, light entities, and GLTF model instances.</p>
+            </article>
+
+        </section>
+
+        <!-- CASE STUDY FOOTER -->
+        <div class="case-footer">
+            <a href="home.html#work" class="btn">← Back to All Projects</a>
+        </div>
+
+    </main>
+
+    <!-- LIGHTBOX MODAL CONTAINER -->
+    <div id="lightboxModal" class="lightbox-modal" onclick="closeLightbox(event)">
+        <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+        <div class="lightbox-content-wrapper" onclick="event.stopPropagation()">
+            <img id="lightboxTargetImg" class="lightbox-img" src="" alt="Enlarged view">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <nav class="footer-nav">
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                </nav>
+            </div>
+            <div class="footer-middle">
+                <p class="copyright">© 2026 Tai Wai Chan · Berlin</p>
+            </div>
+            <div class="footer-right">
+                <button onclick="scrollToTop()" class="btn-top" aria-label="Scroll to top">↑</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ACCESSIBILITY FAB -->
+    <div class="accessibility-menu">
+        <button class="fab" onclick="toggleAccessMenu()" aria-label="Open accessibility options">
+            <img src="img/gear-black.svg" class="icon-gear-black" alt="Settings">
+            <img src="img/gear-white.svg" class="icon-gear-white" alt="Settings">
+        </button>
+        
+        <div class="access-options" id="accessOptions">
+            <button onclick="changeFontSize('increase')">A+</button>
+            <button onclick="changeFontSize('reset')">A</button>
+            <button onclick="changeFontSize('decrease')">A-</button>
+            <button id="contrast-toggle" onclick="toggleContrast()" aria-label="Toggle dark mode">
+                <img src="img/moon.svg" alt="Dark Mode" class="icon-moon">
+                <img src="img/sun.svg" alt="Light Mode" class="icon-sun">
+            </button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

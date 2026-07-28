@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAPP E-Commerce Case Study | Tai Wai Chan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-inner">
+            <a href="home.html" class="logo">Tai Wai Chan</a>
+            <input type="checkbox" id="nav-check">
+            <label for="nav-check" class="menu-toggle" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </label>
+            <nav class="nav">
+                <a href="home.html" class="active">Work</a> 
+                <a href="profile.html">Profile</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-main">
+        
+        <!-- SECTION 1: HEADER & TITLE -->
+        <header class="case-header">
+            <a href="home.html#work" class="back-link">← Back to Work</a>
+            <h1>LAPP Global B2B E-Commerce</h1>
+            <p class="lead">UI Design & Design-System Support</p>
+        </header>
+
+        <!-- SECTION 2: HERO BANNER (Responsive Mockup) -->
+        <section class="hero-banner">
+            <div class="media-frame" onclick="openLightbox('img/lapp-hero.png')">
+                <img src="img/lapp-hero.png" alt="LAPP E-Commerce interface shown on Desktop, Tablet, and Mobile devices">
+            </div>
+            <p class="caption">LAPP Global B2B E-Commerce interface across desktop, tablet, and mobile breakpoints.</p>
+        </section>
+
+        <!-- SECTION 3: PROJECT OVERVIEW & META INFO -->
+        <section class="case-content">
+            <div class="text-block">
+                <p>I joined the LAPP e-commerce project as a Junior UI Designer during its mid-stage in 2022. Working within an established UX concept and visual design system, I created selected interface screens and supported the maintenance and expansion of shared Sketch libraries, reusable components and icons.</p>
+                <p>The platform covered a wide range of B2B e-commerce areas, including product information, listings, search, account functions and purchasing workflows. My role focused specifically on UI production and maintaining visual consistency across different modules and responsive screen sizes.</p>
+            </div>
+
+            <div class="meta-grid">
+                <div class="meta-item">
+                    <h3>Client</h3>
+                    <p>LAPP</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Year</h3>
+                    <p>2022</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Role</h3>
+                    <p>Junior UI Designer</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Team</h3>
+                    <p>Senior in-house designer, external designer, junior designer and project lead</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Tools</h3>
+                    <p>Sketch, Zeplin</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Website</h3>
+                    <p><a href="https://www.lapp.com" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">lapp.com ↗</a></p>
+                </div>
+            </div>
+
+            <!-- CONTRIBUTIONS & LEARNINGS -->
+            <div class="text-block" style="margin-top: 3rem;">
+                <h2>My Contribution</h2>
+                <ul>
+                    <li>Created selected UI screens based on existing UX concepts</li>
+                    <li>Worked within the established style guide and visual system</li>
+                    <li>Maintained and expanded shared Sketch libraries</li>
+                    <li>Adapted components for responsive screen sizes</li>
+                    <li>Created and refined icons and UI elements</li>
+                    <li>Supported visual consistency across screens and modules</li>
+                </ul>
+            </div>
+
+            <div class="text-block">
+                <h2>What I Learned</h2>
+                <p>Working on a large B2B platform strengthened my understanding of component-based UI design, responsive systems and shared library management. Joining the project during its mid-stage also taught me how to quickly understand an existing design system and contribute reliably within a larger design team.</p>
+            </div>
+        </section>
+
+        <hr style="opacity: 0.2; margin: 4rem 0;">
+
+        <!-- SECTION 4: VISUAL SUBSECTIONS -->
+        <section class="case-content">
+            
+
+    <!-- SUBSECTION A: RESPONSIVE VARIANTS -->
+<article class="text-block">
+    <h2>Responsive Variants & Grid System</h2>
+    <p>The interface system was built around a fluid 12-column layout designed across five distinct device breakpoints: Mobile Size XS (360 × 640 px), Tablet Size S (600 × 800 px), Tablet Size M (768 × 1024 px), Desktop Size L (1024 × 768 px), and Desktop Size XL (1366 × 768 px). This unified structure ensured that components, navigation modules, and complex data tables adapted seamlessly and predictably across all mobile, tablet, and widescreen viewports.</p>
+
+    <!-- 2x2 RESPONSIVE SCREEN GALLERY -->
+    <div class="gallery-grid" style="margin-top: 2rem;">
+        <div class="media-frame" onclick="openLightbox('img/size-xs-myLapp-bestellungen--uebersicht.jpg')">
+            <div class="responsive-preview-frame">
+                <img src="img/size-xs-myLapp-bestellungen--uebersicht.jpg" alt="Size XS Mobile View - 360x640">
+            </div>
+            <div class="frame-tag">Size XS (Mobile)</div>
+        </div>
+
+        <div class="media-frame" onclick="openLightbox('img/size-s-myLapp-bestellungen--uebersicht.jpg')">
+            <div class="responsive-preview-frame">
+                <img src="img/size-s-myLapp-bestellungen--uebersicht.jpg" alt="Size S Tablet View - 600x800">
+            </div>
+            <div class="frame-tag">Size S (Tablet)</div>
+        </div>
+
+        <div class="media-frame" onclick="openLightbox('img/size-l-myLapp-bestellungen--uebersicht.jpg')">
+            <div class="responsive-preview-frame">
+                <img src="img/size-l-myLapp-bestellungen--uebersicht.jpg" alt="Size L Desktop View - 1024x768">
+            </div>
+            <div class="frame-tag">Size L (Desktop)</div>
+        </div>
+
+        <div class="media-frame" onclick="openLightbox('img/size-xl-myLapp-bestellungen--uebersicht.jpg')">
+            <div class="responsive-preview-frame">
+                <img src="img/size-xl-myLapp-bestellungen--uebersicht.jpg" alt="Size XL Desktop View - 1366x768">
+            </div>
+            <div class="frame-tag">Size XL (Desktop Widescreen)</div>
+        </div>
+    </div>
+
+    <p class="caption">Selected responsive screen variants for MyLAPP Order Overview across mobile, tablet, and desktop breakpoints. Click any screen to view full resolution.</p>
+</article>
+
+            <!-- SUBSECTION B: UI BOARD / STYLE GUIDE -->
+            <article class="text-block">
+                <h2>UI Board</h2>
+                <p>The shared UI board documented the project’s visual foundations, including colour, typography, buttons and recurring interface patterns. It served as a common reference point for the design team.</p>
+                
+                <!-- LONG IMAGE FRAME WITH OVERFLOW PREVIEW -->
+                <div class="media-frame" onclick="openLightbox('img/ui-kit.jpg')">
+                    <div class="long-image-frame">
+                        <img src="img/ui-kit.jpg" alt="LAPP UI Board showing color palette, typography scales, buttons, and interface patterns">
+                    </div>
+                </div>
+                <p class="caption">Shared UI board defining typography, colour, button styles and reusable interface patterns. Click image to inspect full board in high resolution.</p>
+            </article>
+
+            <!-- SUBSECTION C: UI ELEMENTS & COMPONENT SYSTEM -->
+<article class="text-block">
+    <h2>UI Elements & Component System</h2>
+    <p>To support modularity and efficiency across the e-commerce platform, I worked with reusable UI components and design tokens. This included maintaining standard product tiles across responsive scales, defining interaction states (default, hover, pressed, disabled) for CTA buttons and interactive controls, and documenting tile teaser slots with fixed image ratios (16:9 and 4:3) to maintain visual consistency across marketing areas.</p>
+
+    <!-- 3-CARD COMPONENT GALLERY -->
+    <div class="gallery-grid component-grid" style="margin-top: 2rem;">
+        
+        <!-- CARD 1: BUTTONS & INTERACTION STATES -->
+        <div class="media-frame" onclick="openLightbox('img/buttons.png')">
+            <div class="responsive-preview-frame">
+                <img src="img/buttons.png" alt="Buttons and Interactive Component States Specification">
+            </div>
+            <div class="frame-tag">Buttons & Link States</div>
+        </div>
+
+        <!-- CARD 2: PRODUCT TILES -->
+        <div class="media-frame" onclick="openLightbox('img/product-tile.jpg')">
+            <div class="responsive-preview-frame">
+                <img src="img/product-tile.jpg" alt="Product Tile Variants across XL, L, M, and S Breakpoints">
+            </div>
+            <div class="frame-tag">Product Tile Variants</div>
+        </div>
+
+        <!-- CARD 3: TILE TEASER SLOTS -->
+        <div class="media-frame" onclick="openLightbox('img/size-xl-tile-teaser-slots.png')">
+            <div class="responsive-preview-frame">
+                <img src="img/size-xl-tile-teaser-slots.png" alt="Tile Teaser Slots and Image Aspect Ratios">
+            </div>
+            <div class="frame-tag">Teaser Slots & Ratios</div>
+        </div>
+
+    </div>
+
+    <p class="caption">Documentation of interactive button states, responsive product tiles, and teaser slot image ratios defined for the Sketch library. Click any item to inspect full resolution.</p>
+</article>
+
+        </section>
+
+        <!-- CASE STUDY FOOTER -->
+        <div class="case-footer">
+            <a href="home.html#work" class="btn">← Back to All Projects</a>
+        </div>
+
+    </main>
+
+    <!-- LIGHTBOX MODAL CONTAINER -->
+    <div id="lightboxModal" class="lightbox-modal" onclick="closeLightbox(event)">
+        <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+        <div class="lightbox-content-wrapper" onclick="event.stopPropagation()">
+            <img id="lightboxTargetImg" class="lightbox-img" src="" alt="Enlarged view">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <nav class="footer-nav">
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                </nav>
+            </div>
+            <div class="footer-middle">
+                <p class="copyright">© 2026 Tai Wai Chan · Berlin</p>
+            </div>
+            <div class="footer-right">
+                <button onclick="scrollToTop()" class="btn-top" aria-label="Scroll to top">↑</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ACCESSIBILITY FAB -->
+    <div class="accessibility-menu">
+        <button class="fab" onclick="toggleAccessMenu()" aria-label="Open accessibility options">
+            <img src="img/gear-black.svg" class="icon-gear-black" alt="Settings">
+            <img src="img/gear-white.svg" class="icon-gear-white" alt="Settings">
+        </button>
+        
+        <div class="access-options" id="accessOptions">
+            <button onclick="changeFontSize('increase')">A+</button>
+            <button onclick="changeFontSize('reset')">A</button>
+            <button onclick="changeFontSize('decrease')">A-</button>
+            <button id="contrast-toggle" onclick="toggleContrast()" aria-label="Toggle dark mode">
+                <img src="img/moon.svg" alt="Dark Mode" class="icon-moon">
+                <img src="img/sun.svg" alt="Light Mode" class="icon-sun">
+            </button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

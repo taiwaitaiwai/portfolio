@@ -1,0 +1,199 @@
+{
+    "accessors": [
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 284442,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_Ultimaker 2 Al profile extended museum2low1_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 284442,
+            "max": [
+                173.7060089111328,
+                206.9381866455078,
+                317.9527893066406
+            ],
+            "min": [
+                -182.2940216064453,
+                -192.061767578125,
+                -207.94729614257812
+            ],
+            "name": "accessor_buffer_Ultimaker 2 Al profile extended museum2low1_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 310839,
+            "max": [
+                284441
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_Ultimaker 2 Al profile extended museum2low1_0",
+            "type": "SCALAR"
+        }
+    ],
+    "asset": {
+        "copyright": "",
+        "generator": "blendergltf v1.2.0",
+        "version": "2.0"
+    },
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 3413304,
+            "byteOffset": 0,
+            "byteStride": 12,
+            "name": "bufferView_buffer_Ultimaker 2 Al profile extended museum2low1_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3413304,
+            "byteOffset": 3413304,
+            "byteStride": 12,
+            "name": "bufferView_buffer_Ultimaker 2 Al profile extended museum2low1_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1243360,
+            "byteOffset": 6826608,
+            "name": "bufferView_buffer_Ultimaker 2 Al profile extended museum2low1_0",
+            "target": 34963
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 8069968,
+            "name": "buffer_201806013dprinterlow1_metal",
+            "uri": "buffer_201806013dprinterlow1_metal.bin"
+        }
+    ],
+    "cameras": [
+        {
+            "name": "Camera",
+            "perspective": {
+                "aspectRatio": 1.703595982340029,
+                "yfov": 0.5033799409866333,
+                "zfar": 100.0,
+                "znear": 0.10000000149011612
+            },
+            "type": "perspective"
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Ultimaker 2 Al profile extended museum2low1",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 0,
+                        "POSITION": 1
+                    },
+                    "indices": 2,
+                    "mode": 4
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "camera": 0,
+            "name": "Camera",
+            "rotation": [
+                -0.09062843769788742,
+                -0.8937962651252747,
+                -0.2099730223417282,
+                0.38578000664711
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                -7.481131553649902,
+                5.34366512298584,
+                -6.5076398849487305
+            ]
+        },
+        {
+            "name": "Lamp",
+            "rotation": [
+                -0.34203386306762695,
+                -0.5232755541801453,
+                -0.2841663062572479,
+                0.7269423007965088
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                0.9999999403953552
+            ],
+            "translation": [
+                -4.076245307922363,
+                5.903861999511719,
+                1.0054539442062378
+            ]
+        },
+        {
+            "mesh": 0,
+            "name": "Ultimaker 2 Al profile extended museum2low1",
+            "rotation": [
+                -0.7071336507797241,
+                5.69939303361607e-24,
+                1.570152385863585e-16,
+                0.7070799469947815
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                -54.68010711669922,
+                19.255956649780273,
+                -209.76519775390625
+            ]
+        }
+    ],
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "active_camera": 0,
+                "background_color": [
+                    0.05087608844041824,
+                    0.05087608844041824,
+                    0.05087608844041824
+                ],
+                "frames_per_second": 24
+            },
+            "name": "Scene",
+            "nodes": [
+                2,
+                1,
+                0
+            ]
+        }
+    ]
+}

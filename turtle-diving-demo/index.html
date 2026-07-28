@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turtle Diving Resort - Gili Air</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         HEADER & STICKY FIGMA NAVIGATION (80px)
+         ========================================== -->
+    <header class="main-header">
+        <div class="header-grid">
+            <!-- Brand Identity (Clicking returns to top) -->
+            <a href="#home" class="brand-identity" aria-label="Zurück zur Startseite">
+                <img src="assets/img/schriftzug.svg" alt="Turtle Diving Resort" class="brand-schriftzug">
+            </a>
+            
+            <!-- Mobile Navigation Toggle -->
+            <button class="nav-toggle" aria-label="Navigation öffnen" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+
+            <!-- Main Menu (Nunito Sans Bold, 18px) spanning Columns 6-12 -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#tauchspots" class="nav-link">Tauchspots</a></li>
+                    <li><a href="#kurse" class="nav-link">Kurse</a></li>
+                    <li><a href="#ueber-uns" class="nav-link">Über uns</a></li>
+                    <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 style="position:absolute;left:-9999px;">Turtle Diving Resort - Gili Air</h1>
+        <!-- ==========================================
+             HERO SECTION (16:9 RATIO WITH EMBLEM, WAVE MASK & ARROW)
+             ========================================== -->
+        <div id="home" class="hero-section">
+            <div class="video-container">
+                <video autoplay muted loop playsinline class="bg-video">
+                    <source src="assets/video/background_loop.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <!-- Central Figma Emblem Logo with elegant breathing animation (259px x 150px) -->
+            <img src="assets/img/logo.svg" alt="Turtle Diving Resort Emblem" class="hero-logo">
+
+            <!-- Bobbing Scroll Down Arrow with Drop Shadow (30px x 42px) -->
+            <a href="#welcome" class="scroll-down-btn" aria-label="Nach unten scrollen">
+                <img src="assets/img/icon_scroll_down.svg" alt="Scrollen" class="scroll-down-icon">
+            </a>
+
+            <!-- Wave Mask at the bottom overlaying the video seamlessly -->
+            <img src="assets/img/maske.svg" alt="" class="hero-mask">
+        </div>
+
+        <!-- ==========================================
+             WELCOME & INTRODUCTION SECTION
+             ========================================== -->
+        <section id="welcome" class="welcome-section section-padding">
+            <div class="grid-container">
+                <!-- Editorial Intro Text blocks (Turtle Diving Resort in Bold) -->
+                <div class="welcome-intro-header">
+                    <h2>Dein Tauchurlaub auf Gili Air</h2>
+                    <p class="lead">Frühstück am Strand, Unterricht auf dem Boot, Tauchen an atemberaubenden Spots und Übernachten in verwunschenen Bungalows – buche jetzt deinen Tauchurlaub im <strong>Turtle Diving Resort.</strong></p>
+                    <p>Wer einmal auf den Gili-Inseln tauchen war, wird es nie wieder vergessen. Riesige Wasserschildkröten, Weißspitzen-Riffhaie und Büffelkopfpapageienfische, bunte Korallen und gewaltige Fischschwärme warten auf dich. Und auch Gili Air selbst, die zweitgrößte der Gili-Inseln, wird dich verzaubern.</p>
+                    <p>Im Turtle Diving Resort kannst du nicht nur Tauchen lernen oder dein Können auf ein neues Level heben, sondern auch in liebevoll eingerichteten Bungalows übernachten. Wir freuen uns auf dich!</p>
+                </div>
+
+                <!-- Styled highlight boxes using the card background color #D0E7EA with drop shadow and custom border radius -->
+                <div class="grid-2col highlight-grid">
+                    <!-- Column 1: Tauchen und Naturschutz -->
+                    <div class="highlight-card">
+                        <div class="card-content">
+                            <h3>Tauchen und Naturschutz</h3>
+                            <p>Naturschutz steht beim Tauchen an erster Stelle. Unser Credo: Unter Wasser sind wir nur zu Gast. Wir fassen nichts an, wir nehmen nichts mit, wir lassen nichts da. Wer einmal die Schönheit der Meere gesehen hat, dem geht sie nie wieder aus dem Kopf. Was bleibt, sind große Erinnerungen und der Wunsch, die Unterwasservielfalt zu erhalten. Diesen Wunsch tragen unsere Tauchschüler nach einem Aufenthalt bei uns hinaus in die Welt.</p>
+                        </div>
+                        <a href="#tauchspots" class="btn btn-primary btn-block">Die faszinierendsten Tauchplätze der Welt</a>
+                    </div>
+                    
+                    <!-- Column 2: Hurtle with the turtle! -->
+                    <div class="highlight-card">
+                        <div class="card-content">
+                            <h3>Hurtle with the turtle!</h3>
+                            <p>Wer einmal die Schönheit der Meere gesehen hat, dem geht sie nie wieder aus dem Kopf. Was bleibt, sind große Erinnerungen und der Wunsch, die Unterwasservielfalt zu erhalten. Diesen Wunsch tragen unsere Tauchschüler nach einem Aufenthalt bei uns hinaus in die Welt.</p>
+                            <p>Unsere pfennigfuchserischen Tauchlehrerinnen und -lehrer bringen dir, wahlweise auf Deutsch, Englisch, Spanisch oder Französisch, Tauchen bei und fahren mit dir zu atemberaubenden Tauchspots.</p>
+                        </div>
+                        <a href="#kurse" class="btn btn-primary btn-block">Kurse</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             INTERACTIVE MAP SECTION (TAUCHSPOTS)
+             ========================================== -->
+        <section id="tauchspots" class="spots-section section-padding">
+            <!-- Full-width Parallax Background behind the map card -->
+            <div class="spots-parallax-bg">
+                <!-- Bottom Wave Mask overlaying the parallax image -->
+                <img src="assets/img/maske.svg" alt="" class="spots-mask">
+            </div>
+
+            <div class="grid-container">
+                <!-- 12-Column Grid Wrapper to calculate accurate Figma column coordinates -->
+                <div class="grid-12col">
+                    <!-- Container card (10-column width) -->
+                    <div class="spots-card-container">
+                        <div class="spots-container-header">
+                            <h2>Tauchspots</h2>
+                            <p class="spots-intro">Zwischen zehn und zwanzig Minuten – länger brauchen wir nicht, um euch mit dem Boot zu den schönsten Tauchspots der Gili-Inseln zu fahren.</p>
+                        </div>
+
+                        <!-- Map wrapper container with stroke border and padding -->
+                        <div class="map-wrapper">
+                            <!-- Relative container holding the SVG and pins only, keeping calculations isolated -->
+                            <div class="map-relative-container">
+                                <!-- Custom styled interactive map vector -->
+                                <img src="assets/img/map/tauchspot_karte.svg" alt="Tauchspots Karte" class="map-base-svg">
+                                
+                                <!-- Interactive clickable pins placed proportionally with clamp heights -->
+                                <!-- Pin 1: Deep Turbo (Anchor Icon) -->
+                                <div class="map-interactive-pin" data-spot="deep-turbo" data-title="Deep Turbo" data-desc="Wer schon viel Erfahrung hat, wird diesen Tauchplatz auf 23 Metern Tiefe lieben. Hier trefft ihr Große Zackenbarsche, Muränen und Adlerrochen, außerdem versprechen schwache, aber in verschiedene Richtungen wirbelnde Strömungen einen abenteuerreichen Tauchgang." data-icon="assets/img/icons/icon-deep-turbo.svg" style="top: 11.1%; left: 43.3%;">
+                                    <div class="pulse-ring"></div>
+                                    <img src="assets/img/icons/icon-deep-turbo.svg" alt="Icon Deep Turbo" class="pin-custom-icon">
+                                    <span class="pin-label">Deep Turbo</span>
+                                </div>
+
+                                <!-- Pin 2: Coral Fan Garden (Coral Icon) -->
+                                <div class="map-interactive-pin" data-spot="coral-fan" data-title="Coral Fan Garden" data-desc="Erlebt hier die unglaubliche Vielfalt der Unterwasserwelt, und das bei temporeicher Strömung!" data-icon="assets/img/icons/icon-coral-fan-garden.svg" style="top: 30.5%; left: 41.5%;">
+                                    <div class="pulse-ring"></div>
+                                    <img src="assets/img/icons/icon-coral-fan-garden.svg" alt="Icon Coral Fan Garden" class="pin-custom-icon">
+                                    <span class="pin-label">Coral Fan Garden</span>
+                                </div>
+
+                                <!-- Pin 3: Turtle Heaven (Turtle Icon - ACTIVE BY DEFAULT) -->
+                                <div class="map-interactive-pin active" data-spot="turtle-heaven" data-title="Turtle Heaven" data-desc="Bettys Lieblingsspot, nach dem sie ihre Tauchschule benannt hat. Turtle heaven besteht aus einem Riff aus flachen Korallen and einem hervortretenden Felsen. In der Regel ist hier alles voll mit wunderschönen Wasserschildkröten." data-icon="assets/img/icons/icon-turtle-heaven.svg" style="top: 30.5%; left: 62.3%;">
+                                    <div class="pulse-ring"></div>
+                                    <img src="assets/img/icons/icon-turtle-heaven.svg" alt="Icon Turtle Heaven" class="pin-custom-icon">
+                                    <span class="pin-label">Turtle Heaven</span>
+                                </div>
+
+                                <!-- Pin 4: Shark Point (Shark Icon) -->
+                                <div class="map-interactive-pin" data-spot="shark-point" data-title="Shark Point" data-desc="Treppenartig führt ein stufenförmiger Kamm immer tiefer, bis ihr auf dem Boden liegende Weißspitzen-Riffhaie oder herumschwimmende Schwarzspitzen-Riffhaie antrefft." data-icon="assets/img/icons/icon-shark-point.svg" style="top: 47.5%; left: 19.2%;">
+                                    <div class="pulse-ring"></div>
+                                    <img src="assets/img/icons/icon-shark-point.svg" alt="Icon Shark Point" class="pin-custom-icon">
+                                    <span class="pin-label">Shark Point</span>
+                                </div>
+
+                                <!-- Pin 5: Manta Point (Manta Icon) -->
+                                <div class="map-interactive-pin" data-spot="manta-point" data-title="Manta Point" data-desc="Dieser Korallengarten ist einer der gesündesten der ganzen Umgebung. Hier könnt ihr zum Beispiel Tintenfische, Orang-Utan-Krabben und Weiß- und Schwarzspitzen-Riffhaie beobachten." data-icon="assets/img/icons/icon-manta-point.svg" style="top: 87.4%; left: 30.8%;">
+                                    <div class="pulse-ring"></div>
+                                    <img src="assets/img/icons/icon-manta-point.svg" alt="Icon Manta Point" class="pin-custom-icon">
+                                    <span class="pin-label">Manta Point</span>
+                                </div>
+                            </div>
+
+                            <!-- Absolute Floating Details Overlay Box (ACTIVE BY DEFAULT with Turtle Heaven content) -->
+                            <div id="spot-detail-popup" class="spot-popup-card active">
+                                <button id="spot-popup-close-btn" class="spot-popup-close" aria-label="Schließen">
+                                    <img src="assets/img/icon_close.svg" alt="Schließen">
+                                </button>
+                                <div class="spot-popup-content">
+                                    <div class="spot-popup-icon-col">
+                                        <img id="popup-spot-icon" src="assets/img/icons/icon-turtle-heaven.svg" alt="Diving Spot Icon" class="popup-custom-icon-img">
+                                    </div>
+                                    <div class="spot-popup-text-col">
+                                        <h3 id="popup-spot-title">Turtle Heaven</h3>
+                                        <p id="popup-spot-desc">Bettys Lieblingsspot, nach dem sie ihre Tauchschule benannt hat. Turtle heaven besteht aus einem Riff aus flachen Korallen und einem hervortretenden Felsen. In der Regel ist hier alles voll mit wunderschönen Wasserschildkröten.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             COURSES SECTION (Kurse)
+             ========================================== -->
+        <section id="kurse" class="courses-section section-padding">
+            <div class="grid-container">
+                <div class="grid-12col">
+                    <!-- Intro Paragraphs centered on a 10-column container -->
+                    <div class="courses-intro-wrapper">
+                        <h2>Hurtle with the turtle!</h2>
+                        <p class="lead">Unsere fünf erfahrenen Tauchlehrerinnen und -lehrer bringen dir, wahlweise auf Deutsch, Englisch, Spanisch oder Französisch, Tauchen bei und fahren mit dir zu atemberaubenden Tauchspots.</p>
+                    </div>
+
+                    <!-- 8-Column Row for Language Flag SVGs (Centered, 85px x 85px) -->
+                    <div class="languages-container">
+                        <div class="lang-icon-wrapper" title="Deutsch">
+                            <img src="assets/img/icon_deu.svg" alt="Deutsch" class="lang-icon">
+                        </div>
+                        <div class="lang-icon-wrapper" title="English">
+                            <img src="assets/img/icon_uk.svg" alt="English" class="lang-icon">
+                        </div>
+                        <div class="lang-icon-wrapper" title="Español">
+                            <img src="assets/img/icon_esp.svg" alt="Español" class="lang-icon">
+                        </div>
+                        <div class="lang-icon-wrapper" title="Français">
+                            <img src="assets/img/icon_fr.svg" alt="Français" class="lang-icon">
+                        </div>
+                    </div>
+
+                    <!-- PADI Intro Section (50px gaps) -->
+                    <div class="padi-intro-wrapper">
+                        <h2>Tauchkurse</h2>
+                        <p class="lead">Ob Anfänger oder Fortgeschrittene – bei uns kommt jeder auf seine Kosten. Die Sichtweite unter Wasser beträgt meistens um die 20 Meter, die Temperatur zwischen 26 and 30 Grad. Es ist also glasklar und badwarm bei uns – ideal, um Tauchen zu lernen oder neue Entdeckungen unter Wasser zu machen.</p>
+                        <p class="padi-badge">Wir bilden nach den Richtlinien der Organisation <strong>PADI</strong> aus.</p>
+                        
+                        <h3 class="courses-subheading">Unsere Kurse:</h3>
+                    </div>
+                </div>
+
+                <!-- 5 Course Cards Grid (3 in first row, 2 centered in second row) -->
+                <div class="courses-flex-grid">
+                    <!-- Card 1: Schnuppertauchen -->
+                    <article class="course-item" data-course="schnuppertauchen" data-title="Schnuppertauchen" data-price="150 Euro" data-duration="3 Stunden, 13.00 bis 16.00 Uhr" data-dates="Jeden Montag" data-desc="Noch nicht ganz sicher, ob Tauchen das Richtige für dich ist? Dann ist unser Schnuppertauchgang eine gute Wahl. Ein erfahrener Guide gibt dir einen Crashkurs, nimmt dich mit unter Wasser und zeigt dir, worauf es beim Tauchen ankommt." data-image="assets/img/tauchkurs1.jpg">
+                        <div class="course-visual">
+                            <img src="assets/img/tauchkurs1.jpg" alt="Schnuppertauchen" class="course-card-img">
+                        </div>
+                        <div class="course-content-wrapper">
+                            <h3>Schnuppertauchen</h3>
+                            <span class="course-more-link">mehr ⮕</span>
+                        </div>
+                    </article>
+
+                    <!-- Card 2: Open Water Diver -->
+                    <article class="course-item" data-course="open-water" data-title="Open Water Diver" data-price="500 Euro" data-duration="2 Tage, jeweils 7.00 bis 15.30 Uhr" data-dates="Immer dienstags bis freitags" data-desc="Werde bei uns Open Water Diver! Die weltweit anerkannte Grundausbildung im Gerätetauchen ist der perfekte Einstieg in diesen Sport. Innerhalb von vier Tagen bringen wir dir alles bei, was du können musst, um eigenständig tauchen zu können." data-image="assets/img/tauchkurs2.jpg">
+                        <div class="course-visual">
+                            <img src="assets/img/tauchkurs2.jpg" alt="Open Water Diver" class="course-card-img">
+                        </div>
+                        <div class="course-content-wrapper">
+                            <h3>Open Water Diver</h3>
+                            <span class="course-more-link">mehr ⮕</span>
+                        </div>
+                    </article>
+
+                    <!-- Card 3: Advanced Open Water Diver -->
+                    <article class="course-item" data-course="advanced" data-title="Advanced Open Water Diver" data-price="400 Euro" data-duration="2 Tage, jeweils 7.00 bis 15.30 Uhr" data-dates="Immer mittwochs bis samstags" data-desc="Erweitere Deine Fähigkeiten im Advanced Open Water Diver! Gemeinsam absolvieren wir fünf Abenteuertauchgänge, inklusive Tieftauchen sowie Unterwassernavigation. Nach diesem Kurs darfst du bis zu 30 Meter tief tauchen." data-image="assets/img/tauchkurs3.jpg">
+                        <div class="course-visual">
+                            <img src="assets/img/tauchkurs3.jpg" alt="Advanced Open Water Diver" class="course-card-img">
+                        </div>
+                        <div class="course-content-wrapper">
+                            <h3>Advanced Open Water Diver</h3>
+                            <span class="course-more-link">mehr ⮕</span>
+                        </div>
+                    </article>
+
+                    <!-- Card 4: Rescue Diver -->
+                    <article class="course-item" data-course="rescue" data-title="Rescue Diver" data-price="400 Euro" data-duration="1 Tag, 7.00 bis 15.30 Uhr" data-dates="Jeden Mittwoch" data-desc="Wie vermeide ich Gefahrensituationen, wie reagiere ich in brenzligen Situationen unter Wasser und was tue ich bei einem Tauchunfall? Im Rescue Diver wirst du Rettungstaucher und lernst, für die Sicherheit und das Wohlbefinden deiner Tauchbuddies zu sorgen – von wichtigen Handgriffen unter Wasser bis zur Ersten Hilfe an der Oberfläche." data-image="assets/img/tauchkurs4.jpg">
+                        <div class="course-visual">
+                            <img src="assets/img/tauchkurs4.jpg" alt="Rescue Diver" class="course-card-img">
+                        </div>
+                        <div class="course-content-wrapper">
+                            <h3>Rescue Diver</h3>
+                            <span class="course-more-link">mehr ⮕</span>
+                        </div>
+                    </article>
+
+                    <!-- Card 5: ReActivate Auffrischung -->
+                    <article class="course-item" data-course="reactivate" data-title="ReActivate – Das Auffrischungsprogramm für Taucher" data-price="150 Euro" data-duration="½ Tag, 13.00 bis 16.00 Uhr" data-dates="Termine nach Anfrage" data-desc="Dein letzter Tauchgang ist schon Jahre her? Dann steige am besten mit unserem ReActivate-Programm wieder in den Sport ein. Gemeinsam frischen wir deine Kenntnisse auf, damit du erneut eigenständig tauchen kannst." data-image="assets/img/tauchkurs5.jpg">
+                        <div class="course-visual">
+                            <img src="assets/img/tauchkurs5.jpg" alt="ReActivate Auffrischung" class="course-card-img">
+                        </div>
+                        <div class="course-content-wrapper">
+                            <h3>ReActivate – Das Auffrischungsprogramm für Taucher</h3>
+                            <span class="course-more-link">mehr ⮕</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section> <!-- CLOSE #kurse completely to let booking-outer-wrapper stretch to 100% full screen width natively -->
+
+        <!-- ==========================================
+             COURSE BOOKING FORM SECTION (Full Screen Width Row, directly inside <main>)
+             ========================================== -->
+        <div class="booking-outer-wrapper">
+            <div class="grid-container">
+                <div class="grid-12col">
+                    <div class="booking-container">
+                        <form id="booking-form" class="responsive-form">
+                            <div class="booking-form-wrapper">
+                                <h3>Buchungsformular</h3>
+                                
+                                <div class="form-grid">
+                                    <!-- Horizontal Course & Date row -->
+                                    <div class="form-group">
+                                        <label for="course-select">Gewünschter Kurs *</label>
+                                        <div class="select-wrapper">
+                                            <select id="course-select" required>
+                                                <option value="" disabled selected>Bitte Kurs wählen</option>
+                                                <option value="schnuppertauchen">Schnuppertauchen</option>
+                                                <option value="open-water">Open Water Diver</option>
+                                                <option value="advanced">Advanced Open Water Diver</option>
+                                                <option value="rescue">Rescue Diver</option>
+                                                <option value="reactivate">ReActivate Auffrischung</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="date-select">Termin *</label>
+                                        <div class="select-wrapper">
+                                            <select id="date-select" required disabled>
+                                                <option value="" disabled selected>Bitte Termin wählen</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <!-- Verbatim inputs & placeholder copy matching Figma exactly -->
+                                    <div class="form-group full-width">
+                                        <label for="user-name">Name *</label>
+                                        <input type="text" id="user-name" required placeholder="Z. B. Max Mustermann">
+                                    </div>
+
+                                    <div class="form-group full-width">
+                                        <label for="user-address">Address *</label>
+                                        <input type="text" id="user-address" required placeholder="Straße, Hausnummer, PLZ & Ort">
+                                    </div>
+
+                                    <div class="form-group full-width">
+                                        <label for="user-email">E-Mail-Adresse *</label>
+                                        <input type="email" id="user-email" required placeholder="Z. B. max@beispiel.de">
+                                    </div>
+
+                                    <!-- Verbatim notice text for * Pflichtfelder (Standard weight) -->
+                                    <div class="form-group full-width pflichtfelder-notice">
+                                        * Pflichtfelder
+                                    </div>
+
+                                    <div class="form-group-checkbox full-width">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox" id="agb-check" required>
+                                            <span class="custom-checkbox"></span>
+                                            Ich akzeptiere die AGBs (Turtle Diving Resort)
+                                        </label>
+                                    </div>
+
+                                    <div class="form-group-checkbox full-width">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox" id="privacy-check" required>
+                                            <span class="custom-checkbox"></span>
+                                            Ich habe die Datenschutzerklärung zur Kenntnis genommen. Ich stimme zu, dass meine Angaben und Daten elektronisch erhoben und gespeichert werden. Die Einwilligung kann ich jederzeit für die Zukunft widerrufen.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Flush full-width bottom CTA button matching home highlight CTA style -->
+                            <button type="submit" id="booking-cta-btn" class="booking-submit-btn">Verbindlich buchen!</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             ÜBER UNS (ABOUT US SECTION) (Full 12 Columns, centered header)
+             ========================================== -->
+        <section id="ueber-uns" class="about-section">
+            <div class="grid-container">
+                <div class="grid-12col">
+                    <!-- Center aligned Section Header inside full 12 columns width -->
+                    <div class="about-header text-center">
+                        <h2>Über uns</h2>
+                        <p class="about-slogan">Forget the surface!</p>
+                        <div class="about-intro-text">
+                            <p>Gili Air ist noch immer ein Geheimtipp: Die kleine Insel sei wie Bali vor zwanzig Jahren, sagen die einen, sie sei einzigartig, sagen die anderen. „Sie ist mein Zuhause“, sagt unsere Betty.</p>
+                            <p>Vor fünfundzwanzig Jahren kam Bettina Beckmann selbst als Tauchschülerin nach Gili Air und hat sich sofort in diese Insel verliebt: In die weiten, weißen Sandstrände, das türkisblaues Wasser und die autofreien Straßen. Sie wusste gleich: Hier mache ich eines Tages meine eigene Tauchschule auf. Dabei war es ihr von Anfang an wichtig, nicht nur eine Schule zu gründen, sondern vor allem einen Ort der Begegnung.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grid Row 1: Left is strand.jpg (4 columns), Right is text (8 columns) -->
+                <div class="about-row grid-12col">
+                    <div class="about-col-img">
+                        <img src="assets/img/strand.jpg" alt="Gili Air Traumstrand" class="about-row-img">
+                    </div>
+                    <div class="about-col-text">
+                        <h3>Gili Air – Paradies für Taucher</h3>
+                        <p>Auf Gili Air gibt es kein einziges Auto, nicht einmal ein Moped. Nur Pferdekutschen, Fahrräder und E-Roller begegnen dir auf den naturbelassenen Wegen. In zwei Stunden hast du die Insel umrundet – und dabei den Ausblick auf atemberaubend weiße Sandstrände und türkisblaues Wasser genossen. Am Strand findest du zahlreiche gemütliche Strandlokale und im Inselinneren ein traditionelles Dorf mit einer Moschee.</p>
+                    </div>
+                </div>
+
+                <!-- Grid Row 2: Left is text (8 columns), Right is taucherin.jpg (4 columns) -->
+                <div class="about-row grid-12col reversed">
+                    <div class="about-col-text">
+                        <h3>Bettina Beckmann und ihr Team</h3>
+                        <p>Neben Betty bieten insgesamt fünf Tauchlehrerinnen und -lehrer ihre Kurse auf Deutsch, Englisch, Spanisch und Französisch an. Und Fortgeschrittene können spannende Ausflüge zu atemberaubenden Spots buchen – <a href="#kontakt" class="about-link">sprecht uns einfach an!</a></p>
+                    </div>
+                    <div class="about-col-img">
+                        <img src="assets/img/taucherin.jpg" alt="Bettina Beckmann beim Tauchen" class="about-row-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             KONTAKT SECTION
+             ========================================== -->
+        <section id="kontakt" class="contact-section">
+            <div class="contact-banner" aria-hidden="true">
+                <img src="assets/img/maske_footer.svg" alt="" class="contact-wave-mask">
+            </div>
+
+            <div class="grid-container grid-12col contact-grid">
+                <div class="contact-form-side">
+                    <h2>Kontakt</h2>
+                    <p class="form-intro">Du möchtest bei uns deinen Tauchurlaub machen oder brauchst weitere Informationen? Dann schreib uns!</p>
+                    
+                    <form id="contact-form" class="responsive-form">
+                        <div class="form-group">
+                            <label for="contact-name">Name*</label>
+                            <input type="text" id="contact-name" required placeholder="Dein Name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-email">E-Mail*</label>
+                            <input type="email" id="contact-email" required placeholder="Deine E-Mail-Adresse">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message">Nachricht*</label>
+                            <textarea id="contact-message" rows="5" required placeholder="Hast du Fragen zu unseren Kursen oder Gili Air?&#10;Schreib uns hier!"></textarea>
+                        </div>
+
+                        <p class="pflichtfelder-notice">* Pflichtfelder</p>
+
+                        <div class="form-group-checkbox">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="contact-privacy" required>
+                                <span class="custom-checkbox"></span>
+                                Ich habe die Datenschutzerklärung zur Kenntnis genommen. Ich stimme zu, dass meine Angaben und Daten elektronisch erhoben und gespeichert werden. Die Einwilligung kann ich jederzeit für die Zukunft widerrufen.
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary contact-submit">Nachricht senden!</button>
+                    </form>
+                </div>
+
+                <aside class="contact-info-side">
+    <p class="address">
+        <strong>Turtle Diving Resort</strong><br>
+        Gili Indah, Pemenang<br>
+        Indonesien
+    </p>
+    <ul class="contact-details-list">
+        <li><strong>Telefon:</strong> <a href="tel:+628123627034">+62 812 362 7034</a></li>
+        <li><strong>E-Mail:</strong> <a href="mailto:info@turtledivingresort.com">info@turtledivingresort.com</a></li>
+    </ul>
+    <div class="social-icons" role="group" aria-label="Social Media">
+        <a href="#" aria-label="Facebook"><img src="assets/img/icon_facebook.svg" alt=""></a>
+        <a href="#" aria-label="Instagram"><img src="assets/img/icon_instagram.svg" alt=""></a>
+        <a href="#" aria-label="YouTube"><img src="assets/img/icon_youtube.svg" alt=""></a>
+        <a href="#" aria-label="X / Twitter"><img src="assets/img/icon_twitter.svg" alt=""></a>
+        <a href="#" aria-label="TikTok"><img src="assets/img/icon_tiktok.svg" alt=""></a>
+    </div>
+</aside>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================
+         FOOTER & DISCLAIMER SECTION
+         ========================================== -->
+    <footer class="main-footer">
+        <div class="footer-upper">
+            <div class="grid-container grid-12col footer-upper-grid">
+                <div class="footer-logo-col">
+                    <img src="assets/img/logo_footer.svg" alt="Turtle Diving Resort Logo" class="footer-logo">
+                </div>
+
+                <div class="footer-text-col footer-owner">
+                    <p><strong>Turtle Diving Resort</strong><br>Inhaberin: &nbsp;&nbsp; Bettina Beckmann</p>
+                </div>
+
+                <div class="footer-text-col footer-address">
+                    <p>Gili Indah, Pemenang<br>North Lombok Regency,<br>West Nusa Tenggara 83352<br>Indonesien</p>
+                </div>
+
+                <div class="footer-text-col footer-contact">
+                    <p>Telefon: +62 812 362 7034<br>E-Mail: &nbsp;&nbsp; <a href="mailto:info@turtledivingresort.com">info@turtledivingresort.com</a></p>
+                </div>
+
+                <a href="#top" class="scroll-top" aria-label="Nach oben scrollen">
+                    <img src="assets/img/icon-nach-oben.svg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="grid-container grid-12col footer-bottom-grid">
+                <nav class="footer-menu" aria-label="Footer Navigation">
+                    <a href="#">Impressum</a>
+                    <a href="#">Datenschutz</a>
+                </nav>
+                <p class="footer-exam-note">Mediengestalter-Abschlussprüfung Sommer 2026, ZFA Kassel</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Course Specific Floating Details Modal Overlay (ACTIVE ON CARD CLICK) -->
+    <div id="course-detail-overlay" class="course-modal-overlay">
+        <div class="course-modal-card">
+            <button id="course-popup-close-btn" class="course-modal-close" aria-label="Schließen">
+                <img src="assets/img/icon_close.svg" alt="Schließen">
+            </button>
+            <div class="course-modal-content">
+                <div class="course-modal-icon-col">
+                    <img id="popup-course-img" src="assets/img/tauchkurs1.jpg" alt="Course Thumbnail">
+                </div>
+                <div class="course-modal-text-col">
+                    <h3 id="popup-course-title">Kursname</h3>
+                    <p id="popup-course-desc">Beschreibung</p>
+                    <div class="course-popup-metadata">
+                        <div><strong>Preis:</strong> <span id="popup-course-price">150 €</span></div>
+                        <div><strong>Dauer:</strong> <span id="popup-course-duration">3 Stunden</span></div>
+                        <div><strong><span id="popup-course-dates">Montag</span></strong></div>
+                    </div>
+                </div>
+            </div>
+            <!-- CTA Button on the bottom of modal overlay - Styled similar to the welcome CTAs -->
+            <button id="course-cta-book-btn" class="btn">Jetzt anmelden!</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

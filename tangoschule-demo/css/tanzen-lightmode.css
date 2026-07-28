@@ -1,0 +1,1530 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+/* ========== HEADER STYLES ========== */
+#main-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0; 
+  z-index: 900; 
+}
+
+.top-bar {
+  background-color: #CC3835;
+  height: 15px;
+  width: 100%;
+  position: relative;
+  z-index: 1000;
+}
+
+.header-content {
+  width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 30px;
+}
+
+.mode-switch {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: -120px;
+  z-index: 850;
+}
+
+.mode-icon {
+  width: 68px;
+  height: 22px;
+  margin-right: 8px;
+  transition: filter 0.3s ease;
+}
+
+.mode-icon:hover {
+  filter: brightness(1.2) saturate(1.6);
+}
+
+.logo {
+  width: 330.24px;
+  height: 130.9px;
+  margin-top: -10px;
+  display: block;
+  z-index: 850;
+}
+
+.language-switch {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  position: relative;
+  margin-top: -120px;
+  z-index: 850;
+}
+
+.language-link {
+  color: #333;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.language-link:hover,
+.language-link:active {
+  color: #CC3835;
+}
+
+.language-link.active {
+  color: #CC3835;
+}
+
+.header-background-box {
+  background-color: #f4f4f4;
+  width: 100%;
+  height: 240px;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  z-index: 800;
+}
+
+.header-content:not(:first-child) + .header-background-box,
+.header-content.sticky + .header-background-box {
+  box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.025);
+}
+
+.header-background-box {
+  transition: box-shadow 0.3s ease;
+}
+
+/* ========== NAVIGATION ========== */
+#main-nav {
+  position: fixed;
+  top: 180px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 930px;
+  height: 60px;
+  background-color: #f4f4f4;
+  padding: 10px 0;
+  border-radius: 4px 4px 25px 25px;
+  box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.25);
+  z-index: 1000; /* Über den meisten anderen Elementen */
+}
+
+/* Hauptnavigationsmenü */
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+}
+
+.nav-item {
+  padding: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #CC3835;
+}
+
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown-Menüs */
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f4f4f4;
+  list-style: none;
+  padding: 0;
+  margin: 0px;
+  width: 200px;
+  border-radius: 0px 0px 15px 15px;
+  box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.25);
+  display: none;
+}
+
+.dropdown:hover .submenu {
+  display: block;
+}
+
+.submenu-item {
+  padding: 10px;
+}
+
+.submenu-link {
+  text-decoration: none;
+  color: #333333;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  padding: 0px 12px;
+  margin-left: 5px;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+/* Submenu-Link mit dekorativem Icon */
+.submenu-link::before {
+  content: '';
+  width: 23px;
+  height: 28px;
+  background-image: url('../img/aktiv-hover.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  flex-shrink: 0;
+}
+
+.submenu-link:hover {
+  color: #CC3835;
+}
+
+.submenu-link:hover::before {
+  opacity: 1;
+}
+/* Scroll-Margin-Anpassungen für Sprunglinks (abhängig von Header-Höhe) */
+#membership,
+#course{
+  scroll-margin-top: 240px; /* Adjust based on header height */
+}
+
+#workshops,
+#form {
+  scroll-margin-top: 220px; /* Adjust based on header height */
+}
+
+#ueber-uns, 
+#team, 
+#philosophie, 
+#raeumlichkeiten {
+  scroll-margin-top: 200px; /* Adjust based on header height */
+}
+
+#philosophie {
+  scroll-margin-top: 260px; /* Adjust based on header height */
+}
+
+/* ========== BANNER CAROUSEL ========== */
+#banner-section {
+  width: 1120px;
+  height: 575px;
+  margin: 225px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px 4px 75px 75px;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* ========== NEWS TICKER ========== */
+#news-ticker-section {
+  width: 780px;
+  background-color: #CC3835;
+  overflow: hidden;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  font-family: 'Catamaran', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #f4f4f4;
+  border-radius: 4px 4px 25px 25px;
+  position: absolute;
+  top: 780px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.ticker-wrapper {
+  width: 738px;
+  white-space: nowrap;
+  overflow: hidden; 
+  position: relative;
+}
+
+/* Lauftext-Animation */
+.ticker-content {
+  display: inline-block;
+  padding-left: 100%;
+  animation: ticker-scroll 20s linear infinite;
+}
+
+.ticker-content:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.ticker-item {
+  display: inline-block;
+}
+
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* ========== INHALTSABSCHNITTE ========== */
+/* membership */
+.membership-section {
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+.membership-container {
+  width: 1120px;
+  margin: 0 auto;
+  height: auto;
+  min-height: 654px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.membership-heading {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #CC3835;
+  text-align: left;
+  margin-bottom: 33px;
+}
+
+.membership-intro {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #333333;
+  line-height: 26px;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.membership-cards-container {
+  width: 1120px;
+  height: auto;
+  min-height: 468px;
+  background-color: #f4f4f4;
+  border-radius: 2px 2px 25px 25px;
+  box-shadow: 0 4px 10px rgba(51, 51, 51, 0.25);
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 40px 0;
+  padding-bottom: 0;
+}
+
+.membership-card {
+  width: 320px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  padding-bottom: 0;
+}
+
+.membership-card:hover {
+  cursor: pointer;
+}
+
+.membership-card:hover h2,
+.membership-card:hover .card-description,
+.membership-card:hover .currency,
+.membership-card:hover .price,
+.membership-card:hover .price-term,
+.membership-card:hover .benefits-list li {
+  color: #CC3835;
+}
+
+.membership-card h2 {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 16px;
+  transition: color 0.3s ease;
+}
+
+.card-description {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #333333;
+  line-height: 25px;
+  text-align: center;
+  width: 262px;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.price-container {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 16px;
+}
+
+.currency {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  opacity: 0.4;
+  color: #333333;
+  line-height: 54px;
+  margin-right: 5px;
+  position: relative;
+  top: -2px;
+  transition: color 0.3s ease;
+}
+
+.price {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #333333;
+  line-height: 54px;
+  transition: color 0.3s ease;
+}
+
+.price-term {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #333333;
+  line-height: 20px;
+  margin-bottom: 31px;
+  transition: color 0.3s ease;
+}
+
+.divider {
+  width: 320px;
+  height: 1px;
+  background-color: #333333;
+  margin: 20px auto 32px;
+  transition: background-color 0.3s ease;
+}
+
+.membership-card:hover .divider {
+  background-color: #CC3835;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 262px;
+}
+
+.benefits-list li {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.4;
+  margin-bottom: 28px;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.benefits-list li:last-child {
+  margin-bottom: 28px;
+}
+
+.join-button {
+  width: 320px;
+  height: 45px;
+  background-color: #CC3835;
+  border: none;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #f4f4f4;
+  line-height: 23px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: auto;
+  margin-bottom: 30px;
+}
+
+.join-button:hover {
+  background-color: #a72e2e;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.membership-cards-container .membership-card:nth-child(1) .join-button {
+  border-radius: 2px 2px 2px 20px;
+}
+
+.membership-cards-container .membership-card:nth-child(2) .join-button {
+  border-radius: 2px;
+}
+
+.membership-cards-container .membership-card:nth-child(3) .join-button {
+  border-radius: 2px 2px 20px 2px;
+}
+
+/* Kursangebote */
+.kursangebote-section {
+  width: 100%;
+  margin: 100px auto 60px; /* 100px top gap to membership section */
+}
+
+.kursangebote-container {
+  width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kursangebote-heading {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 23px;
+  color: #CC3835;
+  text-align: center;
+  margin-bottom: 33px;
+}
+
+.kursangebote-intro {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.kursangebote-cards-container {
+  width: 1120px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.kursangebote-card {
+  width: 360px;
+  min-height: 592px;
+  background-color: #f4f4f4;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.20);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex; 
+  flex-direction: column; 
+  position: relative;
+  padding-bottom: 65px;
+}
+
+.kursangebote-card:hover {
+  box-shadow: 0 4px 10px rgba(204, 56, 53, 0.5);
+}
+
+.kursangebote-card-img {
+  width: 360px;
+  height: 210px;
+  object-fit: cover;
+}
+
+.kursangebote-card-content {
+  width: 320px;
+  margin: 20px auto;
+  flex: 1;
+  display: flex; /* Added */
+  flex-direction: column;
+  padding-bottom: 20px; 
+}
+
+.kursangebote-card h3 {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #333333;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.kursangebote-card p {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 130%;
+  color: #333333;
+  margin-bottom: 0;
+  transition: color 0.3s ease;
+}
+
+.kursangebote-card p + p {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.kursangebote-card ul li {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #333333;
+  margin-bottom: 8px; 
+  padding-left: 0; 
+  list-style-type: none; 
+}
+
+.kursangebote-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.kursangebote-card ul li::before {
+  display: none; 
+}
+
+.kursangebote-card:hover h3,
+.kursangebote-card:hover p {
+  color: #CC3835;
+}
+
+.kursangebote-card ul {
+  list-style-type: none;
+  padding-left: 5px;
+  margin: 4px 0 0;
+}
+
+.kursangebote-card li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 4px;
+  line-height: 130%;
+  color: #333333; 
+  transition: color 0.3s ease;
+}
+
+.kursangebote-card li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: inherit;
+  font-size: 18px;
+}
+
+.kursangebote-card:hover li,
+.kursangebote-card:hover li:before {
+  color: #CC3835;
+}
+
+.kursangebote-button {
+  width: 320px;
+  height: 45px;
+  background-color: #CC3835;
+  border: none;
+  border-radius: 2px 2px 20px 20px;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 23px;
+  color: #f4f4f4;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.kursangebote-button:hover {
+  background-color: #a72e2e;
+}
+
+/* Workshops */
+.workshops-section {
+  width: 100%;
+  margin: 60px auto 0;
+}
+
+.workshops-container {
+  width: 1120px;
+  margin: 0 auto;
+}
+
+.workshops-background-box {
+  width: 1120px;
+  min-height: 746px;
+  background-color: #f4f4f4;
+  border-radius: 2px 2px 25px 25px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.20);
+  padding-bottom: 20px; /* Space for dots */
+}
+
+.workshops-heading {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #CC3835;
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 33px;
+}
+
+.workshops-slider {
+  width: 1078px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.workshops-slider .slick-track {
+  display: flex !important;
+  margin-left: 0;
+}
+
+/* Card wrapper styling */
+.workshops-slider .slick-slide {
+  float: none !important; /* Disable default float */
+  display: inline-block; /* Important for layout */
+  height: auto;
+  padding: 0 10px; /* Maintain your 20px gap between cards */
+}
+
+.workshop-card {
+  position: relative;
+  width: 346px !important;
+  min-height: 590px;
+  background: f4f4f4;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.20);
+  margin: 0 10px;
+  display: flex !important;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.workshop-card:hover {
+  box-shadow: 0 4px 10px rgba(204, 56, 53, 0.5);
+}
+
+.workshop-card-img {
+  width: 346px;
+  height: 210px;
+  object-fit: cover;
+  display: block;
+  margin-left: -10px;
+}
+
+.date-label {
+  position: absolute;
+  top: 181px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 125px;
+  height: 47px;
+  background-color: #CC3835;
+  border-radius: 2px 2px 25px 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  color: #f4f4f4;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 780; /* Ensures label is on top */
+  pointer-events: none;
+}
+
+.workshop-card-content {
+  padding: 38px 13px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.workshop-card h3 {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.workshop-card p {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 130%;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.workshop-card:hover h3,
+.workshop-card:hover p,
+.workshop-card:hover .workshop-info {
+  color: #CC3835;
+}
+
+.workshop-button {
+  width: 320px;
+  height: 45px;
+  background-color: #CC3835;
+  border: none;
+  border-radius: 2px 2px 20px 20px;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 23px;
+  color: #f4f4f4;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: auto 0 0 0; /* Changed to stick to bottom */
+  align-self: center;
+}
+
+.workshop-button:hover {
+  background-color: #a72e2e;
+}
+
+/* Slick Slider Customization */
+.workshops-slider .slick-list {
+  padding: 10px 0;
+}
+
+.workshops-slider .slick-dots {
+  position: absolute;
+  bottom: -30px;
+  z-index: 10;
+}
+
+.workshops-slider .slick-dots li button:before {
+  color: #333333;
+  opacity: 0.2;
+  font-size: 12px;
+}
+
+.workshops-slider .slick-dots li.slick-active button:before {
+  color: #CC3835;
+  opacity: 1;
+  font-size: 15px;
+}
+
+/* Form Section */
+.form-section {
+  width: 100%;
+  margin: 60px auto 0;
+}
+
+.form-container {
+  width: 1120px;
+  min-height: 750px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  border-radius: 2px 2px 25px 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.form-heading {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #CC3835;
+  line-height: 23px;
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+
+.form-description {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #333333;
+  line-height: 23px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.registration-form {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.required {
+  color: #CC3835;
+}
+
+.custom-select {
+  position: relative;
+  width: 160px;
+  height: 40px;
+}
+
+.custom-select select {
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  padding: 0 30px 0 10px;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  color: #333333;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.dropdown-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  color: #333333;
+  pointer-events: none;
+}
+	
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  height: 40px;
+  background-color: #f4f4f4;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  color: #333333;
+}
+
+input::placeholder {
+  color: #333333;
+  opacity: 1;
+}
+
+select {
+  font-style: normal;
+}
+
+/* Specific widths for input fields */
+#vorname, #nachname {
+  width: 530px;
+}
+
+#email, #telefon {
+  width: 530px;
+}
+
+.form-group.full-width {
+  width: 100%;
+}
+
+/* Third Row - Anmeldung dropdown */
+#anmeldung {
+  width: 530px;
+  padding: 0 40px 0 10px;
+}
+
+#anmeldung + .dropdown-icon {
+  right: 10px;
+}
+
+.form-group.full-width .custom-select {
+  width: 530px;
+}
+
+/* Fourth Row - Message textarea */
+textarea {
+  width: 1080px;
+  height: 160px;
+  background-color: #f4f4f4;
+  border: 1px solid #333333;
+  border-radius: 5px 5px 20px 20px;
+  padding: 10px;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  color: #333333;
+  resize: none;
+}
+
+textarea::placeholder {
+  font-style: normal;
+}
+
+/* Legal Section */
+.legal-section {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.required-field-note {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+  margin: 0;
+}
+
+.required-field-note .required {
+  color: #CC3835;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #333333;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked {
+  background-color: #CC3835;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked::after {
+  content: "✓";
+  position: absolute;
+  color: white;
+  font-size: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkbox-wrapper label {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+  margin: 0;
+}
+
+.privacy-link {
+  color: #CC3835;
+  text-decoration: underline;
+}
+
+/* Submit Button */
+.submit-row {
+  justify-content: flex-end;
+}
+
+.submit-button {
+  min-width: 200px;
+  height: 47px;
+  background-color: #CC3835;
+  border: none;
+  border-radius: 2px 2px 25px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 20px;
+  margin: 20px 20px 20px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button span {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #f4f4f4;
+}
+
+.submit-button .send-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.submit-button:hover {
+  background-color: #a72e2e;
+}
+
+.cta-contour-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 9;
+}
+
+.cta-contour-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 1080px;
+  height: 290px;
+  border: 4px solid #E69C9A;
+  border-radius: 0px 0px 20px 20px;
+  box-sizing: border-box;
+  z-index: 20;
+  pointer-events: none;
+  transition: transform 0.4s ease;
+  transform-origin: center;
+  /* To center the smaller contour over the larger footer-cta-tabs */
+  inset: 50% auto auto 50%;
+  top: calc(50% + 50px);
+  transform: translate(-50%, -50%);
+}
+
+.cta-contour-wrapper:hover::before {
+  transform: translate(-50%, -50%) scale(1.015);
+}
+
+.footer-cta-tabs {
+  margin: 100px auto 0 auto;  /* no bottom margin */
+  position: relative;          /* needed for z-index to work */
+  z-index: 10;                 /* higher than footer */
+  width: 1120px;
+  height: 330px;
+  background-color: #f4f4f4;
+  border-radius: 2px 2px 25px 25px;
+  box-shadow: 0 4px 10px rgba(51, 51, 51, 0.25);
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.cta-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cta-image {
+  flex: 1 1 45%;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  margin-bottom: -24px;
+  margin-left: -48px;
+  align-self: stretch;
+}
+
+.cta-image img {
+  display: block;     /* removes inline gap below image */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* or cover/contain depending on your choice */
+  border-radius: 8px;
+  margin: 0;         
+  padding: 0;        
+}
+
+.cta-content {
+  flex: 1 1 50%;
+  max-width: 50%;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+
+.cta-content h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600; /* semibold */
+  font-size: 32px;
+  color: #CC3835;
+  margin-bottom: 20px;
+}
+
+.cta-content p {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 300; /* light */
+  font-size: 18px;
+  color: #333333;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+.btn-cta {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 600; /* semibold */
+  font-size: 16px;
+  color: #f4f4f4;
+  background-color: #CC3835;
+  width: 199px;
+  height: 47px;
+  border-radius: 2px 2px 25px 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  text-align: center;
+  line-height: 47px; /* vertically center text */
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border: none;
+  box-sizing: border-box;
+}
+
+.btn-cta:hover {
+  background-color: #a72e2e; 
+  box-shadow: 0 4px 10px rgba(204, 56, 53, 0.5);
+}
+
+.main-footer {
+  background-color: #CC3835;
+  width: 100%;
+  padding-top: 113px;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: -75px;
+  z-index: 1;
+  min-height: 463px; /* or fixed height if you prefer */
+}
+
+.footer-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: nowrap; /* crucial: no wrapping */
+  box-sizing: border-box;
+}
+
+/* Each column fixed width */
+.footer-column {
+  width: 265px;
+  box-sizing: border-box;
+  font-family: 'Catamaran', sans-serif;
+  color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* default */
+}
+
+/* Column 1 specifics */
+.footer-col1 .footer-logo {
+  width: 192px;
+  height: 75px;
+  object-fit: contain;
+  margin-bottom: 24px;
+}
+
+/* Social Icons container */
+.social-icons {
+  margin-top: 10px; /* push to bottom */
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons img {
+  /* no width/height set - use natural image size */
+  display: block;
+}
+
+.footer-col2,
+.footer-col3,
+.footer-col4 {
+  margin-top: 99px; /* adjust value as needed */
+}
+
+/* Headings */
+.footer-column h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #f4f4f4;
+}
+
+/* Paragraphs and address */
+.footer-column p,
+.footer-column address {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.44;
+  margin: 0;
+  color: #f4f4f4;
+  font-style: normal; 
+}
+
+/* Links */
+.footer-col1 a {
+  color: #f4f4f4;
+  text-decoration: none;
+}
+
+.footer-col1 a:hover {
+  text-decoration: underline;
+}
+
+/* Newsletter input wrapper */
+.newsletter-input-wrapper {
+  position: relative;
+  height: 40px;
+  margin-top: 18px;
+  width: 100%;
+}
+
+.newsletter-input-wrapper input[type="email"] {
+  width: 100%;
+  max-width: 265px;
+  height: 40px;
+  padding: 10px 50px 10px 10px; /* space on right for button */
+  border: none;
+  border-radius: 4px;
+  outline: 1px solid #f4f4f4;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #CC3835;
+  box-sizing: border-box;
+}
+
+.newsletter-input-wrapper input::placeholder {
+  color: #CC3835;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.newsletter-input-wrapper button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #CC3835;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-input-wrapper button img {
+  display: block;
+}
+
+.newsletter-input-wrapper button:hover,
+.newsletter-input-wrapper button:focus {
+  background-color: #a72e2e;
+  outline: none;
+}
+
+.back-to-top-wrapper {
+  margin-top: 55px;
+    display: flex;
+  justify-content: flex-end; 
+}
+
+.back-to-top-btn {
+  width: 138px;
+  height: 40px;
+  background-color: #f4f4f4;
+  border: none;
+  border-radius: 2px 2px 25px 25px;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #CC3835;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.back-to-top-btn .back-to-top-icon {
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.back-to-top-btn:hover {
+  color: #f4f4f4;
+  background-color: #a72e2e;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.back-to-top-btn:hover .back-to-top-icon {
+  content: url('../img/icon-weiss-arrow.png');
+}
+
+/* iframe map */
+.footer-col3 iframe {
+  border: 0;
+  display: block;
+}
+
+.bottom-bar {
+  background-color: #f4f4f4;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-bar-content {
+  width: 1120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-menu {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 550px;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #333333;
+  margin-left: -30px; 
+}
+
+.footer-menu li {
+  position: relative;
+}
+
+.footer-menu li a {
+  text-decoration: none;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  padding-left: 30px; /* reserve space for icon */
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.footer-menu li a::before {
+  content: '';
+  display: inline-block;
+  width: 23px;
+  height: 28px;
+  background-image: url('../img/aktiv-hover.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.footer-menu li a:hover {
+  color: #CC3835;
+  text-decoration: underline;
+}
+
+.footer-menu li a:hover::before {
+  opacity: 1;
+}
+
+.bottom-bar .copyright {
+  width: 386px;
+  text-align: right;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #333333;
+}
+
+/* ========== UTILITY CLASSES ========== */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

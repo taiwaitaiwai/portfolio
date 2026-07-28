@@ -1,0 +1,734 @@
+{
+    "accessors": [
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1668,
+            "max": [
+                1.399999976158142,
+                1.399999976158142,
+                1.4000000953674316
+            ],
+            "min": [
+                -1.399999976158142,
+                -1.399999976158142,
+                -1.3999998569488525
+            ],
+            "name": "accessor_buffer_BridgeTestPart.001_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 9,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1668,
+            "max": [
+                1.399999976158142,
+                1.399999976158142,
+                1.4000000953674316
+            ],
+            "min": [
+                -1.399999976158142,
+                -1.399999976158142,
+                -1.3999998569488525
+            ],
+            "name": "accessor_buffer_BridgeTestPart.003_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1668,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_BridgeTestPart_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1668,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_BridgeTestPart.001_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1668,
+            "max": [
+                1.399999976158142,
+                1.399999976158142,
+                1.4000000953674316
+            ],
+            "min": [
+                -1.399999976158142,
+                -1.399999976158142,
+                -1.3999998569488525
+            ],
+            "name": "accessor_buffer_BridgeTestPart_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 8,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 4032,
+            "max": [
+                1667
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_BridgeTestPart.002_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 10,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1668,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_BridgeTestPart.003_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 4032,
+            "max": [
+                1667
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_BridgeTestPart_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 5,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 4032,
+            "max": [
+                1667
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_BridgeTestPart.001_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 11,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 4032,
+            "max": [
+                1667
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_BridgeTestPart.003_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 13,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1668,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_BridgeTestPart.004_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 6,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1668,
+            "max": [
+                1.399999976158142,
+                1.399999976158142,
+                1.4000000953674316
+            ],
+            "min": [
+                -1.399999976158142,
+                -1.399999976158142,
+                -1.3999998569488525
+            ],
+            "name": "accessor_buffer_BridgeTestPart.002_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 12,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1668,
+            "max": [
+                1.399999976158142,
+                1.399999976158142,
+                1.4000000953674316
+            ],
+            "min": [
+                -1.399999976158142,
+                -1.399999976158142,
+                -1.3999998569488525
+            ],
+            "name": "accessor_buffer_BridgeTestPart.004_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 14,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 4032,
+            "max": [
+                1667
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_BridgeTestPart.004_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 7,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1668,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_BridgeTestPart.002_NORMAL_0",
+            "type": "VEC3"
+        }
+    ],
+    "asset": {
+        "copyright": "",
+        "generator": "blendergltf v1.2.0",
+        "version": "2.0"
+    },
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 20016,
+            "byteOffset": 0,
+            "byteStride": 12,
+            "name": "bufferView_buffer_BridgeTestPart_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 20016,
+            "byteOffset": 20016,
+            "byteStride": 12,
+            "name": "bufferView_buffer_BridgeTestPart_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 8068,
+            "byteOffset": 40032,
+            "name": "bufferView_buffer_BridgeTestPart_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 20016,
+            "byteOffset": 48100,
+            "byteStride": 12,
+            "name": "bufferView_buffer_BridgeTestPart.001_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 20016,
+            "byteOffset": 68116,
+            "byteStride": 12,
+            "name": "bufferView_buffer_BridgeTestPart.001_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 8068,
+            "byteOffset": 88132,
+            "name": "bufferView_buffer_BridgeTestPart.001_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 20016,
+            "byteOffset": 96200,
+            "byteStride": 12,
+            "name": "bufferView_buffer_BridgeTestPart.002_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 20016,
+            "byteOffset": 116216,
+            "byteStride": 12,
+            "name": "bufferView_buffer_BridgeTestPart.002_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 8068,
+            "byteOffset": 136232,
+            "name": "bufferView_buffer_BridgeTestPart.002_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 20016,
+            "byteOffset": 144300,
+            "byteStride": 12,
+            "name": "bufferView_buffer_BridgeTestPart.003_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 20016,
+            "byteOffset": 164316,
+            "byteStride": 12,
+            "name": "bufferView_buffer_BridgeTestPart.003_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 8068,
+            "byteOffset": 184332,
+            "name": "bufferView_buffer_BridgeTestPart.003_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 20016,
+            "byteOffset": 192400,
+            "byteStride": 12,
+            "name": "bufferView_buffer_BridgeTestPart.004_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 20016,
+            "byteOffset": 212416,
+            "byteStride": 12,
+            "name": "bufferView_buffer_BridgeTestPart.004_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 8068,
+            "byteOffset": 232432,
+            "name": "bufferView_buffer_BridgeTestPart.004_0",
+            "target": 34963
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 240500,
+            "name": "buffer_4 Essentialblend",
+            "uri": "buffer_4_Essentialblend.bin"
+        }
+    ],
+    "cameras": [
+        {
+            "name": "Camera",
+            "perspective": {
+                "aspectRatio": 1.703595982340029,
+                "yfov": 0.5033799409866333,
+                "zfar": 100.0,
+                "znear": 0.10000000149011612
+            },
+            "type": "perspective"
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "OPAQUE",
+            "doubleSided": false,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "Material.001",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.043584227561950684,
+                    0.2065463364124298,
+                    0.4724951684474945,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "alphaMode": "OPAQUE",
+            "doubleSided": false,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "Material.002",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.043584227561950684,
+                    0.2065463364124298,
+                    0.4724951684474945,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "alphaMode": "OPAQUE",
+            "doubleSided": false,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "Material.003",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.043584227561950684,
+                    0.2065463364124298,
+                    0.4724951684474945,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "alphaMode": "OPAQUE",
+            "doubleSided": false,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "Material.004",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.043584227561950684,
+                    0.2065463364124298,
+                    0.4724951684474945,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "alphaMode": "OPAQUE",
+            "doubleSided": false,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "Material.005",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.043584227561950684,
+                    0.2065463364124298,
+                    0.4724951684474945,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "BridgeTestPart",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 2,
+                        "POSITION": 4
+                    },
+                    "indices": 7,
+                    "material": 0,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "BridgeTestPart.001",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 3,
+                        "POSITION": 0
+                    },
+                    "indices": 8,
+                    "material": 1,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "BridgeTestPart.002",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 14,
+                        "POSITION": 11
+                    },
+                    "indices": 5,
+                    "material": 2,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "BridgeTestPart.003",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 6,
+                        "POSITION": 1
+                    },
+                    "indices": 9,
+                    "material": 3,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "BridgeTestPart.004",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 10,
+                        "POSITION": 12
+                    },
+                    "indices": 13,
+                    "material": 4,
+                    "mode": 4
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "mesh": 0,
+            "name": "BridgeTestPart",
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                -1.4429589967335232e-08,
+                1.600000023841858,
+                1.1999998092651367
+            ]
+        },
+        {
+            "mesh": 1,
+            "name": "BridgeTestPart.001",
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.4999960660934448,
+                0.4999960660934448,
+                0.4999960660934448
+            ],
+            "translation": [
+                0.7285016775131226,
+                -0.49030420184135437,
+                0.504041314125061
+            ]
+        },
+        {
+            "mesh": 2,
+            "name": "BridgeTestPart.002",
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.4999960660934448,
+                0.4999960660934448,
+                0.4999960660934448
+            ],
+            "translation": [
+                -0.6901817321777344,
+                -0.49030420184135437,
+                0.5012047290802002
+            ]
+        },
+        {
+            "mesh": 3,
+            "name": "BridgeTestPart.003",
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.4999960660934448,
+                0.4999960660934448,
+                0.4999960660934448
+            ],
+            "translation": [
+                -0.6901817321777344,
+                -0.49030420184135437,
+                1.8805286884307861
+            ]
+        },
+        {
+            "mesh": 4,
+            "name": "BridgeTestPart.004",
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.4999960660934448,
+                0.4999960660934448,
+                0.4999960660934448
+            ],
+            "translation": [
+                0.7285016775131226,
+                -0.49030420184135437,
+                1.883365273475647
+            ]
+        },
+        {
+            "camera": 0,
+            "name": "Camera",
+            "rotation": [
+                -0.09062843769788742,
+                -0.8937962651252747,
+                -0.2099730223417282,
+                0.38578000664711
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                -7.481131553649902,
+                5.34366512298584,
+                -6.5076398849487305
+            ]
+        },
+        {
+            "name": "Lamp",
+            "rotation": [
+                -0.34203386306762695,
+                -0.5232755541801453,
+                -0.2841663062572479,
+                0.7269423007965088
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                0.9999999403953552
+            ],
+            "translation": [
+                -4.076245307922363,
+                5.903861999511719,
+                1.0054539442062378
+            ]
+        }
+    ],
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "active_camera": 0,
+                "background_color": [
+                    0.05087608844041824,
+                    0.05087608844041824,
+                    0.05087608844041824
+                ],
+                "frames_per_second": 24
+            },
+            "name": "Scene",
+            "nodes": [
+                0,
+                6,
+                5,
+                1,
+                2,
+                4,
+                3
+            ]
+        }
+    ]
+}

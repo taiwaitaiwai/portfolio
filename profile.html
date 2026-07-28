@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Tai Wai Chan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-inner">
+            <a href="home.html" class="logo">Tai Wai Chan</a>
+            <input type="checkbox" id="nav-check">
+            <label for="nav-check" class="menu-toggle" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </label>
+            <nav class="nav">
+                <a href="home.html">Work</a>
+                <a href="profile.html" class="active">Profile</a> 
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="padding-top: 4rem;">
+            <div class="hero-content">
+                <h1 style="margin-bottom: 1.5rem;">It’s nice to meet you!</h1>
+                <div class="about-text" style="font-size: 1.05rem; line-height: 1.8; opacity: 0.9;">
+                    <p style="margin-bottom: 1.2rem;">
+                        I am a curious creative who bridges the gap between high-level interface strategy and the down-to-earth technical execution of code. Originally from Hong Kong and now calling Berlin home, my journey has been a search for the perfect intersection between human experience and digital performance.
+                    </p>
+                    <p style="margin-bottom: 1.2rem;">
+                        My background is a diverse tapestry of design disciplines. I’ve developed OEM designs for the global automotive sector, analyzed market trends in the Asian gaming industry, and illustrated the future of interfaces through a Master of Arts at FH Potsdam.
+                    </p>
+                    <p style="margin-bottom: 1.2rem;">
+                        Currently, I am strengthening my technical foundation at Okidu, where I translate UI concepts into clean, responsive HTML and CSS. I believe that a great interface isn't just a screen—it’s a meaningful solution that balances business goals with human connection.
+                    </p>
+                    <p>
+                        When I’m not deep in Figma or code, you’ll likely find me exploring food photography, experimenting with 2D animation, or staying active at the gym.
+                    </p>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="photo-frame">
+                    <img src="img/taiwaichan-in-park.jpg" alt="Tai Wai Chan Portrait in Park">
+                </div>
+            </div>
+        </section>
+
+        <h2 class="section-title">Skills</h2>
+        <div class="project-card" style="grid-column: span 12; margin-bottom: 3rem;">
+            <p style="font-size: 1.1rem; line-height: 2; font-weight: 600; letter-spacing: 0.5px;">
+                User Research <span style="color: var(--accent-yellow);">|</span> 
+                UI & Visual Design <span style="color: var(--accent-yellow);">|</span> 
+                Information Architecture <span style="color: var(--accent-yellow);">|</span> 
+                Wireframing <span style="color: var(--accent-yellow);">|</span> 
+                Prototyping <span style="color: var(--accent-yellow);">|</span> 
+                Design Systems <span style="color: var(--accent-yellow);">|</span> 
+                HTML5 & CSS3 <span style="color: var(--accent-yellow);">|</span> 
+                Basic JavaScript <span style="color: var(--accent-yellow);">|</span> 
+                2D Animation <span style="color: var(--accent-yellow);">|</span> 
+                Adobe Creative Suite <span style="color: var(--accent-yellow);">|</span> 
+                Market Research
+            </p>
+        </div>
+
+        <!-- TWO CV BUTTONS: ENGLISH (UK FLAG) & GERMAN (GERMAN FLAG) -->
+        <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-bottom: 6rem;">
+            <a href="assets/2026_lebenlauf_Tai_Wai_Chan _eng.pdf" class="btn" target="_blank" rel="noopener noreferrer">
+                Download CV (English 🇬🇧)
+            </a>
+            <a href="assets/2026_lebenlauf_Tai_Wai_Chan _deu.pdf" class="btn" target="_blank" rel="noopener noreferrer">
+                Lebenslauf (Deutsch 🇩🇪)
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <nav class="footer-nav">
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                </nav>
+            </div>
+            <div class="footer-middle">
+                <p class="copyright">© 2026 Tai Wai Chan · Berlin</p>
+            </div>
+            <div class="footer-right">
+                <button onclick="scrollToTop()" class="btn-top" aria-label="Scroll to top">↑</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ACCESSIBILITY FAB -->
+    <div class="accessibility-menu">
+        <button class="fab" onclick="toggleAccessMenu()" aria-label="Open accessibility options">
+            <img src="img/gear-black.svg" class="icon-gear-black" alt="Settings">
+            <img src="img/gear-white.svg" class="icon-gear-white" alt="Settings">
+        </button>
+        
+        <div class="access-options" id="accessOptions">
+            <button onclick="changeFontSize('increase')">A+</button>
+            <button onclick="changeFontSize('reset')">A</button>
+            <button onclick="changeFontSize('decrease')">A-</button>
+            <button id="contrast-toggle" onclick="toggleContrast()" aria-label="Toggle dark mode">
+                <img src="img/moon.svg" alt="Dark Mode" class="icon-moon">
+                <img src="img/sun.svg" alt="Light Mode" class="icon-sun">
+            </button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

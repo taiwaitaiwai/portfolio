@@ -1,0 +1,478 @@
+{
+    "accessors": [
+        {
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 462,
+            "max": [
+                0.9963136911392212,
+                0.6861308813095093,
+                0.4305040240287781
+            ],
+            "min": [
+                -0.9963138699531555,
+                -0.9158355593681335,
+                -0.9831503629684448
+            ],
+            "name": "accessor_buffer_Solidwork lowpolymask  by kongorilla.001_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 6,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 462,
+            "max": [
+                0.5779411792755127,
+                0.7898052930831909,
+                0.9451830983161926
+            ],
+            "min": [
+                -0.919847846031189,
+                -0.9332476854324341,
+                -0.6936678290367126
+            ],
+            "name": "accessor_buffer_Solidwork lowpolymask  by kongorilla.002_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 462,
+            "max": [
+                0.5779411792755127,
+                0.7898052930831909,
+                0.9451830983161926
+            ],
+            "min": [
+                -0.919847846031189,
+                -0.9332476854324341,
+                -0.6936678290367126
+            ],
+            "name": "accessor_buffer_Solidwork lowpolymask  by kongorilla_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 7,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 462,
+            "max": [
+                0.9963136911392212,
+                0.6861308813095093,
+                0.4305040240287781
+            ],
+            "min": [
+                -0.9963138699531555,
+                -0.9158355593681335,
+                -0.9831503629684448
+            ],
+            "name": "accessor_buffer_Solidwork lowpolymask  by kongorilla.002_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 5,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 462,
+            "max": [
+                461
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_Solidwork lowpolymask  by kongorilla.001_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 462,
+            "max": [
+                461
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_Solidwork lowpolymask  by kongorilla_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 462,
+            "max": [
+                0.5779411792755127,
+                0.7898052930831909,
+                0.9451830983161926
+            ],
+            "min": [
+                -0.919847846031189,
+                -0.9332476854324341,
+                -0.6936678290367126
+            ],
+            "name": "accessor_buffer_Solidwork lowpolymask  by kongorilla.001_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 462,
+            "max": [
+                0.9963136911392212,
+                0.6861308813095093,
+                0.4305040240287781
+            ],
+            "min": [
+                -0.9963138699531555,
+                -0.9158355593681335,
+                -0.9831503629684448
+            ],
+            "name": "accessor_buffer_Solidwork lowpolymask  by kongorilla_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 8,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 462,
+            "max": [
+                461
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_Solidwork lowpolymask  by kongorilla.002_0",
+            "type": "SCALAR"
+        }
+    ],
+    "asset": {
+        "copyright": "",
+        "generator": "blendergltf v1.2.0",
+        "version": "2.0"
+    },
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 5544,
+            "byteOffset": 0,
+            "byteStride": 12,
+            "name": "bufferView_buffer_Solidwork lowpolymask  by kongorilla_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 5544,
+            "byteOffset": 5544,
+            "byteStride": 12,
+            "name": "bufferView_buffer_Solidwork lowpolymask  by kongorilla_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 928,
+            "byteOffset": 11088,
+            "name": "bufferView_buffer_Solidwork lowpolymask  by kongorilla_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 5544,
+            "byteOffset": 12016,
+            "byteStride": 12,
+            "name": "bufferView_buffer_Solidwork lowpolymask  by kongorilla.001_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 5544,
+            "byteOffset": 17560,
+            "byteStride": 12,
+            "name": "bufferView_buffer_Solidwork lowpolymask  by kongorilla.001_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 928,
+            "byteOffset": 23104,
+            "name": "bufferView_buffer_Solidwork lowpolymask  by kongorilla.001_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 5544,
+            "byteOffset": 24032,
+            "byteStride": 12,
+            "name": "bufferView_buffer_Solidwork lowpolymask  by kongorilla.002_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 5544,
+            "byteOffset": 29576,
+            "byteStride": 12,
+            "name": "bufferView_buffer_Solidwork lowpolymask  by kongorilla.002_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 928,
+            "byteOffset": 35120,
+            "name": "bufferView_buffer_Solidwork lowpolymask  by kongorilla.002_0",
+            "target": 34963
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 36048,
+            "name": "buffer_2Mask_vers2",
+            "uri": "buffer_2Mask_vers2.bin"
+        }
+    ],
+    "cameras": [
+        {
+            "name": "Camera",
+            "perspective": {
+                "aspectRatio": 1.703595982340029,
+                "yfov": 0.5033799409866333,
+                "zfar": 100.0,
+                "znear": 0.10000000149011612
+            },
+            "type": "perspective"
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "OPAQUE",
+            "doubleSided": false,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "Material.001",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.64000004529953,
+                    0.64000004529953,
+                    0.64000004529953,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "alphaMode": "OPAQUE",
+            "doubleSided": false,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "Material.002",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.64000004529953,
+                    0.64000004529953,
+                    0.64000004529953,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "alphaMode": "OPAQUE",
+            "doubleSided": false,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "Material.003",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.64000004529953,
+                    0.64000004529953,
+                    0.64000004529953,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Solidwork lowpolymask  by kongorilla",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 7,
+                        "POSITION": 2
+                    },
+                    "indices": 5,
+                    "material": 0,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "Solidwork lowpolymask  by kongorilla.001",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 0,
+                        "POSITION": 6
+                    },
+                    "indices": 4,
+                    "material": 1,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "Solidwork lowpolymask  by kongorilla.002",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 3,
+                        "POSITION": 1
+                    },
+                    "indices": 8,
+                    "material": 2,
+                    "mode": 4
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "camera": 0,
+            "name": "Camera",
+            "rotation": [
+                -0.09062843769788742,
+                -0.8937962651252747,
+                -0.2099730223417282,
+                0.38578000664711
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                -7.481131553649902,
+                5.34366512298584,
+                -6.5076398849487305
+            ]
+        },
+        {
+            "name": "Lamp",
+            "rotation": [
+                -0.34203386306762695,
+                -0.5232755541801453,
+                -0.2841663062572479,
+                0.7269423007965088
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                0.9999999403953552
+            ],
+            "translation": [
+                -4.076245307922363,
+                5.903861999511719,
+                1.0054539442062378
+            ]
+        },
+        {
+            "mesh": 0,
+            "name": "Solidwork lowpolymask  by kongorilla",
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                0.13156044483184814,
+                0.9332476854324341,
+                0.6936678290367126
+            ]
+        },
+        {
+            "mesh": 1,
+            "name": "Solidwork lowpolymask  by kongorilla.001",
+            "rotation": [
+                -0.21684858202934265,
+                0.09887911379337311,
+                -0.8814824223518372,
+                0.40766212344169617
+            ],
+            "scale": [
+                0.23733314871788025,
+                0.23733313381671906,
+                0.23733316361904144
+            ],
+            "translation": [
+                0.14439231157302856,
+                0.610152542591095,
+                0.04173177108168602
+            ]
+        },
+        {
+            "mesh": 2,
+            "name": "Solidwork lowpolymask  by kongorilla.002",
+            "rotation": [
+                -0.21684858202934265,
+                -0.09887911379337311,
+                0.8814824223518372,
+                0.40766212344169617
+            ],
+            "scale": [
+                0.23733314871788025,
+                0.23733313381671906,
+                0.23733316361904144
+            ],
+            "translation": [
+                -0.2885526418685913,
+                0.6701540946960449,
+                0.04824765399098396
+            ]
+        }
+    ],
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "active_camera": 0,
+                "background_color": [
+                    0.05087608844041824,
+                    0.05087608844041824,
+                    0.05087608844041824
+                ],
+                "frames_per_second": 24
+            },
+            "name": "Scene",
+            "nodes": [
+                2,
+                1,
+                0,
+                3,
+                4
+            ]
+        }
+    ]
+}

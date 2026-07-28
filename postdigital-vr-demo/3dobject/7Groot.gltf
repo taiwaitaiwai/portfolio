@@ -1,0 +1,1804 @@
+{
+    "accessors": [
+        {
+            "bufferView": 14,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 14988,
+            "max": [
+                14987
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_7Body lower detail.009_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 36,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 20972,
+            "max": [
+                28.182701110839844,
+                30.677658081054688,
+                51.17522430419922
+            ],
+            "min": [
+                -27.35712432861328,
+                -34.666099548339844,
+                -58.149200439453125
+            ],
+            "name": "accessor_buffer_7Head without brim lower detail.010_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 40,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 20972,
+            "max": [
+                0.9997580051422119,
+                0.999358057975769,
+                0.9999057054519653
+            ],
+            "min": [
+                -0.9999930262565613,
+                -0.9996541738510132,
+                -1.0
+            ],
+            "name": "accessor_buffer_7Head without brim lower detail.011_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 15,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 14988,
+            "max": [
+                73.30348205566406,
+                44.896026611328125,
+                45.024513244628906
+            ],
+            "min": [
+                -74.56065368652344,
+                -36.161827087402344,
+                -20.89690399169922
+            ],
+            "name": "accessor_buffer_7Body lower detail.010_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 14988,
+            "max": [
+                73.30348205566406,
+                44.896026611328125,
+                45.024513244628906
+            ],
+            "min": [
+                -74.56065368652344,
+                -36.161827087402344,
+                -20.89690399169922
+            ],
+            "name": "accessor_buffer_7Body lower detail.001_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 32,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 20994,
+            "max": [
+                20971
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_7Head without brim lower detail.004_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 39,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 20972,
+            "max": [
+                28.182701110839844,
+                30.677658081054688,
+                51.17522430419922
+            ],
+            "min": [
+                -27.35712432861328,
+                -34.666099548339844,
+                -58.149200439453125
+            ],
+            "name": "accessor_buffer_7Head without brim lower detail.011_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 35,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 20994,
+            "max": [
+                20971
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_7Head without brim lower detail.005_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 34,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 20972,
+            "max": [
+                0.9997580051422119,
+                0.999358057975769,
+                0.9999057054519653
+            ],
+            "min": [
+                -0.9999930262565613,
+                -0.9996541738510132,
+                -1.0
+            ],
+            "name": "accessor_buffer_7Head without brim lower detail.005_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 33,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 20972,
+            "max": [
+                28.182701110839844,
+                30.677658081054688,
+                51.17522430419922
+            ],
+            "min": [
+                -27.35712432861328,
+                -34.666099548339844,
+                -58.149200439453125
+            ],
+            "name": "accessor_buffer_7Head without brim lower detail.005_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 44,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 20994,
+            "max": [
+                20971
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_7Head without brim lower detail.012_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 45,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 20982,
+            "max": [
+                28.18265151977539,
+                30.67763328552246,
+                51.17530059814453
+            ],
+            "min": [
+                -27.357173919677734,
+                -34.6661262512207,
+                -58.14912414550781
+            ],
+            "name": "accessor_buffer_7Head without brim lower detail.013_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 47,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 20994,
+            "max": [
+                20981
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_7Head without brim lower detail.013_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 18,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 14988,
+            "max": [
+                73.30348205566406,
+                44.896026611328125,
+                45.024513244628906
+            ],
+            "min": [
+                -74.56065368652344,
+                -36.161827087402344,
+                -20.89690399169922
+            ],
+            "name": "accessor_buffer_7Body lower detail.011_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 10,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 14988,
+            "max": [
+                0.9994159936904907,
+                0.9999894499778748,
+                0.9999997615814209
+            ],
+            "min": [
+                -0.9994751811027527,
+                -0.9999087452888489,
+                -1.0
+            ],
+            "name": "accessor_buffer_7Body lower detail.004_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 19,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 14988,
+            "max": [
+                0.9994159936904907,
+                0.9999894499778748,
+                0.9999997615814209
+            ],
+            "min": [
+                -0.9994751811027527,
+                -0.9999087452888489,
+                -1.0
+            ],
+            "name": "accessor_buffer_7Body lower detail.011_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 13,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 14988,
+            "max": [
+                0.9994159936904907,
+                0.9999894499778748,
+                0.9999997615814209
+            ],
+            "min": [
+                -0.9994751811027527,
+                -0.9999087452888489,
+                -1.0
+            ],
+            "name": "accessor_buffer_7Body lower detail.009_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 8,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 14988,
+            "max": [
+                14987
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_7Body lower detail.003_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 46,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 20982,
+            "max": [
+                0.9997579455375671,
+                0.9993581771850586,
+                0.9999057054519653
+            ],
+            "min": [
+                -0.9999929666519165,
+                -0.9996541738510132,
+                -1.0
+            ],
+            "name": "accessor_buffer_7Head without brim lower detail.013_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 14988,
+            "max": [
+                14987
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_7Body lower detail.001_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 28,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 20972,
+            "max": [
+                0.9997580051422119,
+                0.999358057975769,
+                0.9999057054519653
+            ],
+            "min": [
+                -0.9999930262565613,
+                -0.9996541738510132,
+                -1.0
+            ],
+            "name": "accessor_buffer_7Head without brim lower detail.003_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 30,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 20972,
+            "max": [
+                28.182701110839844,
+                30.677658081054688,
+                51.17522430419922
+            ],
+            "min": [
+                -27.35712432861328,
+                -34.666099548339844,
+                -58.149200439453125
+            ],
+            "name": "accessor_buffer_7Head without brim lower detail.004_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 11,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 14988,
+            "max": [
+                14987
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_7Body lower detail.004_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 16,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 14988,
+            "max": [
+                0.9994159936904907,
+                0.9999894499778748,
+                0.9999997615814209
+            ],
+            "min": [
+                -0.9994751811027527,
+                -0.9999087452888489,
+                -1.0
+            ],
+            "name": "accessor_buffer_7Body lower detail.010_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 6,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 14988,
+            "max": [
+                73.30348205566406,
+                44.896026611328125,
+                45.024513244628906
+            ],
+            "min": [
+                -74.56065368652344,
+                -36.161827087402344,
+                -20.89690399169922
+            ],
+            "name": "accessor_buffer_7Body lower detail.003_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 29,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 20994,
+            "max": [
+                20971
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_7Head without brim lower detail.003_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 14988,
+            "max": [
+                73.30348205566406,
+                44.896026611328125,
+                45.024513244628906
+            ],
+            "min": [
+                -74.56065368652344,
+                -36.161827087402344,
+                -20.89690399169922
+            ],
+            "name": "accessor_buffer_7Body lower detail.002_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 17,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 14988,
+            "max": [
+                14987
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_7Body lower detail.010_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 20,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 14988,
+            "max": [
+                14987
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_7Body lower detail.011_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 22,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 14988,
+            "max": [
+                0.9994159936904907,
+                0.9999894499778748,
+                0.9999997615814209
+            ],
+            "min": [
+                -0.9994751811027527,
+                -0.9999087452888489,
+                -1.0
+            ],
+            "name": "accessor_buffer_7Body lower detail.012_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 25,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 20972,
+            "max": [
+                0.9997580051422119,
+                0.999358057975769,
+                0.9999057054519653
+            ],
+            "min": [
+                -0.9999930262565613,
+                -0.9996541738510132,
+                -1.0
+            ],
+            "name": "accessor_buffer_7Head without brim lower detail.001_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 14988,
+            "max": [
+                0.9994159936904907,
+                0.9999894499778748,
+                0.9999997615814209
+            ],
+            "min": [
+                -0.9994751811027527,
+                -0.9999087452888489,
+                -1.0
+            ],
+            "name": "accessor_buffer_7Body lower detail.001_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 26,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 20994,
+            "max": [
+                20971
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_7Head without brim lower detail.001_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 9,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 14988,
+            "max": [
+                73.30348205566406,
+                44.896026611328125,
+                45.024513244628906
+            ],
+            "min": [
+                -74.56065368652344,
+                -36.161827087402344,
+                -20.89690399169922
+            ],
+            "name": "accessor_buffer_7Body lower detail.004_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 24,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 20972,
+            "max": [
+                28.182701110839844,
+                30.677658081054688,
+                51.17522430419922
+            ],
+            "min": [
+                -27.35712432861328,
+                -34.666099548339844,
+                -58.149200439453125
+            ],
+            "name": "accessor_buffer_7Head without brim lower detail.001_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 5,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 14988,
+            "max": [
+                14987
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_7Body lower detail.002_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 38,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 20994,
+            "max": [
+                20971
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_7Head without brim lower detail.010_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 14988,
+            "max": [
+                0.9994159936904907,
+                0.9999894499778748,
+                0.9999997615814209
+            ],
+            "min": [
+                -0.9994751811027527,
+                -0.9999087452888489,
+                -1.0
+            ],
+            "name": "accessor_buffer_7Body lower detail.002_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 27,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 20972,
+            "max": [
+                28.182701110839844,
+                30.677658081054688,
+                51.17522430419922
+            ],
+            "min": [
+                -27.35712432861328,
+                -34.666099548339844,
+                -58.149200439453125
+            ],
+            "name": "accessor_buffer_7Head without brim lower detail.003_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 37,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 20972,
+            "max": [
+                0.9997580051422119,
+                0.999358057975769,
+                0.9999057054519653
+            ],
+            "min": [
+                -0.9999930262565613,
+                -0.9996541738510132,
+                -1.0
+            ],
+            "name": "accessor_buffer_7Head without brim lower detail.010_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 21,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 14988,
+            "max": [
+                73.30348205566406,
+                44.896026611328125,
+                45.024513244628906
+            ],
+            "min": [
+                -74.56065368652344,
+                -36.161827087402344,
+                -20.89690399169922
+            ],
+            "name": "accessor_buffer_7Body lower detail.012_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 43,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 20972,
+            "max": [
+                0.9997580051422119,
+                0.999358057975769,
+                0.9999057054519653
+            ],
+            "min": [
+                -0.9999930262565613,
+                -0.9996541738510132,
+                -1.0
+            ],
+            "name": "accessor_buffer_7Head without brim lower detail.012_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 31,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 20972,
+            "max": [
+                0.9997580051422119,
+                0.999358057975769,
+                0.9999057054519653
+            ],
+            "min": [
+                -0.9999930262565613,
+                -0.9996541738510132,
+                -1.0
+            ],
+            "name": "accessor_buffer_7Head without brim lower detail.004_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 12,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 14988,
+            "max": [
+                73.30348205566406,
+                44.896026611328125,
+                45.024513244628906
+            ],
+            "min": [
+                -74.56065368652344,
+                -36.161827087402344,
+                -20.89690399169922
+            ],
+            "name": "accessor_buffer_7Body lower detail.009_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 7,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 14988,
+            "max": [
+                0.9994159936904907,
+                0.9999894499778748,
+                0.9999997615814209
+            ],
+            "min": [
+                -0.9994751811027527,
+                -0.9999087452888489,
+                -1.0
+            ],
+            "name": "accessor_buffer_7Body lower detail.003_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 42,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 20972,
+            "max": [
+                28.182701110839844,
+                30.677658081054688,
+                51.17522430419922
+            ],
+            "min": [
+                -27.35712432861328,
+                -34.666099548339844,
+                -58.149200439453125
+            ],
+            "name": "accessor_buffer_7Head without brim lower detail.012_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 23,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 14988,
+            "max": [
+                14987
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_7Body lower detail.012_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 41,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 20994,
+            "max": [
+                20971
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_7Head without brim lower detail.011_0",
+            "type": "SCALAR"
+        }
+    ],
+    "asset": {
+        "copyright": "",
+        "generator": "blendergltf v1.2.0",
+        "version": "2.0"
+    },
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 179856,
+            "byteOffset": 0,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Body lower detail.001_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 179856,
+            "byteOffset": 179856,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Body lower detail.001_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 29980,
+            "byteOffset": 359712,
+            "name": "bufferView_buffer_7Body lower detail.001_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 179856,
+            "byteOffset": 389692,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Body lower detail.002_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 179856,
+            "byteOffset": 569548,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Body lower detail.002_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 29980,
+            "byteOffset": 749404,
+            "name": "bufferView_buffer_7Body lower detail.002_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 179856,
+            "byteOffset": 779384,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Body lower detail.003_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 179856,
+            "byteOffset": 959240,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Body lower detail.003_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 29980,
+            "byteOffset": 1139096,
+            "name": "bufferView_buffer_7Body lower detail.003_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 179856,
+            "byteOffset": 1169076,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Body lower detail.004_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 179856,
+            "byteOffset": 1348932,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Body lower detail.004_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 29980,
+            "byteOffset": 1528788,
+            "name": "bufferView_buffer_7Body lower detail.004_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 179856,
+            "byteOffset": 1558768,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Body lower detail.009_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 179856,
+            "byteOffset": 1738624,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Body lower detail.009_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 29980,
+            "byteOffset": 1918480,
+            "name": "bufferView_buffer_7Body lower detail.009_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 179856,
+            "byteOffset": 1948460,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Body lower detail.010_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 179856,
+            "byteOffset": 2128316,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Body lower detail.010_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 29980,
+            "byteOffset": 2308172,
+            "name": "bufferView_buffer_7Body lower detail.010_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 179856,
+            "byteOffset": 2338152,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Body lower detail.011_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 179856,
+            "byteOffset": 2518008,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Body lower detail.011_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 29980,
+            "byteOffset": 2697864,
+            "name": "bufferView_buffer_7Body lower detail.011_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 179856,
+            "byteOffset": 2727844,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Body lower detail.012_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 179856,
+            "byteOffset": 2907700,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Body lower detail.012_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 29980,
+            "byteOffset": 3087556,
+            "name": "bufferView_buffer_7Body lower detail.012_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 251664,
+            "byteOffset": 3117536,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Head without brim lower detail.001_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 251664,
+            "byteOffset": 3369200,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Head without brim lower detail.001_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 41992,
+            "byteOffset": 3620864,
+            "name": "bufferView_buffer_7Head without brim lower detail.001_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 251664,
+            "byteOffset": 3662856,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Head without brim lower detail.003_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 251664,
+            "byteOffset": 3914520,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Head without brim lower detail.003_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 41992,
+            "byteOffset": 4166184,
+            "name": "bufferView_buffer_7Head without brim lower detail.003_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 251664,
+            "byteOffset": 4208176,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Head without brim lower detail.004_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 251664,
+            "byteOffset": 4459840,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Head without brim lower detail.004_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 41992,
+            "byteOffset": 4711504,
+            "name": "bufferView_buffer_7Head without brim lower detail.004_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 251664,
+            "byteOffset": 4753496,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Head without brim lower detail.005_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 251664,
+            "byteOffset": 5005160,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Head without brim lower detail.005_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 41992,
+            "byteOffset": 5256824,
+            "name": "bufferView_buffer_7Head without brim lower detail.005_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 251664,
+            "byteOffset": 5298816,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Head without brim lower detail.010_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 251664,
+            "byteOffset": 5550480,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Head without brim lower detail.010_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 41992,
+            "byteOffset": 5802144,
+            "name": "bufferView_buffer_7Head without brim lower detail.010_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 251664,
+            "byteOffset": 5844136,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Head without brim lower detail.011_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 251664,
+            "byteOffset": 6095800,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Head without brim lower detail.011_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 41992,
+            "byteOffset": 6347464,
+            "name": "bufferView_buffer_7Head without brim lower detail.011_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 251664,
+            "byteOffset": 6389456,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Head without brim lower detail.012_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 251664,
+            "byteOffset": 6641120,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Head without brim lower detail.012_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 41992,
+            "byteOffset": 6892784,
+            "name": "bufferView_buffer_7Head without brim lower detail.012_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 251784,
+            "byteOffset": 6934776,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Head without brim lower detail.013_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 251784,
+            "byteOffset": 7186560,
+            "byteStride": 12,
+            "name": "bufferView_buffer_7Head without brim lower detail.013_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 41992,
+            "byteOffset": 7438344,
+            "name": "bufferView_buffer_7Head without brim lower detail.013_0",
+            "target": 34963
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 7480336,
+            "name": "buffer_7Groot",
+            "uri": "buffer_7Groot.bin"
+        }
+    ],
+    "cameras": [
+        {
+            "name": "Camera",
+            "perspective": {
+                "aspectRatio": 1.703595982340029,
+                "yfov": 0.5033799409866333,
+                "zfar": 100.0,
+                "znear": 0.10000000149011612
+            },
+            "type": "perspective"
+        }
+    ],
+    "meshes": [
+        {
+            "name": "7Body lower detail.001",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 31,
+                        "POSITION": 4
+                    },
+                    "indices": 19,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "7Body lower detail.002",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 37,
+                        "POSITION": 26
+                    },
+                    "indices": 35,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "7Body lower detail.003",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 44,
+                        "POSITION": 24
+                    },
+                    "indices": 17,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "7Body lower detail.004",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 14,
+                        "POSITION": 33
+                    },
+                    "indices": 22,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "7Body lower detail.009",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 16,
+                        "POSITION": 43
+                    },
+                    "indices": 0,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "7Body lower detail.010",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 23,
+                        "POSITION": 3
+                    },
+                    "indices": 27,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "7Body lower detail.011",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 15,
+                        "POSITION": 13
+                    },
+                    "indices": 28,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "7Body lower detail.012",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 29,
+                        "POSITION": 40
+                    },
+                    "indices": 46,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "7Head without brim lower detail.001",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 30,
+                        "POSITION": 34
+                    },
+                    "indices": 32,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "7Head without brim lower detail.003",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 20,
+                        "POSITION": 38
+                    },
+                    "indices": 25,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "7Head without brim lower detail.004",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 42,
+                        "POSITION": 21
+                    },
+                    "indices": 5,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "7Head without brim lower detail.005",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 8,
+                        "POSITION": 9
+                    },
+                    "indices": 7,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "7Head without brim lower detail.010",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 39,
+                        "POSITION": 1
+                    },
+                    "indices": 36,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "7Head without brim lower detail.011",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 2,
+                        "POSITION": 6
+                    },
+                    "indices": 47,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "7Head without brim lower detail.012",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 41,
+                        "POSITION": 45
+                    },
+                    "indices": 10,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "7Head without brim lower detail.013",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 18,
+                        "POSITION": 11
+                    },
+                    "indices": 12,
+                    "mode": 4
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "mesh": 1,
+            "name": "7Body lower detail.000",
+            "rotation": [
+                4.574245394906029e-06,
+                -0.7070930004119873,
+                -0.7071205973625183,
+                4.636242465494433e-06
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                20.46255111694336,
+                19.180538177490234,
+                13.782474517822266
+            ]
+        },
+        {
+            "mesh": 0,
+            "name": "7Body lower detail.001",
+            "rotation": [
+                4.574245394906029e-06,
+                -0.7070930004119873,
+                -0.7071205973625183,
+                4.636242465494433e-06
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                -68.11608123779297,
+                19.178993225097656,
+                13.782474517822266
+            ]
+        },
+        {
+            "mesh": 2,
+            "name": "7Body lower detail.002",
+            "rotation": [
+                -0.2654814124107361,
+                0.6553667783737183,
+                0.6553888320922852,
+                0.2654796540737152
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                88.60811614990234,
+                19.180538177490234,
+                47.690284729003906
+            ]
+        },
+        {
+            "mesh": 3,
+            "name": "7Body lower detail.003",
+            "rotation": [
+                -0.3670940399169922,
+                0.6043450832366943,
+                0.6043637990951538,
+                0.3670876622200012
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                131.97964477539062,
+                19.180538177490234,
+                116.00855255126953
+            ]
+        },
+        {
+            "mesh": 4,
+            "name": "7Body lower detail.004",
+            "rotation": [
+                -0.6988489031791687,
+                -0.10783705115318298,
+                -0.10785037279129028,
+                0.6988202333450317
+            ],
+            "scale": [
+                0.9999999403953552,
+                0.9999999403953552,
+                1.0
+            ],
+            "translation": [
+                -75.88340759277344,
+                19.180538177490234,
+                252.05245971679688
+            ]
+        },
+        {
+            "mesh": 5,
+            "name": "7Body lower detail.005",
+            "rotation": [
+                -0.707098662853241,
+                0.0055627040565013885,
+                0.005553710740059614,
+                0.7070712447166443
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                3.0946121215820312,
+                19.180538177490234,
+                269.68621826171875
+            ]
+        },
+        {
+            "mesh": 6,
+            "name": "7Body lower detail.006",
+            "rotation": [
+                -0.6532817482948303,
+                0.2706228196620941,
+                0.2706247866153717,
+                0.6532599329948425
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                137.88491821289062,
+                19.178993225097656,
+                182.8312530517578
+            ]
+        },
+        {
+            "mesh": 7,
+            "name": "7Body lower detail.007",
+            "rotation": [
+                -0.6532817482948303,
+                0.2706228196620941,
+                0.2706247866153717,
+                0.6532599329948425
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                75.25532531738281,
+                19.180538177490234,
+                245.4707489013672
+            ]
+        },
+        {
+            "mesh": 9,
+            "name": "7Head without brim lower detail.000",
+            "rotation": [
+                4.574245394906029e-06,
+                -0.7070930004119873,
+                -0.7071205973625183,
+                4.636242465494433e-06
+            ],
+            "scale": [
+                1.3186149597167969,
+                1.3186149597167969,
+                1.3186149597167969
+            ],
+            "translation": [
+                19.459999084472656,
+                114.8523941040039,
+                -4.417610168457031
+            ]
+        },
+        {
+            "mesh": 8,
+            "name": "7Head without brim lower detail.001",
+            "rotation": [
+                4.574245394906029e-06,
+                -0.7070930004119873,
+                -0.7071205973625183,
+                4.636242465494433e-06
+            ],
+            "scale": [
+                1.4504504203796387,
+                1.4504504203796387,
+                1.4504504203796387
+            ],
+            "translation": [
+                -66.06626892089844,
+                119.6563949584961,
+                -6.8676605224609375
+            ]
+        },
+        {
+            "mesh": 10,
+            "name": "7Head without brim lower detail.002",
+            "rotation": [
+                -0.2654814124107361,
+                0.6553667783737183,
+                0.6553888320922852,
+                0.2654796540737152
+            ],
+            "scale": [
+                1.3186149597167969,
+                1.3186149597167969,
+                1.3186149597167969
+            ],
+            "translation": [
+                105.26673126220703,
+                114.8523941040039,
+                33.923431396484375
+            ]
+        },
+        {
+            "mesh": 11,
+            "name": "7Head without brim lower detail.003",
+            "rotation": [
+                -0.3670940399169922,
+                0.6043450832366943,
+                0.6043637990951538,
+                0.3670876622200012
+            ],
+            "scale": [
+                1.1950807571411133,
+                1.1950807571411133,
+                1.1950807571411133
+            ],
+            "translation": [
+                152.37939453125,
+                102.65193939208984,
+                110.13316345214844
+            ]
+        },
+        {
+            "mesh": 12,
+            "name": "7Head without brim lower detail.004",
+            "rotation": [
+                -0.6988489031791687,
+                -0.10783705860376358,
+                -0.10785036534070969,
+                0.6988202333450317
+            ],
+            "scale": [
+                1.4504469633102417,
+                1.4504469633102417,
+                1.4504470825195312
+            ],
+            "translation": [
+                -84.07366180419922,
+                118.9406967163086,
+                272.05181884765625
+            ]
+        },
+        {
+            "mesh": 13,
+            "name": "7Head without brim lower detail.005",
+            "rotation": [
+                -0.707098662853241,
+                0.0055627040565013885,
+                0.005553711671382189,
+                0.7070712447166443
+            ],
+            "scale": [
+                1.3186149597167969,
+                1.3186149597167969,
+                1.3186148405075073
+            ],
+            "translation": [
+                4.3831634521484375,
+                114.85237884521484,
+                287.8682861328125
+            ]
+        },
+        {
+            "mesh": 14,
+            "name": "7Head without brim lower detail.006",
+            "rotation": [
+                -0.6532817482948303,
+                0.2706228196620941,
+                0.2706247866153717,
+                0.6532599329948425
+            ],
+            "scale": [
+                1.1950806379318237,
+                1.1950806379318237,
+                1.1950806379318237
+            ],
+            "translation": [
+                155.81954956054688,
+                102.65052795410156,
+                194.50869750976562
+            ]
+        },
+        {
+            "mesh": 15,
+            "name": "7Head without brim lower detail.007",
+            "rotation": [
+                -0.6532817482948303,
+                0.2706228196620941,
+                0.2706247866153717,
+                0.6532599329948425
+            ],
+            "scale": [
+                1.3186148405075073,
+                1.3186148405075073,
+                1.3186148405075073
+            ],
+            "translation": [
+                88.83463287353516,
+                108.19322967529297,
+                260.49639892578125
+            ]
+        },
+        {
+            "camera": 0,
+            "name": "Camera",
+            "rotation": [
+                -0.09062843769788742,
+                -0.8937962651252747,
+                -0.2099730223417282,
+                0.38578000664711
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                -7.481131553649902,
+                5.34366512298584,
+                -6.5076398849487305
+            ]
+        },
+        {
+            "name": "Lamp",
+            "rotation": [
+                -0.34203386306762695,
+                -0.5232755541801453,
+                -0.2841663062572479,
+                0.7269423007965088
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                0.9999999403953552
+            ],
+            "translation": [
+                -4.076245307922363,
+                5.903861999511719,
+                1.0054539442062378
+            ]
+        }
+    ],
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "active_camera": 0,
+                "background_color": [
+                    0.05087608844041824,
+                    0.05087608844041824,
+                    0.05087608844041824
+                ],
+                "frames_per_second": 24
+            },
+            "name": "Scene",
+            "nodes": [
+                17,
+                16,
+                1,
+                9,
+                0,
+                8,
+                2,
+                10,
+                3,
+                11,
+                7,
+                6,
+                5,
+                4,
+                15,
+                14,
+                13,
+                12
+            ]
+        }
+    ]
+}

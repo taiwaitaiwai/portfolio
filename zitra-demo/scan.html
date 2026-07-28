@@ -1,0 +1,44 @@
+<!-- scan.html -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZITRA – Scan</title>
+	
+  <link rel="icon" href="img/favicon-32.png" sizes="32x32">
+  <link rel="icon" href="img/favicon-16.png" sizes="16x16">
+  <link rel="apple-touch-icon" href="img/icon-192.png">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jsQR.min.js"></script>
+  <script src="js/script.js" defer></script>
+</head>
+
+<body class="scan-page">
+
+  <header class="topbar">
+    <div class="deko-left"></div>
+    <div class="deko-right"></div>
+    <div class="topbar-content">
+      <img src="img/zitra-logo.svg" alt="ZITRA Logo" class="logo logo-portrait">
+      <img src="img/zitra-logo-vertical.svg" alt="ZITRA Vertical" class="logo logo-landscape">
+    </div>
+  </header>
+
+  <div id="qrsection">
+    <video id="video" playsinline muted style="display:none;"></video>
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <a href="index.html" class="scan-return-circle" aria-label="Zurück zur Startseite">
+    <div class="circle-content">
+      <img src="img/icon-return.svg" alt="" class="return-icon">
+      <span class="menu-text">ZURÜCK</span>
+    </div>
+  </a>
+
+</body>
+</html>

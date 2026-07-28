@@ -1,0 +1,445 @@
+  <html xmlns="http://www.w3.org/1999/xhtml"><head>
+      <title>Museum</title>
+      <meta name="description" content="Hello, WebVR! - A-Frame" />
+      <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+      <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+      
+      <!--SkyGradient-->
+
+      <script> AFRAME.registerShader('skyGradient', {
+  schema: {
+    colorTop: { type: 'color', default: 'black', is: 'uniform' },
+    colorBottom: { type: 'color', default: 'red', is: 'uniform' }
+  },
+
+  vertexShader: [
+    'varying vec3 vWorldPosition;',
+
+    'void main() {',
+
+      'vec4 worldPosition = modelMatrix * vec4( position, 1.0 );',
+      'vWorldPosition = worldPosition.xyz;',
+
+      'gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );',
+
+    '}'
+
+  ].join('\n'),
+
+  fragmentShader: [
+    'uniform vec3 colorTop;',
+    'uniform vec3 colorBottom;',
+
+    'varying vec3 vWorldPosition;',
+
+    'void main()',
+
+    '{',
+      'vec3 pointOnSphere = normalize(vWorldPosition.xyz);',
+      'float f = 1.0;',
+      'if(pointOnSphere.y > - 0.2){',
+
+        'f = sin(pointOnSphere.y * 2.0);',
+
+      '}',
+      'gl_FragColor = vec4(mix(colorBottom,colorTop, f ), 1.0);',
+
+    '}'
+  ].join('\n')
+});
+    </script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Mono" media="all" /></head>
+    <body class="a-body ">
+      <a-scene>
+<!--         <a-sky color="#ffffff"></a-sky>
+ -->        <a-entity id="sky"
+                  geometry="primitive: sphere; radius: 250;"
+                  material="shader: skyGradient; colorTop: #353449; colorBottom: #BC483E; side: back"></a-entity>
+        <assets>
+        <audio id="printsound" src="3D%20Printer%20Sound.mp3"></audio>
+        <a-asset-item id="printer" src="3dprintermetalmovingpart/201806053dprinterlow2_metal.gltf"></a-asset-item>
+        <a-asset-item id="quote" src="list/3Dprinter_material_board__with_Objects_low.gltf"></a-asset-item>
+        <a-asset-item id="nozzle" src="3dprintermetalmovingpart/3Dprinter_material_Xasis__low.gltf"></a-asset-item>
+
+        <a-asset-item id="elephant" src="3dobject/8elephant_remade_low4.gltf"></a-asset-item>
+
+        <a-asset-item id="shoes" src="3dobject/6Trex_remade2low.gltf"></a-asset-item>
+
+        <a-asset-item id="lung" src="3dobject/5lung_blend.gltf"></a-asset-item>
+
+        <a-asset-item id="leg" src="3dobject/13dBenchy_remade_low.gltf"></a-asset-item>
+
+        <a-asset-item id="mask" src="3dobject/2Mask_vers4.gltf"></a-asset-item>
+
+        <a-asset-item id="dent" src="3dobject/7Groot_all_2.gltf"></a-asset-item>
+
+        <a-asset-item id="abc" src="3dobject/3xyz.gltf"></a-asset-item>
+
+        <a-asset-item id="water" src="3dobject/4 Essentialblend.gltf"></a-asset-item>
+
+
+
+
+
+
+
+
+        <img src="https://img.gs/bbdkhfbzkk/2048x1024,stretch/http://i.imgur.com/WMNH2OF.jpg" id="chrome" crossorigin="anonymous">
+
+        
+        </assets>
+        
+      
+<!--Printer-->
+
+        <a-entity id="printer_big" gltf-model="#printer" scale="0.2 0.2 0.2" position="-12 17 -50" rotation="0 180 0"></a-entity>
+        <a-entity id="printer_nozzle" gltf-model="#nozzle" scale="0.2 0.2 0.2" position="-52 -51.5 -62" rotation="-90 180 0" sound="src: #printsound; autoplay: true; loop: true; volume: 3">
+          <a-animation 
+                    easing="linear"
+                    attribute="position" 
+                    from="-52 -51.5 -62" 
+                    to="-52 -51.5 -19" 
+                    dur="3000"  
+                    direction="alternate"
+                    repeat="indefinite"
+          ></a-animation>
+        </a-entity>
+
+<!--Light-->
+
+        <a-entity light="type: ambient; color: #BBB; intensity: 0.7"></a-entity>
+        <a-entity light="type: directional; color: #FFF; intensity: 0.6" position="-0.5 1 1"></a-entity>
+        <a-entity light="type: directional; color: #FFF; intensity: 0.6" position="0.5 1 -1"></a-entity>
+
+
+<!--Exhibit 1-->
+
+        <a-entity id="ex1" position="0 0.22 0" scale="0.4 0.4 0.4">
+
+          <!--Model-->
+
+            <a-box color="red" opacity="0" depth="6" width="6" height="2" position="0 3.2 -13""
+            event-set__enter="_event: mouseenter; _target: #ex_shoes; scale: 0.025 0.025 0.025"
+            event-set__leave="_event: mouseleave; _target: #ex_shoes; scale: 0.015 0.015 0.01"></a-box>
+
+          <a-entity id="ex_shoes" gltf-model="#shoes" scale="0.015 0.015 0.015" position="1 1.5 -13" rotation="0 -130 0">
+          <a-animation
+                    begin="mouseenter"
+                    attribute="rotation" 
+                    from="0 -130 0" 
+                    to="0 230 0" 
+                    dur="4000"  
+                    direction="normal"></a-animation>
+          </a-entity>
+
+          <!--Stand-->
+          <!--material="color: #e81010; metalness:0.9; roughness: 0.05; sphericalEnvMap: #chrome;"-->
+          <a-box color="#b2b2b2" opacity="1" depth="6" width="6" height="2" position="0 0.5 -13" rotation="0 0 0">
+            <a-entity id="title1" visible="false" position="0 0.25 3.14" text="value: Super Custom Shoes; color: black; width: 10; align: center"></a-entity>
+          </a-box>
+
+          <!--Label-->
+
+          <a-box color="#ffffff" opacity="1" depth="1" width="1" height="0.5" position="-2.29 1.086 -10.4" rotation="0 0 0"
+            event-set__enter="_event: mouseenter; position: -0.044 0.766 -10.410; width: 5.7; height: 1.2; depth: 1.1"
+            event-set__leave="_event: mouseleave; position: -2.29 1.086 -10.4; width: 1; height: 0.5; depth: 1"
+            event-set__makevisible="_event: mouseenter; _target: #title1; visible: true"
+            event-set__makeinvisible="_event: mouseleave; _target: #title1; visible: false"></a-box>
+          <a-box color="#000000" opacity="1" depth="1" width="0.8" height="0.1" position="-2.29 1.18 -10.39" rotation="0 0 0"></a-box>
+          <a-box color="#000000" opacity="1" depth="1" width="0.3" height="0.1" position="-2.55 1 -10.39" rotation="0 0 0"></a-box>
+
+
+        </a-entity>
+
+<!--Exhibit 2-->
+
+        <a-entity id="ex2" position="0 0.22 0" rotation="0 180 0" scale="0.4 0.4 0.4">
+
+          <!--Model-->
+
+            <a-box color="red" opacity="0" depth="6" width="6" height="2" position="0 3.2 -13""
+            event-set__enter="_event: mouseenter; _target: #ex_abc; scale: 0.03 0.03 0.03; position: 0 3.1 -13.5"
+            event-set__leave="_event: mouseleave; _target: #ex_abc; scale: 0.02 0.02 0.02; position: 0 2.5 -13.5"></a-box>
+
+          <a-entity id="ex_abc" gltf-model="#abc" scale="0.02 0.02 0.02" position="0 2.5 -13.5" rotation="0 0 180">
+          <a-animation
+                    begin="mouseenter"
+                    attribute="rotation" 
+                    from="0 0 180" 
+                    to="0 360 180" 
+                    dur="4000"  
+                    direction="normal"></a-animation>
+          </a-entity>
+
+          <!--Stand-->
+          <!--material="color: #e81010; metalness:0.9; roughness: 0.05; sphericalEnvMap: #chrome;"-->
+          <a-box color="#b2b2b2" opacity="1" depth="6" width="6" height="2" position="0 0.5 -13" rotation="0 0 0">
+            <a-entity id="title2" visible="false" position="0 0.25 3.14" text="value: Reading Education; color: black; width: 10; align: center"></a-entity>
+          </a-box>
+
+          <!--Label-->
+
+          <a-box color="#ffffff" opacity="1" depth="1" width="1" height="0.5" position="-2.29 1.086 -10.4" rotation="0 0 0"
+            event-set__enter="_event: mouseenter; position: -0.044 0.766 -10.410; width: 5.7; height: 1.2; depth: 1.1"
+            event-set__leave="_event: mouseleave; position: -2.29 1.086 -10.4; width: 1; height: 0.5; depth: 1"
+            event-set__makevisible="_event: mouseenter; _target: #title2; visible: true"
+            event-set__makeinvisible="_event: mouseleave; _target: #title2; visible: false"></a-box>
+          <a-box color="#000000" opacity="1" depth="1" width="0.8" height="0.1" position="-2.29 1.18 -10.39" rotation="0 0 0"></a-box>
+          <a-box color="#000000" opacity="1" depth="1" width="0.3" height="0.1" position="-2.55 1 -10.39" rotation="0 0 0"></a-box>
+
+
+        </a-entity>
+
+<!--Exhibit 3-->
+
+        <a-entity id="ex3" position="0 0.22 0" rotation="0 90 0" scale="0.4 0.4 0.4">
+
+          <!--Model-->
+
+          <a-box color="red" opacity="0" depth="6" width="6" height="2" position="0 3.2 -13""
+            event-set__enter="_event: mouseenter; _target: #ex_leg; scale: 0.03 0.03 0.03"
+            event-set__leave="_event: mouseleave; _target: #ex_leg; scale: 0.02 0.02 0.02"></a-box>
+
+          <a-entity id="ex_leg" gltf-model="#leg" scale="0.02 0.02 0.02" position="0 2.2 -12.9" rotation="10 0 0">
+          <a-animation
+                    begin="mouseenter"
+                    attribute="rotation" 
+                    from="10 0 0" 
+                    to="10 360 0" 
+                    dur="4000"  
+                    direction="normal"></a-animation>
+          </a-entity>
+
+          <!--Stand-->
+          <!--material="color: #e81010; metalness:0.9; roughness: 0.05; sphericalEnvMap: #chrome;"-->
+          <a-box color="#b2b2b2" opacity="1" depth="6" width="6" height="2" position="0 0.5 -13" rotation="0 0 0">
+            <a-entity id="title3" visible="false" position="0 0.25 3.14" rotation="0 0 0" text="value: Leg Prothesis; color: black; width: 10; align: center"></a-entity>
+          </a-box>
+
+          <!--Label-->
+
+          <a-box color="#ffffff" opacity="1" depth="1" width="1" height="0.5" position="-2.29 1.086 -10.4" rotation="0 0 0"
+            event-set__enter="_event: mouseenter; position: -0.044 0.766 -10.410; width: 5.7; height: 1.2; depth: 1.1"
+            event-set__leave="_event: mouseleave; position: -2.29 1.086 -10.4; width: 1; height: 0.5; depth: 1"
+            event-set__makevisible="_event: mouseenter; _target: #title3; visible: true"
+            event-set__makeinvisible="_event: mouseleave; _target: #title3; visible: false"></a-box>
+          <a-box color="#000000" opacity="1" depth="1" width="0.8" height="0.1" position="-2.29 1.18 -10.39" rotation="0 0 0"></a-box>
+          <a-box color="#000000" opacity="1" depth="1" width="0.3" height="0.1" position="-2.55 1 -10.39" rotation="0 0 0"></a-box>
+
+
+        </a-entity>
+
+<!--Exhibit 4-->
+
+        <a-entity id="ex4" position="0 0.22 0" rotation="0 -90 0" scale="0.4 0.4 0.4">
+
+          <!--Model-->
+
+          <a-box color="red" opacity="0" depth="6" width="6" height="2" position="0 3.2 -13""
+            event-set__enter="_event: mouseenter; _target: #ex_dent; scale: 0.01 0.01 0.01"
+            event-set__leave="_event: mouseleave; _target: #ex_dent; scale: 0.005 0.005 0.005"></a-box>
+
+          <a-entity id="ex_dent" gltf-model="#dent" scale="0.005 0.005 0.005" position="-0.341 1.5 -12" rotation="15 -325 0">
+          <a-animation
+                    begin="mouseenter"
+                    attribute="rotation" 
+                    from="15 -325 0" 
+                    to="35 35 0" 
+                    dur="4000"  
+                    direction="alternate"
+                    repeat="1"></a-animation>
+          </a-entity>
+
+          <!--Stand-->
+          <!--material="color: #e81010; metalness:0.9; roughness: 0.05; sphericalEnvMap: #chrome;"-->
+          <a-box color="#b2b2b2" opacity="1" depth="6" width="6" height="2" position="0 0.5 -13" rotation="0 0 0">
+            <a-entity id="title4" visible="false" position="0 0.25 3.14" rotation="0 0 0" text="value: Printed Teeth; color: black; width: 10; align: center"></a-entity>
+          </a-box>
+
+          <!--Label-->
+
+          <a-box color="#ffffff" opacity="1" depth="1" width="1" height="0.5" position="-2.29 1.086 -10.4" rotation="0 0 0"
+            event-set__enter="_event: mouseenter; position: -0.044 0.766 -10.410; width: 5.7; height: 1.2; depth: 1.1"
+            event-set__leave="_event: mouseleave; position: -2.29 1.086 -10.4; width: 1; height: 0.5; depth: 1"
+            event-set__makevisible="_event: mouseenter; _target: #title4; visible: true"
+            event-set__makeinvisible="_event: mouseleave; _target: #title4; visible: false"></a-box>
+          <a-box color="#000000" opacity="1" depth="1" width="0.8" height="0.1" position="-2.29 1.18 -10.39" rotation="0 0 0"></a-box>
+          <a-box color="#000000" opacity="1" depth="1" width="0.3" height="0.1" position="-2.55 1 -10.39" rotation="0 0 0"></a-box>
+
+
+        </a-entity>
+
+<!--Exhibit 5-->
+
+        <a-entity id="ex5" position="0 0.22 0" rotation="0 45 0" scale="0.4 0.4 0.4">
+
+          <!--Model-->
+
+          <a-box color="red" opacity="0" depth="6" width="6" height="2" position="0 3.2 -13""
+            event-set__enter="_event: mouseenter; _target: #ex_lung; rotation: 0 10 -90"
+            event-set__leave="_event: mouseleave; _target: #ex_lung; rotation: 0 0 -90"></a-box>
+
+          <a-entity id="ex_lung" gltf-model="#lung" scale="0.08 0.08 0.08" position="0.4 4.7 -14" rotation="0 0 -90">
+          <a-animation
+                    begin="mouseenter"
+                    attribute="scale" 
+                    from="0.08 0.08 0.08" 
+                    to="0.1 0.1 0.1" 
+                    dur="2000"  
+                    direction="alternate"
+                    repeat="1"></a-animation>
+          </a-entity>
+
+          <!--Stand-->
+          <!--material="color: #e81010; metalness:0.9; roughness: 0.05; sphericalEnvMap: #chrome;"-->
+          <a-box color="#b2b2b2" opacity="1" depth="6" width="6" height="2" position="0 0.5 -13" rotation="0 0 0">
+            <a-entity id="title5" visible="false" position="0 0.25 3.14" rotation="0 0 0" text="value: Artificial Lung; color: black; width: 10; align: center"></a-entity>
+          </a-box>
+
+          <!--Label-->
+
+          <a-box color="#ffffff" opacity="1" depth="1" width="1" height="0.5" position="-2.29 1.086 -10.4" rotation="0 0 0"
+            event-set__enter="_event: mouseenter; position: -0.044 0.766 -10.410; width: 5.7; height: 1.2; depth: 1.1"
+            event-set__leave="_event: mouseleave; position: -2.29 1.086 -10.4; width: 1; height: 0.5; depth: 1"
+            event-set__makevisible="_event: mouseenter; _target: #title5; visible: true"
+            event-set__makeinvisible="_event: mouseleave; _target: #title5; visible: false"></a-box>
+          <a-box color="#000000" opacity="1" depth="1" width="0.8" height="0.1" position="-2.29 1.18 -10.39" rotation="0 0 0"></a-box>
+          <a-box color="#000000" opacity="1" depth="1" width="0.3" height="0.1" position="-2.55 1 -10.39" rotation="0 0 0"></a-box>
+
+
+        </a-entity>
+
+<!--Exhibit 6-->
+
+        <a-entity id="ex6" position="0 0.22 0" rotation="0 -135 0" scale="0.4 0.4 0.4">
+
+          <!--Model-->
+
+          <a-box color="red" opacity="0" depth="6" width="6" height="2" position="0 3.2 -13""
+            event-set__enter="_event: mouseenter; _target: #ex_ele; scale: 0.04 0.04 0.04"
+            event-set__leave="_event: mouseleave; _target: #ex_ele; scale: 0.03 0.03 0.03"></a-box>
+
+          <a-entity id="ex_ele" gltf-model="#elephant" scale="0.03 0.03 0.03" position="1.825 3.848 -11.985"" rotation="30 0 0">
+          <a-animation
+                    begin="mouseenter"
+                    attribute="position" 
+                    from="1.825 3.848 -11.985" 
+                    to="1.825 4.8 -11.985" 
+                    dur="2000"  
+                    direction="alternate"
+                    repeat="1"></a-animation>
+          </a-entity>
+
+          <!--Stand-->
+          <!--material="color: #e81010; metalness:0.9; roughness: 0.05; sphericalEnvMap: #chrome;"-->
+          <a-box color="#b2b2b2" opacity="1" depth="6" width="6" height="2" position="0 0.5 -13" rotation="0 0 0">
+            <a-entity id="title6" visible="false" position="0 0.25 3.14" rotation="0 0 0" text="value: Lifejacket; color: black; width: 10; align: center"></a-entity>
+          </a-box>
+
+          <!--Label-->
+
+          <a-box color="#ffffff" opacity="1" depth="1" width="1" height="0.5" position="-2.29 1.086 -10.4" rotation="0 0 0"
+            event-set__enter="_event: mouseenter; position: -0.044 0.766 -10.410; width: 5.7; height: 1.2; depth: 1.1"
+            event-set__leave="_event: mouseleave; position: -2.29 1.086 -10.4; width: 1; height: 0.5; depth: 1"
+            event-set__makevisible="_event: mouseenter; _target: #title6; visible: true"
+            event-set__makeinvisible="_event: mouseleave; _target: #title6; visible: false"></a-box>
+          <a-box color="#000000" opacity="1" depth="1" width="0.8" height="0.1" position="-2.29 1.18 -10.39" rotation="0 0 0"></a-box>
+          <a-box color="#000000" opacity="1" depth="1" width="0.3" height="0.1" position="-2.55 1 -10.39" rotation="0 0 0"></a-box>
+
+
+        </a-entity>
+
+<!--Exhibit 7-->
+
+        <a-entity id="ex7" position="0 0.22 0" rotation="0 135 0" scale="0.4 0.4 0.4">
+
+          <!--Model-->
+
+          <a-box color="red" opacity="0" depth="6" width="6" height="2" position="0 3.2 -13""
+            event-set__enter="_event: mouseenter; _target: #ex_water; scale: 0.4 0.4 0.4"
+            event-set__leave="_event: mouseleave; _target: #ex_water; scale: 0.3 0.3 0.3"></a-box>
+
+          <a-entity id="ex_water" gltf-model="#water" scale="0.3 0.3 0.3" position="0 2 -14" rotation="0 0 0">
+          <a-animation
+                    begin="mouseenter"
+                    attribute="rotation" 
+                    from="0 0 0" 
+                    to="0 360 0" 
+                    dur="4000"  
+                    direction="normal"></a-animation>
+          </a-entity>
+
+          <!--Stand-->
+          <!--material="color: #e81010; metalness:0.9; roughness: 0.05; sphericalEnvMap: #chrome;"-->
+          <a-box color="#b2b2b2" opacity="1" depth="6" width="6" height="2" position="0 0.5 -13" rotation="0 0 0">
+            <a-entity id="title7" visible="false" position="0 0.25 3.14" rotation="0 0 0" text="value: Water Purifier; color: black; width: 10; align: center"></a-entity>
+          </a-box>
+
+          <!--Label-->
+
+          <a-box color="#ffffff" opacity="1" depth="1" width="1" height="0.5" position="-2.29 1.086 -10.4" rotation="0 0 0"
+            event-set__enter="_event: mouseenter; position: -0.044 0.766 -10.410; width: 5.7; height: 1.2; depth: 1.1"
+            event-set__leave="_event: mouseleave; position: -2.29 1.086 -10.4; width: 1; height: 0.5; depth: 1"
+            event-set__makevisible="_event: mouseenter; _target: #title7; visible: true"
+            event-set__makeinvisible="_event: mouseleave; _target: #title7; visible: false"></a-box>
+          <a-box color="#000000" opacity="1" depth="1" width="0.8" height="0.1" position="-2.29 1.18 -10.39" rotation="0 0 0"></a-box>
+          <a-box color="#000000" opacity="1" depth="1" width="0.3" height="0.1" position="-2.55 1 -10.39" rotation="0 0 0"></a-box>
+
+
+        </a-entity>
+
+
+  <!--Exhibit 8-->
+
+        <a-entity id="ex8" position="0 0.22 0" rotation="0 -45 0" scale="0.4 0.4 0.4">
+
+          <!--Model-->
+
+          <a-box color="red" opacity="0" depth="6" width="6" height="2" position="0 3.2 -13""
+            event-set__enter="_event: mouseenter; _target: #ex_mask; scale: 3 3 3"
+            event-set__leave="_event: mouseleave; _target: #ex_mask; scale: 2 2 2"></a-box>
+
+          <a-entity id="ex_mask" gltf-model="#mask" scale="2 2 2" position="0 2.18 -13.3" rotation="0 0 0">
+          <a-animation
+                    begin="mouseenter"
+                    attribute="rotation" 
+                    from="0 0 0" 
+                    to="35 0 0"
+                    dur="2000"  
+                    direction="alternate"
+                    repeat="1"></a-animation>
+          </a-entity>
+
+          <!--Stand-->
+          <!--material="color: #e81010; metalness:0.9; roughness: 0.05; sphericalEnvMap: #chrome;"-->
+          <a-box color="#b2b2b2" opacity="1" depth="6" width="6" height="2" position="0 0.5 -13" rotation="0 0 0">
+            <a-entity id="title8" visible="false" position="0 0.25 3.14" rotation="0 0 0" text="value: Anti-Pollution Mask; color: black; width: 10; align: center"></a-entity>
+          </a-box>
+
+          <!--Label-->
+
+          <a-box color="#ffffff" opacity="1" depth="1" width="1" height="0.5" position="-2.29 1.086 -10.4" rotation="0 0 0"
+            event-set__enter="_event: mouseenter; position: -0.044 0.766 -10.410; width: 5.7; height: 1.2; depth: 1.1"
+            event-set__leave="_event: mouseleave; position: -2.29 1.086 -10.4; width: 1; height: 0.5; depth: 1"
+            event-set__makevisible="_event: mouseenter; _target: #title8; visible: true"
+            event-set__makeinvisible="_event: mouseleave; _target: #title8; visible: false"></a-box>
+          <a-box color="#000000" opacity="1" depth="1" width="0.8" height="0.1" position="-2.29 1.18 -10.39" rotation="0 0 0"></a-box>
+          <a-box color="#000000" opacity="1" depth="1" width="0.3" height="0.1" position="-2.55 1 -10.39" rotation="0 0 0"></a-box>
+
+
+        </a-entity>
+
+<!--List-->
+
+        <a-entity id="printer_quote" gltf-model="#quote" scale="0.2 0.2 0.2" position="-20.1 -8 -36.3" rotation="-90 180 0"></a-entity>
+
+
+        
+        <a-camera position="0 1.6 0" rotation="0 0 0">
+          <a-cursor color="tomato"></a-cursor>
+        </a-camera>
+      </a-scene>
+
+
+  </body></html>

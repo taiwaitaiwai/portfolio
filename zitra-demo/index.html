@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZITRA - Scan & Win</title>
+	
+<link rel="icon" href="img/favicon-32.png" sizes="32x32">
+<link rel="icon" href="img/favicon-16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="img/icon-192.png">
+	
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page-home">
+
+  <div class="pattern-overlay">
+    <img src="img/start-bg.png" alt="" class="rotating-bg">
+  </div>
+
+  <div class="lemon-layer">
+    <img src="img/lemon-bg.png" alt="Lemon Background Decoration">
+  </div>
+
+  <header class="topbar">
+    <div class="deko-left"></div>
+    <div class="deko-right"></div>
+    <div class="topbar-content">
+      <img src="img/zitra-logo.svg" alt="ZITRA Logo" class="logo logo-portrait">
+      <img src="img/zitra-logo-vertical.svg" alt="ZITRA Vertical" class="logo logo-landscape">
+    </div>
+  </header>
+
+  <main class="content-grid">
+    <section class="hero-section">
+
+      <h1 class="hero-title hero-title-portrait">
+        <span class="line-1">· scannen · erfrischen ·</span>
+        <span class="line-2">· GEWINNEN ·</span>
+      </h1>
+
+      <h1 class="hero-title hero-title-landscape">
+        <span class="line-1">· scannen ·</span>
+        <span class="line-1">· erfrischen ·</span>
+        <span class="line-2">· GEWINNEN ·</span>
+      </h1>
+
+      <!-- CTA BUTTON (fixed: <a> instead of <button>) -->
+      <a href="scan.html" class="cta-button">
+        <span class="cta-text">JETZT SCANNEN</span>
+        <img src="img/icon-scan.svg" alt="Scan Icon" class="cta-icon">
+      </a>
+
+      <!-- Responsive dose image -->
+      <picture class="hero-dose">
+        <source media="(orientation: landscape)" srcset="img/dose-landscape.png">
+        <img src="img/dose.png" alt="Zitra Dose">
+      </picture>
+
+    </section>
+  </main>
+
+  <nav class="main-menu">
+    <a href="zitra.html" class="menu-item">
+      <div class="item-content">
+        <img src="img/icon-zitra.png" alt="Zitra" class="menu-icon-small">
+        <span class="menu-text">ZITRA</span>
+      </div>
+    </a>
+
+    <!-- Center circle fixed: no href="#" -->
+    <a href="scan.html" class="center-circle active">
+      <div class="circle-content">
+        <img src="img/icon-qr.png" alt="Scan" class="menu-icon-large">
+        <span class="menu-text">SCAN</span>
+      </div>
+    </a>
+
+    <a href="preise.html" class="menu-item">
+      <div class="item-content">
+        <img src="img/icon-preis.png" alt="Preise" class="menu-icon-small">
+        <span class="menu-text">PREISE</span>
+      </div>
+    </a>
+  </nav>
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+{
+    "accessors": [
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 154350,
+            "max": [
+                134910
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_1157-B2P-A-1 text_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 134911,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_1157-B2P-A-1 text_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 134911,
+            "max": [
+                100.56827545166016,
+                5.354879379272461,
+                79.33038330078125
+            ],
+            "min": [
+                -99.43172454833984,
+                -30.145118713378906,
+                -98.66961669921875
+            ],
+            "name": "accessor_buffer_1157-B2P-A-1 text_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 31403,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_Allobject Low2_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 31403,
+            "max": [
+                8.150672912597656,
+                42.28340148925781,
+                49.50028610229492
+            ],
+            "min": [
+                -9.420120239257812,
+                31.898637771606445,
+                -28.410322189331055
+            ],
+            "name": "accessor_buffer_Allobject Low2_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 5,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 33906,
+            "max": [
+                31402
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_Allobject Low2_0",
+            "type": "SCALAR"
+        }
+    ],
+    "asset": {
+        "copyright": "",
+        "generator": "blendergltf v1.2.0",
+        "version": "2.0"
+    },
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 1618932,
+            "byteOffset": 0,
+            "byteStride": 12,
+            "name": "bufferView_buffer_1157-B2P-A-1 text_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1618932,
+            "byteOffset": 1618932,
+            "byteStride": 12,
+            "name": "bufferView_buffer_1157-B2P-A-1 text_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 617404,
+            "byteOffset": 3237864,
+            "name": "bufferView_buffer_1157-B2P-A-1 text_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 376836,
+            "byteOffset": 3855268,
+            "byteStride": 12,
+            "name": "bufferView_buffer_Allobject Low2_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 376836,
+            "byteOffset": 4232104,
+            "byteStride": 12,
+            "name": "bufferView_buffer_Allobject Low2_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 67816,
+            "byteOffset": 4608940,
+            "name": "bufferView_buffer_Allobject Low2_0",
+            "target": 34963
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 4676756,
+            "name": "buffer_3Dprinter_material_board__with_Objects_low",
+            "uri": "buffer_3Dprinter_material_board__with_Objects_low.bin"
+        }
+    ],
+    "meshes": [
+        {
+            "name": "1157-B2P-A-1 text",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 1,
+                        "POSITION": 2
+                    },
+                    "indices": 0,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "Allobject Low2",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 3,
+                        "POSITION": 4
+                    },
+                    "indices": 5,
+                    "mode": 4
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "mesh": 0,
+            "name": "1157-B2P-A-1 text",
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                -100.5683822631836,
+                30.145118713378906,
+                98.66961669921875
+            ]
+        },
+        {
+            "mesh": 1,
+            "name": "Allobject Low2",
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                -176.1263427734375,
+                0.3028119206428528,
+                86.60185241699219
+            ]
+        },
+        {
+            "name": "Lamp",
+            "rotation": [
+                -0.34203386306762695,
+                -0.5232755541801453,
+                -0.2841663062572479,
+                0.7269423007965088
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                0.9999999403953552
+            ],
+            "translation": [
+                -4.076245307922363,
+                5.903861999511719,
+                1.0054539442062378
+            ]
+        }
+    ],
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "background_color": [
+                    0.05087608844041824,
+                    0.05087608844041824,
+                    0.05087608844041824
+                ],
+                "frames_per_second": 24
+            },
+            "name": "Scene",
+            "nodes": [
+                1,
+                0,
+                2
+            ]
+        }
+    ]
+}

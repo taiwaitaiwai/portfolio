@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Tai Wai Chan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">Tai Wai Chan</div>
+            <input type="checkbox" id="nav-check">
+            <label for="nav-check" class="menu-toggle"><span></span><span></span><span></span></label>
+            <nav class="nav">
+                <a href="home.html">Work</a>
+                <a href="profile.html">Profile</a>
+                <a href="contact.html" class="active">Contact</a> 
+            </nav>
+        </div>
+    </header>
+
+    <main class="contact-main">
+        <div class="contact-hero">
+            <h1>Connect</h1>
+            <p>I’d love to hear from you. Whether you want to hear about my availability, have questions, or just want to chat, don't hesitate to reach out!</p>
+        </div>
+
+        <form id="contact-form" action="https://formspree.io/f/xwvqboyq" method="POST" class="contact-form">
+            
+            <input type="hidden" name="_next" value="success.html">
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="first_name">First Name</label>
+                    <input type="text" name="first_name" id="first_name" placeholder="your first name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" name="last_name" id="last_name" placeholder="your family name" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="your email address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="6" placeholder="how can I help u?" required></textarea>
+                <div id="word-count" class="form-note">0 / 10 words minimum</div>
+            </div>
+
+            <div class="form-footer">
+                <button type="submit" id="submit-btn" class="btn">SUBMIT</button>
+                <p id="form-status" class="form-note" style="margin-left: 1rem;"></p>
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <nav class="footer-nav">
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                </nav>
+            </div>
+            <div class="footer-middle">
+                <p class="copyright">© 2026 Tai Wai Chan · Berlin</p>
+            </div>
+            <div class="footer-right">
+                <button onclick="scrollToTop()" class="btn-top">↑</button>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="accessibility-menu">
+        <button class="fab" onclick="toggleAccessMenu()">
+            <img src="img/gear-black.svg" class="icon-gear-black" alt="Settings">
+            <img src="img/gear-white.svg" class="icon-gear-white" alt="Settings">
+        </button>
+        
+        <div class="access-options" id="accessOptions">
+            <button onclick="changeFontSize('increase')">A+</button>
+			<button onclick="changeFontSize('reset')">A</button>
+            <button onclick="changeFontSize('decrease')">A-</button>
+            <button id="contrast-toggle" onclick="toggleContrast()">
+                <img src="img/moon.svg" alt="Dark Mode" class="icon-moon">
+                <img src="img/sun.svg" alt="Light Mode" class="icon-sun">
+            </button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

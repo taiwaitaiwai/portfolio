@@ -1,0 +1,478 @@
+{
+    "accessors": [
+        {
+            "bufferView": 6,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 472,
+            "max": [
+                25.000001907348633,
+                24.96201515197754,
+                25.07758331298828
+            ],
+            "min": [
+                -24.999998092651367,
+                -25.03798484802246,
+                -24.92241668701172
+            ],
+            "name": "accessor_buffer_ybox_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 8,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 684,
+            "max": [
+                471
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_ybox_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 828,
+            "max": [
+                624
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_Abox_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 625,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_Abox_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 5,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 900,
+            "max": [
+                648
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_xbox_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 625,
+            "max": [
+                25.000017166137695,
+                25.024730682373047,
+                24.950471878051758
+            ],
+            "min": [
+                -24.999982833862305,
+                -24.975269317626953,
+                -25.049528121948242
+            ],
+            "name": "accessor_buffer_Abox_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 649,
+            "max": [
+                25.000003814697266,
+                24.979930877685547,
+                25.00001335144043
+            ],
+            "min": [
+                -24.999996185302734,
+                -25.020069122314453,
+                -24.99998664855957
+            ],
+            "name": "accessor_buffer_xbox_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 7,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 472,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_ybox_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 649,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_xbox_NORMAL_0",
+            "type": "VEC3"
+        }
+    ],
+    "asset": {
+        "copyright": "",
+        "generator": "blendergltf v1.2.0",
+        "version": "2.0"
+    },
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 7500,
+            "byteOffset": 0,
+            "byteStride": 12,
+            "name": "bufferView_buffer_Abox_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 7500,
+            "byteOffset": 7500,
+            "byteStride": 12,
+            "name": "bufferView_buffer_Abox_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1660,
+            "byteOffset": 15000,
+            "name": "bufferView_buffer_Abox_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 7788,
+            "byteOffset": 16660,
+            "byteStride": 12,
+            "name": "bufferView_buffer_xbox_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 7788,
+            "byteOffset": 24448,
+            "byteStride": 12,
+            "name": "bufferView_buffer_xbox_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1804,
+            "byteOffset": 32236,
+            "name": "bufferView_buffer_xbox_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 5664,
+            "byteOffset": 34040,
+            "byteStride": 12,
+            "name": "bufferView_buffer_ybox_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 5664,
+            "byteOffset": 39704,
+            "byteStride": 12,
+            "name": "bufferView_buffer_ybox_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1372,
+            "byteOffset": 45368,
+            "name": "bufferView_buffer_ybox_0",
+            "target": 34963
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 46740,
+            "name": "buffer_3xyz",
+            "uri": "buffer_3xyz.bin"
+        }
+    ],
+    "cameras": [
+        {
+            "name": "Camera",
+            "perspective": {
+                "aspectRatio": 1.703595982340029,
+                "yfov": 0.5033799409866333,
+                "zfar": 100.0,
+                "znear": 0.10000000149011612
+            },
+            "type": "perspective"
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "OPAQUE",
+            "doubleSided": false,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "Material.001",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.30506083369255066,
+                    0.6330384612083435,
+                    0.30506083369255066,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "alphaMode": "OPAQUE",
+            "doubleSided": false,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "Material.002",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.6710392832756042,
+                    0.4568999707698822,
+                    0.16690953075885773,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "alphaMode": "OPAQUE",
+            "doubleSided": false,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "Material.003",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.21639826893806458,
+                    0.48306193947792053,
+                    0.48306193947792053,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Abox",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 3,
+                        "POSITION": 5
+                    },
+                    "indices": 2,
+                    "material": 1,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "xbox",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 8,
+                        "POSITION": 6
+                    },
+                    "indices": 4,
+                    "material": 0,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "ybox",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 7,
+                        "POSITION": 0
+                    },
+                    "indices": 1,
+                    "material": 2,
+                    "mode": 4
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "mesh": 0,
+            "name": "Abox",
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                5.615713119506836,
+                -25.002094268798828,
+                1.1013622283935547
+            ]
+        },
+        {
+            "camera": 0,
+            "name": "Camera",
+            "rotation": [
+                -0.09062843769788742,
+                -0.8937962651252747,
+                -0.2099730223417282,
+                0.38578000664711
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                -7.481131553649902,
+                5.34366512298584,
+                -6.5076398849487305
+            ]
+        },
+        {
+            "name": "Lamp",
+            "rotation": [
+                -0.34203386306762695,
+                -0.5232755541801453,
+                -0.2841663062572479,
+                0.7269423007965088
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                0.9999999403953552
+            ],
+            "translation": [
+                -4.076245307922363,
+                5.903861999511719,
+                1.0054539442062378
+            ]
+        },
+        {
+            "mesh": 1,
+            "name": "xbox",
+            "rotation": [
+                0.0,
+                -0.4155983328819275,
+                0.0,
+                0.9095482230186462
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                -30.435646057128906,
+                25.020069122314453,
+                -2.5364456176757812
+            ]
+        },
+        {
+            "mesh": 2,
+            "name": "ybox",
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                32.5897216796875,
+                25.03798484802246,
+                24.92241668701172
+            ]
+        }
+    ],
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "active_camera": 0,
+                "background_color": [
+                    0.05087608844041824,
+                    0.05087608844041824,
+                    0.05087608844041824
+                ],
+                "frames_per_second": 24
+            },
+            "name": "Scene",
+            "nodes": [
+                3,
+                0,
+                4,
+                2,
+                1
+            ]
+        }
+    ]
+}

@@ -1,0 +1,734 @@
+{
+    "accessors": [
+        {
+            "bufferView": 8,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 41820,
+            "max": [
+                41654
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_6 V29D Fixed.002_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 41655,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_6 V29D Fixed.001_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 13,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 41655,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_6 V29D Fixed.004_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 10,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 41655,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_6 V29D Fixed.003_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 41655,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_6 V29D Fixed_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 5,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 41820,
+            "max": [
+                41654
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_6 V29D Fixed.001_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 7,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 41655,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "name": "accessor_buffer_6 V29D Fixed.002_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 14,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 41820,
+            "max": [
+                41654
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_6 V29D Fixed.004_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 12,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 41655,
+            "max": [
+                30.05439567565918,
+                13.1962308883667,
+                12.47277545928955
+            ],
+            "min": [
+                -33.82752227783203,
+                -9.064845085144043,
+                -12.449283599853516
+            ],
+            "name": "accessor_buffer_6 V29D Fixed.004_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 41655,
+            "max": [
+                30.05439567565918,
+                13.1962308883667,
+                12.47277545928955
+            ],
+            "min": [
+                -33.82752227783203,
+                -9.064845085144043,
+                -12.449283599853516
+            ],
+            "name": "accessor_buffer_6 V29D Fixed.001_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 6,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 41655,
+            "max": [
+                30.05439567565918,
+                13.1962308883667,
+                12.47277545928955
+            ],
+            "min": [
+                -33.82752227783203,
+                -9.064845085144043,
+                -12.449283599853516
+            ],
+            "name": "accessor_buffer_6 V29D Fixed.002_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 41820,
+            "max": [
+                41654
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_6 V29D Fixed_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 9,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 41655,
+            "max": [
+                30.05439567565918,
+                13.1962308883667,
+                12.47277545928955
+            ],
+            "min": [
+                -33.82752227783203,
+                -9.064845085144043,
+                -12.449283599853516
+            ],
+            "name": "accessor_buffer_6 V29D Fixed.003_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 41655,
+            "max": [
+                30.05439567565918,
+                13.1962308883667,
+                12.47277545928955
+            ],
+            "min": [
+                -33.82752227783203,
+                -9.064845085144043,
+                -12.449283599853516
+            ],
+            "name": "accessor_buffer_6 V29D Fixed_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 11,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 41820,
+            "max": [
+                41654
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_6 V29D Fixed.003_0",
+            "type": "SCALAR"
+        }
+    ],
+    "asset": {
+        "copyright": "",
+        "generator": "blendergltf v1.2.0",
+        "version": "2.0"
+    },
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 499860,
+            "byteOffset": 0,
+            "byteStride": 12,
+            "name": "bufferView_buffer_6 V29D Fixed_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 499860,
+            "byteOffset": 499860,
+            "byteStride": 12,
+            "name": "bufferView_buffer_6 V29D Fixed_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 83644,
+            "byteOffset": 999720,
+            "name": "bufferView_buffer_6 V29D Fixed_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 499860,
+            "byteOffset": 1083364,
+            "byteStride": 12,
+            "name": "bufferView_buffer_6 V29D Fixed.001_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 499860,
+            "byteOffset": 1583224,
+            "byteStride": 12,
+            "name": "bufferView_buffer_6 V29D Fixed.001_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 83644,
+            "byteOffset": 2083084,
+            "name": "bufferView_buffer_6 V29D Fixed.001_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 499860,
+            "byteOffset": 2166728,
+            "byteStride": 12,
+            "name": "bufferView_buffer_6 V29D Fixed.002_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 499860,
+            "byteOffset": 2666588,
+            "byteStride": 12,
+            "name": "bufferView_buffer_6 V29D Fixed.002_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 83644,
+            "byteOffset": 3166448,
+            "name": "bufferView_buffer_6 V29D Fixed.002_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 499860,
+            "byteOffset": 3250092,
+            "byteStride": 12,
+            "name": "bufferView_buffer_6 V29D Fixed.003_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 499860,
+            "byteOffset": 3749952,
+            "byteStride": 12,
+            "name": "bufferView_buffer_6 V29D Fixed.003_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 83644,
+            "byteOffset": 4249812,
+            "name": "bufferView_buffer_6 V29D Fixed.003_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 499860,
+            "byteOffset": 4333456,
+            "byteStride": 12,
+            "name": "bufferView_buffer_6 V29D Fixed.004_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 499860,
+            "byteOffset": 4833316,
+            "byteStride": 12,
+            "name": "bufferView_buffer_6 V29D Fixed.004_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 83644,
+            "byteOffset": 5333176,
+            "name": "bufferView_buffer_6 V29D Fixed.004_0",
+            "target": 34963
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 5416820,
+            "name": "buffer_5lung_blend",
+            "uri": "buffer_5lung_blend.bin"
+        }
+    ],
+    "cameras": [
+        {
+            "name": "Camera",
+            "perspective": {
+                "aspectRatio": 1.703595982340029,
+                "yfov": 0.5033799409866333,
+                "zfar": 100.0,
+                "znear": 0.10000000149011612
+            },
+            "type": "perspective"
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "OPAQUE",
+            "doubleSided": false,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "Material.001",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.800000011920929,
+                    0.48306193947792053,
+                    0.48306193947792053,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "alphaMode": "OPAQUE",
+            "doubleSided": false,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "Material.002",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.800000011920929,
+                    0.48306193947792053,
+                    0.48306193947792053,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "alphaMode": "OPAQUE",
+            "doubleSided": false,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "Material.003",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.800000011920929,
+                    0.48306193947792053,
+                    0.48306193947792053,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "alphaMode": "OPAQUE",
+            "doubleSided": false,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "Material.004",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.800000011920929,
+                    0.48306193947792053,
+                    0.48306193947792053,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "alphaMode": "OPAQUE",
+            "doubleSided": false,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "Material.005",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.800000011920929,
+                    0.48306193947792053,
+                    0.48306193947792053,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "6 V29D Fixed",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 4,
+                        "POSITION": 13
+                    },
+                    "indices": 11,
+                    "material": 1,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "6 V29D Fixed.001",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 1,
+                        "POSITION": 9
+                    },
+                    "indices": 5,
+                    "material": 0,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "6 V29D Fixed.002",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 6,
+                        "POSITION": 10
+                    },
+                    "indices": 0,
+                    "material": 4,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "6 V29D Fixed.003",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 3,
+                        "POSITION": 12
+                    },
+                    "indices": 14,
+                    "material": 3,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "6 V29D Fixed.004",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 2,
+                        "POSITION": 8
+                    },
+                    "indices": 7,
+                    "material": 2,
+                    "mode": 4
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "mesh": 0,
+            "name": "6 V29D Fixed",
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                1.8869353532791138,
+                5.23117733001709,
+                -0.011926628649234772
+            ]
+        },
+        {
+            "mesh": 1,
+            "name": "6 V29D Fixed.001",
+            "rotation": [
+                -1.0,
+                3.352783802756687e-23,
+                2.220446049250313e-16,
+                9.37382264964981e-06
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                1.8869353532791138,
+                -18.43603515625,
+                0.01175726018846035
+            ]
+        },
+        {
+            "mesh": 2,
+            "name": "6 V29D Fixed.002",
+            "rotation": [
+                -0.39446064829826355,
+                -0.9189128279685974,
+                8.773823537921999e-06,
+                3.848489086522022e-06
+            ],
+            "scale": [
+                0.11839127540588379,
+                0.11839127540588379,
+                0.11839127540588379
+            ],
+            "translation": [
+                -32.351165771484375,
+                -3.6700844764709473,
+                0.0013915770687162876
+            ]
+        },
+        {
+            "mesh": 3,
+            "name": "6 V29D Fixed.003",
+            "rotation": [
+                5.3154461056692526e-05,
+                3.820259007625282e-05,
+                0.9189128279685974,
+                0.39446061849594116
+            ],
+            "scale": [
+                0.11839127540588379,
+                0.11839127540588379,
+                0.11839127540588379
+            ],
+            "translation": [
+                -32.351165771484375,
+                -9.987399101257324,
+                -0.0013546047266572714
+            ]
+        },
+        {
+            "mesh": 4,
+            "name": "6 V29D Fixed.004",
+            "rotation": [
+                -0.7071283459663391,
+                -3.578448982064374e-24,
+                1.5701406068116623e-16,
+                0.7070852518081665
+            ],
+            "scale": [
+                0.1101599931716919,
+                0.1101599931716919,
+                0.1101599931716919
+            ],
+            "translation": [
+                -36.983333587646484,
+                -6.554791450500488,
+                0.2356358915567398
+            ]
+        },
+        {
+            "camera": 0,
+            "name": "Camera",
+            "rotation": [
+                -0.09062843769788742,
+                -0.8937962651252747,
+                -0.2099730223417282,
+                0.38578000664711
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                -7.481131553649902,
+                5.34366512298584,
+                -6.5076398849487305
+            ]
+        },
+        {
+            "name": "Lamp",
+            "rotation": [
+                -0.34203386306762695,
+                -0.5232755541801453,
+                -0.2841663062572479,
+                0.7269423007965088
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                0.9999999403953552
+            ],
+            "translation": [
+                -4.076245307922363,
+                5.903861999511719,
+                1.0054539442062378
+            ]
+        }
+    ],
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "active_camera": 0,
+                "background_color": [
+                    0.05087608844041824,
+                    0.05087608844041824,
+                    0.05087608844041824
+                ],
+                "frames_per_second": 24
+            },
+            "name": "Scene",
+            "nodes": [
+                0,
+                6,
+                5,
+                1,
+                2,
+                3,
+                4
+            ]
+        }
+    ]
+}

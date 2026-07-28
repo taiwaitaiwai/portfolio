@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZITRA Web App Case Study | Tai Wai Chan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-inner">
+            <a href="home.html" class="logo">Tai Wai Chan</a>
+            <input type="checkbox" id="nav-check">
+            <label for="nav-check" class="menu-toggle" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </label>
+            <nav class="nav">
+                <a href="home.html" class="active">Work</a> 
+                <a href="profile.html">Profile</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-main">
+        
+        <!-- SECTION 1: HEADER & TITLE -->
+        <header class="case-header">
+            <a href="home.html#work" class="back-link">← Back to Work</a>
+            <h1>ZITRA Web App</h1>
+            <p class="lead">Pop & Kitsch Mobile QR-Code Scanning Campaign for Organic Lemonade</p>
+        </header>
+
+        <!-- SECTION 2: HERO BANNER IMAGE -->
+        <section class="hero-banner">
+            <div class="media-frame" onclick="openLightbox('img/zitra-hero.jpg')">
+                <img src="img/zitra-hero.jpg" alt="ZITRA Web App Interface Overview">
+            </div>
+            <p class="caption">ZITRA mobile web application overview showcasing the pop-kitsch aesthetic, brand character, and campaign navigation.</p>
+        </section>
+
+        <!-- SECTION 3: PROJECT OVERVIEW & META INFO -->
+        <section class="case-content">
+            <div class="text-block">
+                <p>ZITRA is an interactive mobile web app campaign designed for a fictional organic lemonade brand ("Pur · Sauer · Echt"). The core feature of the app is an instant-win QR code scanner built directly into the mobile browser using Vanilla JavaScript and HTML5 camera stream integration.</p>
+                <p>The visual identity embraces a playful "pop & kitsch" style featuring a stylish, vibrant grandma character as the brand ambassador. Built strictly for mobile viewports, the web app dynamically adapts its layout structure when rotated between vertical (portrait) and horizontal (landscape) orientations, enhanced with keyframe CSS animations.</p>
+            </div>
+
+            <div class="meta-grid">
+                <div class="meta-item">
+                    <h3>Project</h3>
+                    <p>ZITRA Scan & Gewinn</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Year</h3>
+                    <p>2026</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Role</h3>
+                    <p>UI Designer & Front-End Developer</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Key Highlights</h3>
+                    <p>Camera QR Scanner, Dynamic Layout Rotation, Pop/Kitsch Visual Identity</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Tools</h3>
+                    <p>HTML5, CSS3 Animations, Vanilla JS, jsQR Plugin, Illustrator, Photoshop</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Live Prototype</h3>
+                    <p><a href="zitra-demo/index.html" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">View Live Prototype ↗</a></p>
+                </div>
+            </div>
+
+            <!-- PROTOTYPE VIEWING NOTICE -->
+            <div style="background: rgba(255, 235, 59, 0.15); border-left: 4px solid var(--accent-yellow, #ffd700); padding: 1.2rem 1.5rem; border-radius: 8px; margin-top: 2rem;">
+                <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
+                    📱 <strong>Mobile Viewing Tip:</strong> This web app is specifically crafted for mobile devices. When opening the live prototype on a desktop browser, please enable <strong>Mobile Device View / DevTools (F12)</strong> or scan the QR codes below with your smartphone camera.
+                </p>
+            </div>
+
+            <!-- CONTRIBUTIONS & LEARNINGS -->
+            <div class="text-block" style="margin-top: 3rem;">
+                <h2>My Process & Contributions</h2>
+                <ul>
+                    <li><strong>Concept & Art Direction:</strong> Designed a retro-pop visual aesthetic using energetic sunburst backgrounds, custom typography, and the "trendy grandma" mascot.</li>
+                    <li><strong>QR Camera Integration:</strong> Integrated client-side camera access via JavaScript and the `jsQR` library to parse codes instantly without native app installation.</li>
+                    <li><strong>Adaptive Orientation System:</strong> Engineered CSS layout mechanics that smoothly reorient navigation bars and promotional cards when turning the phone landscape.</li>
+                    <li><strong>Interactive States & Micro-Interactions:</strong> Crafted custom win/lose result states, animated button states, and floating lemon graphics using pure CSS keyframes.</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr style="opacity: 0.2; margin: 4rem 0;">
+
+        <!-- SECTION 4: TEST QR CODES (WITH LIGHTBOX ENABLED) -->
+        <section class="case-content">
+            <article class="text-block">
+                <h2>Interactive Demo QR Codes</h2>
+                <p>Scan these test codes using your smartphone or point the ZITRA in-app camera at them to trigger the live scanning workflow and test both winning and try-again result states. Click any QR code to expand.</p>
+
+                <div class="gallery-grid" style="grid-template-columns: repeat(2, 1fr); margin-top: 2rem; gap: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                    <!-- WIN QR CODE -->
+                    <div class="media-frame" onclick="openLightbox('img/qr-win.png', true)" style="text-align: center;">
+                        <img src="img/qr-win.png" alt="Winning Test QR Code" style="width: 100%; aspect-ratio: 1/1; max-width: 240px; margin: 0 auto; display: block;">
+                        <div class="frame-tag" style="background: #27ae60;">Scan to Win</div>
+                    </div>
+
+                    <!-- LOSE QR CODE -->
+                    <div class="media-frame" onclick="openLightbox('img/qr-lose.png', true)" style="text-align: center;">
+                        <img src="img/qr-lose.png" alt="Try Again Test QR Code" style="width: 100%; aspect-ratio: 1/1; max-width: 240px; margin: 0 auto; display: block;">
+                        <div class="frame-tag" style="background: #e74c3c;">Try Again Code</div>
+                    </div>
+                </div>
+                <p class="caption">Test codes for mobile camera scanning verification in the web app. Click to expand in full resolution.</p>
+            </article>
+        </section>
+
+        <hr style="opacity: 0.2; margin: 4rem 0;">
+
+        <!-- SECTION 5: VISUAL SUBSECTIONS -->
+        <section class="case-content">
+            
+            <!-- SUBSECTION 1: VERTICAL / PORTRAIT LAYOUTS (4 SCREENS IN ONE ROW ON DESKTOP) -->
+            <article class="text-block">
+                <h2>1. Vertical (Portrait) UI Experience</h2>
+                <p>In standard portrait mode, the interface places the primary action button ("JETZT SCANNEN") within natural thumb reach, backed by persistent bottom navigation tabs for instant section switching.</p>
+
+                <div class="gallery-grid four-col-grid" style="margin-top: 2rem; gap: 1rem;">
+                    <div class="media-frame" onclick="openLightbox('img/zitra-portrait-1.png')">
+                        <div class="responsive-preview-frame" style="height: 480px;">
+                            <img src="img/zitra-portrait-1.png" alt="ZITRA Mobile Home Screen Portrait">
+                        </div>
+                        <div class="frame-tag">01. Campaign Hero</div>
+                    </div>
+
+                    <div class="media-frame" onclick="openLightbox('img/zitra-portrait-2.png')">
+                        <div class="responsive-preview-frame" style="height: 480px;">
+                            <img src="img/zitra-portrait-2.png" alt="ZITRA Mobile Brand Mission Screen">
+                        </div>
+                        <div class="frame-tag">02. Brand Mission</div>
+                    </div>
+
+                    <div class="media-frame" onclick="openLightbox('img/zitra-portrait-3.png')">
+                        <div class="responsive-preview-frame" style="height: 480px;">
+                            <img src="img/zitra-portrait-3.png" alt="ZITRA Mobile Camera Scanner View">
+                        </div>
+                        <div class="frame-tag">03. Live Camera View</div>
+                    </div>
+
+                    <div class="media-frame" onclick="openLightbox('img/zitra-portrait-4.png')">
+                        <div class="responsive-preview-frame" style="height: 480px;">
+                            <img src="img/zitra-portrait-4.png" alt="ZITRA Scan Win Form Result">
+                        </div>
+                        <div class="frame-tag">04. Win Form State</div>
+                    </div>
+                </div>
+
+                <p class="caption">Portrait interface layouts optimized for standard mobile viewports. Click any screenshot to open in full screen.</p>
+            </article>
+
+            <!-- SUBSECTION 2: LANDSCAPE LAYOUTS (4 IMAGES IN 2x2 GRID) -->
+            <article class="text-block" style="margin-top: 4rem;">
+                <h2>2. Horizontal (Landscape) Orientation</h2>
+                <p>When the device is rotated sideways, media queries transition navigation elements to the side column while aligning content containers horizontally to maintain visual hierarchy without clipping information.</p>
+
+                <div class="gallery-grid" style="grid-template-columns: repeat(2, 1fr); margin-top: 2rem; gap: 1.5rem;">
+                    <div class="media-frame" onclick="openLightbox('img/zitra-landscape-1.png')">
+                        <img src="img/zitra-landscape-1.png" alt="ZITRA Landscape Home Screen">
+                        <div class="frame-tag">01. Landscape Hero</div>
+                    </div>
+
+                    <div class="media-frame" onclick="openLightbox('img/zitra-landscape-2.png')">
+                        <img src="img/zitra-landscape-2.png" alt="ZITRA Landscape Brand Story">
+                        <div class="frame-tag">02. Landscape Mission</div>
+                    </div>
+
+                    <div class="media-frame" onclick="openLightbox('img/zitra-landscape-3.png')">
+                        <img src="img/zitra-landscape-3.png" alt="ZITRA Landscape Prize Overview Screen">
+                        <div class="frame-tag">03. Prize Overview</div>
+                    </div>
+
+                    <div class="media-frame" onclick="openLightbox('img/zitra-landscape-4.png')">
+                        <img src="img/zitra-landscape-4.png" alt="ZITRA Landscape Try Again Screen">
+                        <div class="frame-tag">04. Try-Again Result</div>
+                    </div>
+                </div>
+
+                <p class="caption">Landscape screen adaptations reorienting key interface actions for horizontal viewing. Click to enlarge.</p>
+            </article>
+
+        </section>
+
+        <!-- CASE STUDY FOOTER -->
+        <div class="case-footer">
+            <a href="home.html#work" class="btn">← Back to All Projects</a>
+        </div>
+
+    </main>
+
+    <!-- LIGHTBOX MODAL CONTAINER -->
+    <div id="lightboxModal" class="lightbox-modal" onclick="closeLightbox(event)">
+        <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+        <div class="lightbox-content-wrapper" onclick="event.stopPropagation()">
+            <img id="lightboxTargetImg" class="lightbox-img" src="" alt="Enlarged view">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <nav class="footer-nav">
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                </nav>
+            </div>
+            <div class="footer-middle">
+                <p class="copyright">© 2026 Tai Wai Chan · Berlin</p>
+            </div>
+            <div class="footer-right">
+                <button onclick="scrollToTop()" class="btn-top" aria-label="Scroll to top">↑</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ACCESSIBILITY FAB -->
+    <div class="accessibility-menu">
+        <button class="fab" onclick="toggleAccessMenu()" aria-label="Open accessibility options">
+            <img src="img/gear-black.svg" class="icon-gear-black" alt="Settings">
+            <img src="img/gear-white.svg" class="icon-gear-white" alt="Settings">
+        </button>
+        
+        <div class="access-options" id="accessOptions">
+            <button onclick="changeFontSize('increase')">A+</button>
+            <button onclick="changeFontSize('reset')">A</button>
+            <button onclick="changeFontSize('decrease')">A-</button>
+            <button id="contrast-toggle" onclick="toggleContrast()" aria-label="Toggle dark mode">
+                <img src="img/moon.svg" alt="Dark Mode" class="icon-moon">
+                <img src="img/sun.svg" alt="Light Mode" class="icon-sun">
+            </button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

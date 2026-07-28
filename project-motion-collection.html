@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motion & 3D Lab — Commercial Animation & Voice Synthesis | Tai Wai Chan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .video-link-card {
+            position: relative;
+            display: block;
+            margin-top: 1.5rem;
+            overflow: hidden;
+            border-radius: 12px;
+            background: #111;
+            text-decoration: none;
+            color: #fff;
+            box-shadow: 0 8px 24px rgba(24, 35, 48, 0.14);
+            transition: transform 180ms ease, box-shadow 180ms ease;
+        }
+
+        .video-link-card:hover,
+        .video-link-card:focus-visible {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 32px rgba(24, 35, 48, 0.22);
+        }
+
+        .video-link-card:focus-visible {
+            outline: 3px solid currentColor;
+            outline-offset: 4px;
+        }
+
+        .video-link-card img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            transition: transform 260ms ease, opacity 260ms ease;
+        }
+
+        .video-link-card:hover img,
+        .video-link-card:focus-visible img {
+            transform: scale(1.025);
+            opacity: 0.82;
+        }
+
+        .video-card-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.58),
+                rgba(0, 0, 0, 0.08) 55%,
+                rgba(0, 0, 0, 0.16)
+            );
+        }
+
+        .video-card-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1.25rem;
+            text-align: center;
+        }
+
+        .video-play-button {
+            display: grid;
+            place-items: center;
+            width: 72px;
+            height: 72px;
+            border: 2px solid rgba(255, 255, 255, 0.88);
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.55);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            transition: transform 180ms ease, background 180ms ease;
+        }
+
+        .video-link-card:hover .video-play-button,
+        .video-link-card:focus-visible .video-play-button {
+            transform: scale(1.08);
+            background: rgba(255, 0, 0, 0.88);
+        }
+
+        .video-play-button::before {
+            content: "";
+            width: 0;
+            height: 0;
+            margin-left: 5px;
+            border-top: 11px solid transparent;
+            border-bottom: 11px solid transparent;
+            border-left: 17px solid #fff;
+        }
+
+        .video-card-label {
+            font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+            font-weight: 700;
+            line-height: 1.35;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
+        }
+
+        .video-card-note {
+            font-size: 0.82rem;
+            font-weight: 600;
+            opacity: 0.88;
+        }
+
+        @media (max-width: 640px) {
+            .video-play-button {
+                width: 58px;
+                height: 58px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-inner">
+            <a href="home.html" class="logo">Tai Wai Chan</a>
+            <input type="checkbox" id="nav-check">
+            <label for="nav-check" class="menu-toggle" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </label>
+            <nav class="nav">
+                <a href="home.html" class="active">Work</a> 
+                <a href="profile.html">Profile</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-main">
+        
+        <!-- SECTION 1: HEADER & TITLE -->
+        <header class="case-header">
+            <a href="home.html#work" class="back-link">← Back to Work</a>
+            <h1>Motion & 3D Lab</h1>
+            <p class="lead">Commercial Motion Graphics, SolidWorks 3D Modeling, Adobe Animate & AI Speech Synthesis</p>
+        </header>
+
+        <!-- SECTION 2: HERO BANNER IMAGE -->
+        <section class="hero-banner">
+            <div class="media-frame" onclick="openLightbox('img/motion-hero.jpg')">
+                <img src="img/motion-hero.jpg" alt="Motion Graphics & 3D Animation Production Showcase">
+            </div>
+            <p class="caption">Commercial 2D/3D motion graphics production combining 3D CAD modeling, vector animation, and multi-language AI audio synthesis.</p>
+        </section>
+
+        <!-- SECTION 3: PROJECT OVERVIEW & META INFO -->
+        <section class="case-content">
+            <div class="text-block">
+                <p><strong>Motion & 3D Lab</strong> highlights commercial motion design projects engineered for industrial and retail client campaigns. The showcase demonstrates full-pipeline production capabilities—spanning 3D SolidWorks CAD modeling and rendering, 2D vector character animation in Adobe Animate, and localized multi-language voice synthesis via ElevenLabs.</p>
+            </div>
+
+            <div class="meta-grid">
+                <div class="meta-item">
+                    <h3>Project</h3>
+                    <p>Commercial Motion & 3D Lab</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Clients</h3>
+                    <p>EcoTekFutura, JalouCity</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Role</h3>
+                    <p>3D Modeler, Motion Designer & Animator</p>
+                </div>
+                <div class="meta-item">
+                    <h3>3D Tools</h3>
+                    <p>SolidWorks CAD, Photorealistic Rendering</p>
+                </div>
+                <div class="meta-item">
+                    <h3>2D & Audio</h3>
+                    <p>Adobe Animate, ElevenLabs AI Voice Synthesis</p>
+                </div>
+                <div class="meta-item">
+                    <h3>Deliverables</h3>
+                    <p>Product Explainer & Recruitment Videos</p>
+                </div>
+            </div>
+        </section>
+
+        <hr style="opacity: 0.2; margin: 4rem 0;">
+
+        <!-- SECTION 4: CLIENT CASE STUDIES -->
+        <section class="case-content">
+
+            <!-- CASE 1: JALOUCITY -->
+            <article class="text-block">
+                <h2>1. JalouCity — 2D Motion Graphics Recruitment Campaign</h2>
+                <p>JalouCity is Germany's market leader for custom blinds and sun protection systems. I produced a dynamic 2D vector animation in <strong>Adobe Animate</strong> designed to attract qualified assembly technicians. The video translates job benefits and installation workflows into visual storytelling.</p>
+
+                <a
+                    class="video-link-card"
+                    href="https://www.youtube.com/watch?v=4e8ncluSKC0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Watch the JalouCity recruitment video on YouTube">
+                    <img
+                        src="img/jaloucity-30jahre.jpg"
+                        alt="JalouCity recruitment campaign video preview">
+                    <span class="video-card-overlay">
+                        <span class="video-card-content">
+                            <span class="video-play-button" aria-hidden="true"></span>
+                            <span class="video-card-label">Watch JalouCity Recruitment Video</span>
+                            <span class="video-card-note">Opens on YouTube ↗</span>
+                        </span>
+                    </span>
+                </a>
+
+                <p class="caption">▶️ JalouCity Recruitment Video (2D Vector Motion Graphics built with Adobe Animate). Official website: <a href="https://www.jaloucity.de/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">jaloucity.de ↗</a></p>
+            </article>
+
+            <!-- CASE 2: ECOTEKFUTURA -->
+            <article class="text-block" style="margin-top: 4rem;">
+                <h2>2. EcoTekFutura — 3D Technical Product Explainer</h2>
+                <p>EcoTekFutura specializes in sustainable drain and overflow protection systems. For this commercial explainer, I modeled and rendered the drain assembly in <strong>SolidWorks</strong> to accurately illustrate mechanical fluid flow and microplastic filtration. 2D vector overlays were created in <strong>Adobe Animate</strong>, paired with <strong>ElevenLabs</strong> multi-language AI voice synthesis for international marketing deployment.</p>
+
+                <a
+                    class="video-link-card"
+                    href="https://www.youtube.com/watch?v=D8CPmCWqGJg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Watch the EcoTekFutura product explainer on YouTube">
+                    <img
+                        src="https://i.ytimg.com/vi/D8CPmCWqGJg/maxresdefault.jpg"
+                        onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/D8CPmCWqGJg/hqdefault.jpg';"
+                        alt="EcoTekFutura product explainer thumbnail">
+                    <span class="video-card-overlay">
+                        <span class="video-card-content">
+                            <span class="video-play-button" aria-hidden="true"></span>
+                            <span class="video-card-label">Watch EcoTekFutura Product Video</span>
+                            <span class="video-card-note">Opens on YouTube ↗</span>
+                        </span>
+                    </span>
+                </a>
+
+                <p class="caption">▶️ EcoTekFutura 3D Product Video (SolidWorks 3D Modeling, Adobe Animate & ElevenLabs Audio Localization). Official website: <a href="https://www.ecotekfutura.de/en" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">ecotekfutura.de ↗</a></p>
+            </article>
+
+        </section>
+
+        <!-- CASE STUDY FOOTER -->
+        <div class="case-footer">
+            <a href="home.html#work" class="btn">← Back to All Projects</a>
+        </div>
+
+    </main>
+
+    <!-- LIGHTBOX MODAL CONTAINER -->
+    <div id="lightboxModal" class="lightbox-modal" onclick="closeLightbox(event)">
+        <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+        <div class="lightbox-content-wrapper" onclick="event.stopPropagation()">
+            <img id="lightboxTargetImg" class="lightbox-img" src="" alt="Enlarged view">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <nav class="footer-nav">
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                </nav>
+            </div>
+            <div class="footer-middle">
+                <p class="copyright">© 2026 Tai Wai Chan · Berlin</p>
+            </div>
+            <div class="footer-right">
+                <button onclick="scrollToTop()" class="btn-top" aria-label="Scroll to top">↑</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ACCESSIBILITY FAB -->
+    <div class="accessibility-menu">
+        <button class="fab" onclick="toggleAccessMenu()" aria-label="Open accessibility options">
+            <img src="img/gear-black.svg" class="icon-gear-black" alt="Settings">
+            <img src="img/gear-white.svg" class="icon-gear-white" alt="Settings">
+        </button>
+        
+        <div class="access-options" id="accessOptions">
+            <button onclick="changeFontSize('increase')">A+</button>
+            <button onclick="changeFontSize('reset')">A</button>
+            <button onclick="changeFontSize('decrease')">A-</button>
+            <button id="contrast-toggle" onclick="toggleContrast()" aria-label="Toggle dark mode">
+                <img src="img/moon.svg" alt="Dark Mode" class="icon-moon">
+                <img src="img/sun.svg" alt="Light Mode" class="icon-sun">
+            </button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
